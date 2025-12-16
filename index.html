@@ -57,12 +57,87 @@
               <img src="./assets/img/logo.webp" alt="Logo" class="h-12 w-auto relative transition-transform duration-500 group-hover:scale-105 brightness-0 invert">
           </div>
 
-          <!-- Desktop Nav Left -->
+          <!-- Desktop Nav Left - Only 3 Menus -->
           <div class="hidden lg:flex items-center">
-              <nav class="flex items-center gap-8">
-                  <a href="#" class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out hover:after:w-full">About</a>
-                  <a href="#" class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out hover:after:w-full">Campus</a>
-                  <a href="#" class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out hover:after:w-full">Academics</a>
+              <nav class="flex items-center gap-6 xl:gap-8">
+                  <!-- About Dropdown -->
+                  <div class="group relative">
+                      <button class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out group-hover:after:w-full flex items-center gap-1">
+                          About
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300 group-hover:rotate-180">
+                              <path d="m6 9 6 6 6-6"></path>
+                          </svg>
+                      </button>
+                      <div class="absolute top-full left-0 mt-2 w-64 bg-white/98 backdrop-blur-xl rounded-xl shadow-2xl border border-gray-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
+                          <div class="p-2">
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Vision / Mission</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Our Core Values</a>
+                              <div class="relative group/submenu">
+                                  <button class="w-full flex items-center justify-between px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">
+                                      <span>Administration</span>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-200 group-hover/submenu:rotate-90">
+                                          <path d="m9 18 6-6-6-6"></path>
+                                      </svg>
+                                  </button>
+                                  <div class="absolute left-full top-0 ml-2 w-64 bg-white/98 backdrop-blur-xl rounded-xl shadow-2xl border border-gray-200/50 opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible transition-all duration-300 transform translate-x-2 group-hover/submenu:translate-x-0 z-[60] pointer-events-none group-hover/submenu:pointer-events-auto">
+                                      <div class="p-2">
+                                          <a href="#" class="block px-4 py-3 text-sm text-gray-600 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Makkar Education Trust</a>
+                                          <a href="#" class="block px-4 py-3 text-sm text-gray-600 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Principal Message</a>
+                                          <a href="#" class="block px-4 py-3 text-sm text-gray-600 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Teaching Staff</a>
+                                          <a href="#" class="block px-4 py-3 text-sm text-gray-600 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Non-Teaching Staff</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">ESP</a>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Academics Dropdown -->
+                  <div class="group relative">
+                      <button class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out group-hover:after:w-full flex items-center gap-1">
+                          Academics
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300 group-hover:rotate-180">
+                              <path d="m6 9 6 6 6-6"></path>
+                          </svg>
+                      </button>
+                      <div class="absolute top-full left-0 mt-2 w-64 bg-white/98 backdrop-blur-xl rounded-xl shadow-2xl border border-gray-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
+                          <div class="p-2">
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Exam / Activity Planner</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Academic Calendar / Saturday Activity</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">School Uniform</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">School Timing</a>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Facilities Dropdown -->
+                  <div class="group relative">
+                      <button class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out group-hover:after:w-full flex items-center gap-1">
+                          Facilities
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300 group-hover:rotate-180">
+                              <path d="m6 9 6 6 6-6"></path>
+                          </svg>
+                      </button>
+                      <div class="absolute top-full left-0 mt-2 w-72 bg-white/98 backdrop-blur-xl rounded-xl shadow-2xl border border-gray-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 max-h-96 overflow-y-auto">
+                          <div class="p-2">
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Our Campus</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Life at MLZS</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">House System</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Classroom</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Multimedia Classes</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Laboratory</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Library</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Safety & Security</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Infirmary</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Open Air Theatre</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Momentum Classes</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Eco Friendly Environment</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Transportation</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Sports</a>
+                          </div>
+                      </div>
+                  </div>
               </nav>
           </div>
 
@@ -72,10 +147,13 @@
               <img src="./assets/img/logo.webp" alt="Logo" class="h-20 md:h-24 group-[&.scrolled]/nav:h-20 w-auto relative transition-all duration-500 group-hover:scale-105 brightness-0 invert">
           </div>
 
-          <!-- Desktop Nav Right -->
+          <!-- Desktop Nav Right - Only 2 Menus + Menu Button -->
           <div class="hidden lg:flex items-center">
-              <nav class="flex items-center gap-8">
+              <nav class="flex items-center gap-6 xl:gap-8">
+                  <!-- Admissions -->
                   <a href="#" class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out hover:after:w-full">Admissions</a>
+                  
+                  <!-- Contact -->
                   <a href="#" class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out hover:after:w-full">Contact</a>
               
                   <!-- Menu Toggle Button -->
@@ -123,18 +201,18 @@
       </div>
 
       <!-- Sidebar Content Side -->
-      <div class="w-full lg:w-1/2 h-full flex flex-col relative bg-sidebar-bg">
+      <div class="w-full lg:w-1/2 h-full flex flex-col relative bg-sidebar-bg overflow-hidden">
           
-          <!-- Close Button -->
-          <button onclick="toggleMenu()" class="absolute top-4 right-4 lg:top-12 lg:right-12 text-white/50 hover:text-white hover:rotate-90 transition-all duration-300 group z-10">
-              <div class="p-2 lg:p-3 border border-white/10 rounded-full group-hover:border-white/40 group-hover:bg-white/5">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x w-6 h-6 lg:w-8 lg:h-8"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
-              </div>
-          </button>
 
           <!-- Quick Links (Fixed Top) -->
-          <div class="flex-shrink-0 p-8 lg:p-24 pb-8 lg:pb-16 border-b border-white/10">
+          <div id="quick-links" class="flex-shrink-0 p-8 lg:px-24 border-b border-white/10 transition-all duration-300 ease-in-out z-10">
               <div class="flex flex-wrap gap-x-8 gap-y-4">
+                <!-- Close Button -->
+                <button onclick="toggleMenu()" class="text-white/50 hover:text-white hover:rotate-90 transition-all duration-300 group z-10">
+                    <div class="p-2 lg:p-3 border border-white/10 rounded-full group-hover:border-white/40 group-hover:bg-white/5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x w-6 h-6 lg:w-8 lg:h-8"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                    </div>
+                </button>
                   <a href="#" class="text-white/40 hover:text-light-blue text-[0.6875rem] font-bold uppercase tracking-[0.15em] flex items-center gap-2 transition-colors">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="user" class="lucide lucide-user w-4 h-4"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> Login
                   </a>
@@ -147,71 +225,131 @@
               </div>
           </div>
 
-          <!-- Menu List (Scrollable) -->
-          <div class="flex-1 overflow-y-auto px-8 lg:px-24 py-8">
-              <ul class="flex flex-col gap-6">
-                  <!-- Desktop Nav Items (Mobile Only) -->
+          <!-- Menu List (Scrollable) - Main Menu -->
+          <div id="main-menu" class="flex-1 overflow-y-auto px-8 lg:px-24 py-8 transition-all duration-300 ease-in-out relative z-10">
+              <ul class="flex flex-col gap-4">
+                  
+                  <!-- Header Navigation Items (Mobile Only) -->
                   <li class="lg:hidden">
-                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop">
-                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl max-md:hidden">01.</span>
+                      <a href="#" class="menu-item group flex items-center text-4xl lg:text-5xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop">
                           About
                       </a>
                   </li>
                   <li class="lg:hidden">
-                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop">
-                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl max-md:hidden">02.</span>
+                      <a href="#" class="menu-item group flex items-center text-4xl lg:text-5xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop">
                           Campus
                       </a>
                   </li>
                   <li class="lg:hidden">
-                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop">
-                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl max-md:hidden">03.</span>
+                      <a href="#" class="menu-item group flex items-center text-4xl lg:text-5xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop">
                           Academics
                       </a>
                   </li>
                   <li class="lg:hidden">
-                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop">
-                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl max-md:hidden">04.</span>
+                      <a href="#" class="menu-item group flex items-center text-4xl lg:text-5xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop">
                           Admissions
                       </a>
                   </li>
                   <li class="lg:hidden">
-                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop">
-                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl max-md:hidden">05.</span>
+                      <a href="#" class="menu-item group flex items-center text-4xl lg:text-5xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop">
                           Contact
                       </a>
                   </li>
                   
-                  <!-- Main Menu Items -->
+                  <!-- Main Navigation Items (All Devices) -->
+                  <li class="hidden lg:block">
+                      <button onclick="openSubmenu('about')" class="menu-item group w-full flex items-center justify-between text-4xl lg:text-5xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop">
+                          <span>About</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300">
+                              <path d="m9 18 6-6-6-6"></path>
+                          </svg>
+                      </button>
+                  </li>
+                  
                   <li>
-                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop">
-                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl max-md:hidden">01.</span>
-                          Academics
+                      <button onclick="openSubmenu('academics')" class="menu-item group w-full flex items-center justify-between text-4xl lg:text-5xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop">
+                          <span>Academics</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300">
+                              <path d="m9 18 6-6-6-6"></path>
+                          </svg>
+                      </button>
+                  </li>
+                  
+                  <li>
+                      <button onclick="openSubmenu('facilities')" class="menu-item group w-full flex items-center justify-between text-4xl lg:text-5xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop">
+                          <span>Facilities</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300">
+                              <path d="m9 18 6-6-6-6"></path>
+                          </svg>
+                      </button>
+                  </li>
+                  
+                  <li>
+                      <button onclick="openSubmenu('activity')" class="menu-item group w-full flex items-center justify-between text-4xl lg:text-5xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop">
+                          <span>Activity</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300">
+                              <path d="m9 18 6-6-6-6"></path>
+                          </svg>
+                      </button>
+                  </li>
+                  
+                  <!-- Simple Menu Items -->
+                  <li>
+                      <a href="#" class="menu-item group flex items-center text-4xl lg:text-5xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop">
+                          Circular
                       </a>
                   </li>
                   <li>
-                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop">
-                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl max-md:hidden">02.</span>
-                          Campus Life
+                      <a href="#" class="menu-item group flex items-center text-4xl lg:text-5xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop">
+                          Gallery
                       </a>
                   </li>
+                  
                   <li>
-                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop">
-                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl max-md:hidden">03.</span>
+                      <button onclick="openSubmenu('alumni')" class="menu-item group w-full flex items-center justify-between text-4xl lg:text-5xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop">
+                          <span>Alumni</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300">
+                              <path d="m9 18 6-6-6-6"></path>
+                          </svg>
+                      </button>
+                  </li>
+                  
+                  <li>
+                      <a href="#" class="menu-item group flex items-center text-4xl lg:text-5xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop">
                           Admissions
                       </a>
                   </li>
                   <li>
-                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop">
-                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl max-md:hidden">04.</span>
-                          Gallery
+                      <a href="#" class="menu-item group flex items-center text-4xl lg:text-5xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop">
+                          Contact
                       </a>
                   </li>
+                  
               </ul>
           </div>
 
+          <!-- Submenu Overlay -->
+          <div id="submenu-overlay" class="absolute inset-0 bg-sidebar-bg transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col z-20">
+              <!-- Back Button -->
+              <div class="flex-shrink-0 p-8 lg:p-24 pb-6 lg:pb-8 border-b border-white/10">
+                  <button onclick="closeSubmenu()" class="flex items-center gap-4 text-white/50 hover:text-white transition-colors duration-300 group">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300 group-hover:-translate-x-1">
+                          <path d="m15 18-6-6 6-6"></path>
+                      </svg>
+                      <span class="text-xl lg:text-2xl font-bold capitalize">Back</span>
+                  </button>
+              </div>
+
+              <!-- Submenu Content (Scrollable) -->
+              <div class="flex-1 overflow-y-auto px-8 lg:px-24 py-8">
+                  <ul id="submenu-list" class="flex flex-col gap-4 transition-all duration-300 ease-in-out">
+                      <!-- Submenu items will be dynamically inserted here -->
+                  </ul>
+              </div>
+          </div>
+
           <!-- Socials (Fixed Bottom) -->
-          <div class="flex-shrink-0 p-8 lg:p-24 pt-8 lg:pt-16 border-t border-white/10">
+          <div id="socials" class="flex-shrink-0 p-8 lg:px-24 lg:py-10 border-t border-white/10 transition-all duration-300 ease-in-out z-10">
               <div class="flex gap-4">
                   <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:bg-primary-blue hover:text-white hover:border-primary-blue hover:-translate-y-1 transition-all duration-300">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="facebook" class="lucide lucide-facebook w-5 h-5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
@@ -354,6 +492,307 @@
               document.body.style.overflow = '';
           }
       }
+
+      // Submenu Data
+      const submenuData = {
+          about: [
+              { name: 'Vision / Mission', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Our Core Values', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Administration', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop', submenu: [
+                  { name: 'Makkar Education Trust', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+                  { name: 'Principal Message', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+                  { name: 'Teaching Staff', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+                  { name: 'Non-Teaching Staff', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' }
+              ]},
+              { name: 'ESP', href: '#', img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop' }
+          ],
+          academics: [
+              { name: 'Exam / Activity Planner', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Academic Calendar / Saturday Activity', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'School Uniform', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'School Timing', href: '#', img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop' }
+          ],
+          facilities: [
+              { name: 'Our Campus', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Life at MLZS', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'House System', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Classroom', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Multimedia Classes', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Laboratory', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Library', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Safety & Security', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Infirmary', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Open Air Theatre', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Momentum Classes', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Eco Friendly Environment', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Transportation', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Sports', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' }
+          ],
+          activity: [
+              { name: 'Events', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Co-Scholastic', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop', submenu: [
+                  { name: 'Art & Craft', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+                  { name: 'Music & Dance', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+                  { name: 'Spiritual Programme', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+                  { name: 'Parents Testimonial', href: '#', img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop' }
+              ]},
+              { name: 'Value Added Services', href: '#', img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop', submenu: [
+                  { name: 'Excursions', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+                  { name: 'Teacher Training', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+                  { name: 'Disaster Management', href: '#', img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop' }
+              ]}
+          ],
+          alumni: [
+              { name: 'Alumni Network', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Success Stories', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Register', href: '#', img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop' }
+          ]
+      };
+
+      // Track current menu path for nested submenus
+      let currentMenuPath = [];
+      let currentMenuData = null;
+
+      // Open Submenu Overlay
+      function openSubmenu(menuKey, itemIndex = null) {
+          const overlay = document.getElementById('submenu-overlay');
+          const submenuList = document.getElementById('submenu-list');
+          const mainMenu = document.getElementById('main-menu');
+          
+          let menuData;
+          
+          // If itemIndex is provided, it means we're opening a nested submenu
+          if (itemIndex !== null && currentMenuData && currentMenuData[itemIndex] && currentMenuData[itemIndex].submenu) {
+              menuData = currentMenuData[itemIndex].submenu;
+              currentMenuPath.push({ key: menuKey, index: itemIndex, data: currentMenuData });
+              currentMenuData = menuData;
+          } else {
+              // Opening first level submenu
+              menuData = submenuData[menuKey];
+              currentMenuPath = [{ key: menuKey, index: null, data: null }];
+              currentMenuData = menuData;
+          }
+          
+          if (!menuData) return;
+          
+          // Hide main menu, quick links, and socials completely
+          mainMenu.style.opacity = '0';
+          mainMenu.style.pointerEvents = 'none';
+          mainMenu.style.visibility = 'hidden';
+          
+          const quickLinks = document.getElementById('quick-links');
+          const socials = document.getElementById('socials');
+          if (quickLinks) {
+              quickLinks.style.opacity = '0';
+              quickLinks.style.pointerEvents = 'none';
+              quickLinks.style.visibility = 'hidden';
+          }
+          if (socials) {
+              socials.style.opacity = '0';
+              socials.style.pointerEvents = 'none';
+              socials.style.visibility = 'hidden';
+          }
+          
+          // If opening nested submenu, animate out current content first
+          if (itemIndex !== null && currentMenuPath.length > 1) {
+              // Fade out current content
+              submenuList.style.opacity = '0';
+              submenuList.style.transform = 'translateX(-20px)';
+              
+              // After fade out, update content and fade in
+              setTimeout(() => {
+                  // Generate submenu HTML
+                  submenuList.innerHTML = menuData.map((item, idx) => {
+                      if (item.submenu) {
+                          // Item with nested submenu
+                          return `
+                              <li>
+                                  <button onclick="openSubmenu('${menuKey}', ${idx})" class="menu-item group w-full flex items-center justify-between text-3xl lg:text-4xl font-bold text-white/30 hover:text-white transition-colors duration-300 capitalize">
+                                      <span>${item.name}</span>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300">
+                                          <path d="m9 18 6-6-6-6"></path>
+                                      </svg>
+                                  </button>
+                              </li>
+                          `;
+                      } else {
+                          // Regular item
+                          return `
+                              <li>
+                                  <a href="${item.href}" class="menu-item group flex items-center text-3xl lg:text-4xl font-bold text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="${item.img}">
+                                      ${item.name}
+                                  </a>
+                              </li>
+                          `;
+                      }
+                  }).join('');
+                  
+                  // Fade in new content
+                  submenuList.style.opacity = '1';
+                  submenuList.style.transform = 'translateX(0)';
+              }, 150);
+              
+              // Ensure overlay is visible
+              overlay.classList.remove('translate-x-full');
+              overlay.classList.add('translate-x-0');
+          } else {
+              // First level submenu - generate HTML immediately
+              submenuList.innerHTML = menuData.map((item, idx) => {
+                  if (item.submenu) {
+                      // Item with nested submenu
+                      return `
+                          <li>
+                              <button onclick="openSubmenu('${menuKey}', ${idx})" class="menu-item group w-full flex items-center justify-between text-3xl lg:text-4xl font-bold text-white/30 hover:text-white transition-colors duration-300 capitalize">
+                                  <span>${item.name}</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300">
+                                      <path d="m9 18 6-6-6-6"></path>
+                                  </svg>
+                              </button>
+                          </li>
+                      `;
+                  } else {
+                      // Regular item
+                      return `
+                          <li>
+                              <a href="${item.href}" class="menu-item group flex items-center text-3xl lg:text-4xl font-bold text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="${item.img}">
+                                  ${item.name}
+                              </a>
+                          </li>
+                      `;
+                  }
+              }).join('');
+              
+              // Reset submenu list styles
+              submenuList.style.opacity = '1';
+              submenuList.style.transform = 'translateX(0)';
+              
+              // Show overlay with animation
+              overlay.classList.remove('translate-x-full');
+              overlay.classList.add('translate-x-0');
+          }
+      }
+
+      // Close Submenu Overlay
+      function closeSubmenu() {
+          const overlay = document.getElementById('submenu-overlay');
+          const submenuList = document.getElementById('submenu-list');
+          const mainMenu = document.getElementById('main-menu');
+          
+          // If we have nested menus, go back one level
+          if (currentMenuPath.length > 1) {
+              // Fade out current content
+              submenuList.style.opacity = '0';
+              submenuList.style.transform = 'translateX(20px)';
+              
+              setTimeout(() => {
+                  currentMenuPath.pop();
+                  const previousMenu = currentMenuPath[currentMenuPath.length - 1];
+                  
+                  let menuData;
+                  if (previousMenu.index !== null && previousMenu.data) {
+                      // We're in a nested submenu, go back to parent
+                      menuData = previousMenu.data;
+                      currentMenuData = menuData;
+                  } else {
+                      // Go back to first level
+                      menuData = submenuData[previousMenu.key];
+                      currentMenuData = menuData;
+                  }
+                  
+                  // Generate submenu HTML for previous level
+                  submenuList.innerHTML = menuData.map((item, index) => {
+                      if (item.submenu) {
+                          return `
+                              <li>
+                                  <button onclick="openSubmenu('${previousMenu.key}', ${index})" class="menu-item group w-full flex items-center justify-between text-3xl lg:text-4xl font-bold text-white/30 hover:text-white transition-colors duration-300 capitalize">
+                                      <span>${item.name}</span>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300">
+                                          <path d="m9 18 6-6-6-6"></path>
+                                      </svg>
+                                  </button>
+                              </li>
+                          `;
+                      } else {
+                          return `
+                              <li>
+                                  <a href="${item.href}" class="menu-item group flex items-center text-3xl lg:text-4xl font-bold text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="${item.img}">
+                                      ${item.name}
+                                  </a>
+                              </li>
+                          `;
+                      }
+                  }).join('');
+                  
+                  // Fade in previous content
+                  submenuList.style.opacity = '1';
+                  submenuList.style.transform = 'translateX(0)';
+              }, 150);
+          } else {
+              // Hide overlay completely
+              overlay.classList.remove('translate-x-0');
+              overlay.classList.add('translate-x-full');
+              
+              // Show main menu, quick links, and socials
+              mainMenu.style.opacity = '1';
+              mainMenu.style.pointerEvents = 'auto';
+              mainMenu.style.visibility = 'visible';
+              
+              const quickLinks = document.getElementById('quick-links');
+              const socials = document.getElementById('socials');
+              if (quickLinks) {
+                  quickLinks.style.opacity = '1';
+                  quickLinks.style.pointerEvents = 'auto';
+                  quickLinks.style.visibility = 'visible';
+              }
+              if (socials) {
+                  socials.style.opacity = '1';
+                  socials.style.pointerEvents = 'auto';
+                  socials.style.visibility = 'visible';
+              }
+              
+              // Reset menu path
+              currentMenuPath = [];
+              currentMenuData = null;
+          }
+      }
+
+      // Fix second level dropdown hover for desktop header
+      document.addEventListener('DOMContentLoaded', function() {
+          const submenuGroups = document.querySelectorAll('.group\\/submenu');
+          
+          submenuGroups.forEach(group => {
+              const submenu = group.querySelector('div[class*="absolute left-full"]');
+              
+              if (submenu) {
+                  // Mouse enter on group
+                  group.addEventListener('mouseenter', function() {
+                      submenu.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
+                      submenu.classList.add('opacity-100', 'visible', 'pointer-events-auto');
+                      submenu.style.transform = 'translateX(0)';
+                  });
+                  
+                  // Mouse leave from group
+                  group.addEventListener('mouseleave', function() {
+                      submenu.classList.remove('opacity-100', 'visible', 'pointer-events-auto');
+                      submenu.classList.add('opacity-0', 'invisible', 'pointer-events-none');
+                      submenu.style.transform = 'translateX(0.5rem)';
+                  });
+                  
+                  // Keep submenu open when hovering over it
+                  submenu.addEventListener('mouseenter', function() {
+                      submenu.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
+                      submenu.classList.add('opacity-100', 'visible', 'pointer-events-auto');
+                      submenu.style.transform = 'translateX(0)';
+                  });
+                  
+                  submenu.addEventListener('mouseleave', function() {
+                      submenu.classList.remove('opacity-100', 'visible', 'pointer-events-auto');
+                      submenu.classList.add('opacity-0', 'invisible', 'pointer-events-none');
+                      submenu.style.transform = 'translateX(0.5rem)';
+                  });
+              }
+          });
+      });
 
       // Hover Image Logic
       const menuItems = document.querySelectorAll('.menu-item');
