@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="md:text-[1vw]">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mount Litera Zee School Alwar</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Material Symbols for extra options if needed -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+
+    <!-- Tailwind CSS v4 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primary-blue: #074775;
+            --color-primary-dark: #042b4a;
+            --color-light-blue: #48b3e1;
+            --color-sidebar-bg: #1a0508;
+            
+            --font-family-montserrat: 'Montserrat', sans-serif;
+            
+            --ease-custom-ease: cubic-bezier(0.77, 0, 0.175, 1);
+            --ease-bounce-slight: cubic-bezier(0.34, 1.56, 0.64, 1);
+            
+            --animate-shine: shine 1s forwards;
+        }
+        
+        @keyframes shine {
+            100% {
+                left: 125%;
+            }
+        }
+    </style>
+
+  </head>
+<body class="font-montserrat bg-black text-white overflow-x-hidden selection:bg-light-blue selection:text-white">
+
+  <!-- Header -->
+  <header id="header" class="fixed top-0 left-0 w-full z-50 px-4 lg:px-6 py-4 lg:py-6 transition-all duration-300 bg-transparent [&.scrolled]:bg-gradient-to-b [&.scrolled]:from-black [&.scrolled]:via-black/60 [&.scrolled]:to-transparent [&.scrolled]:py-2 lg:[&.scrolled]:py-3 [&.scrolled]:backdrop-blur-md group/nav">
+      <div class="max-w-[112.5rem] mx-auto flex justify-between lg:justify-center items-center relative gap-8 lg:gap-16">
+          
+          <!-- Mobile Logo (Left) -->
+          <div class="lg:hidden shrink-0 relative z-10 group cursor-pointer">
+              <div class="absolute inset-0 bg-primary-blue/50 blur-[2.5rem] opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+              <img src="./assets/img/logo.webp" alt="Logo" class="h-12 w-auto relative transition-transform duration-500 group-hover:scale-105 brightness-0 invert">
+          </div>
+
+          <!-- Desktop Nav Left -->
+          <div class="hidden lg:flex items-center">
+              <nav class="flex items-center gap-8">
+                  <a href="#" class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out hover:after:w-full">About</a>
+                  <a href="#" class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out hover:after:w-full">Campus</a>
+                  <a href="#" class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out hover:after:w-full">Academics</a>
+              </nav>
+          </div>
+
+          <!-- Desktop Logo (Center) -->
+          <div class="hidden lg:block shrink-0 relative z-10 group cursor-pointer">
+              <div class="absolute inset-0 bg-primary-blue/50 blur-[2.5rem] opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+              <img src="./assets/img/logo.webp" alt="Logo" class="h-20 md:h-24 group-[&.scrolled]/nav:h-20 w-auto relative transition-all duration-500 group-hover:scale-105 brightness-0 invert">
+          </div>
+
+          <!-- Desktop Nav Right -->
+          <div class="hidden lg:flex items-center">
+              <nav class="flex items-center gap-8">
+                  <a href="#" class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out hover:after:w-full">Admissions</a>
+                  <a href="#" class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out hover:after:w-full">Contact</a>
+              
+                  <!-- Menu Toggle Button -->
+                  <button onclick="toggleMenu()" class="group flex items-center gap-4 cursor-pointer">
+                      <span class="font-bold uppercase text-xs tracking-[0.2em] group-hover:text-light-blue transition-colors duration-300">Menu</span>
+                      <div class="w-12 h-12 rounded-full border border-white/20 flex flex-col items-center justify-center gap-[0.3125rem] group-hover:bg-white/10 group-hover:border-white/40 transition-all duration-300 relative overflow-hidden">
+                          <span class="w-5 h-[0.125rem] bg-white transition-all duration-300 group-hover:w-6 group-hover:bg-light-blue"></span>
+                          <span class="w-5 h-[0.125rem] bg-white transition-all duration-300 group-hover:w-4 group-hover:-translate-x-1 group-hover:bg-light-blue"></span>
+                          <span class="w-5 h-[0.125rem] bg-white transition-all duration-300 group-hover:w-6 group-hover:bg-light-blue"></span>
+                      </div>
+                  </button>
+              </nav>
+          </div>
+
+          <!-- Mobile Menu Toggle (Right) -->
+          <div class="lg:hidden">
+              <button onclick="toggleMenu()" class="p-2 text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" class="lucide lucide-menu w-8 h-8"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+              </button>
+          </div>
+      </div>
+  </header>
+
+  <!-- Right Side Sticky Actions -->
+  <div class="hidden md:flex fixed right-0 top-1/2 -translate-y-1/2 z-40 flex-col gap-0 shadow-2xl">
+      <a href="#" class="group [writing-mode:vertical-rl] [text-orientation:mixed] bg-white/10 backdrop-blur-xl border border-white/20 border-b-white/30 shadow-[0_0.5rem_2rem_-0.5rem_rgba(0,0,0,0.3)] p-5 text-white flex items-center gap-4 transition-all duration-300 hover:bg-white/20 hover:border-white/30 hover:shadow-[0_0.75rem_2.5rem_-0.5rem_rgba(72,179,225,0.4)] hover:pl-7 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-b before:from-white/5 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300 rounded-tl-2xl">
+          <span class="absolute inset-0 bg-gradient-to-r from-light-blue/20 to-transparent translate-x-full group-hover:translate-x-0 transition-transform duration-300"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="help-circle" class="lucide lucide-help-circle rotate-90 w-5 h-5 relative z-10"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg>
+          <span class="font-bold text-[0.625rem] uppercase tracking-[0.2em] relative z-10">Enquiry</span>
+      </a>
+      <a href="#" class="group [writing-mode:vertical-rl] [text-orientation:mixed] bg-white/10 backdrop-blur-xl border border-white/20 border-t-white/30 shadow-[0_0.5rem_2rem_-0.5rem_rgba(0,0,0,0.3)] p-5 text-white flex items-center gap-4 transition-all duration-300 hover:bg-white/20 hover:border-white/30 hover:shadow-[0_0.75rem_2.5rem_-0.5rem_rgba(72,179,225,0.4)] hover:pl-7 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-b before:from-white/5 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300 rounded-bl-2xl">
+          <span class="absolute inset-0 bg-gradient-to-r from-light-blue/20 to-transparent translate-x-full group-hover:translate-x-0 transition-transform duration-300"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" class="lucide lucide-map-pin rotate-90 w-5 h-5 relative z-10"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span class="font-bold text-[0.625rem] uppercase tracking-[0.2em] relative z-10">Visit Us</span>
+      </a>
+  </div>
+
+  <!-- Full Screen Sidebar Overlay -->
+  <div id="sidebar" class="fixed top-0 w-full h-screen bg-sidebar-bg z-[60] flex transition-all duration-700 ease-custom-ease -right-full">
+      
+      <!-- Sidebar Image Side -->
+      <div class="hidden lg:block w-1/2 h-full relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-r from-sidebar-bg via-sidebar-bg/60 to-transparent z-10"></div>
+          <img id="sidebar-preview" src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transition-opacity duration-500 scale-105" alt="Menu Preview" style="opacity: 1;">
+      </div>
+
+      <!-- Sidebar Content Side -->
+      <div class="w-full lg:w-1/2 h-full flex flex-col relative bg-sidebar-bg">
+          
+          <!-- Close Button -->
+          <button onclick="toggleMenu()" class="absolute top-4 right-4 lg:top-12 lg:right-12 text-white/50 hover:text-white hover:rotate-90 transition-all duration-300 group z-10">
+              <div class="p-2 lg:p-3 border border-white/10 rounded-full group-hover:border-white/40 group-hover:bg-white/5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x w-6 h-6 lg:w-8 lg:h-8"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+              </div>
+          </button>
+
+          <!-- Quick Links (Fixed Top) -->
+          <div class="flex-shrink-0 p-8 lg:p-24 pb-8 lg:pb-16 border-b border-white/10">
+              <div class="flex flex-wrap gap-x-8 gap-y-4">
+                  <a href="#" class="text-white/40 hover:text-light-blue text-[0.6875rem] font-bold uppercase tracking-[0.15em] flex items-center gap-2 transition-colors">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="user" class="lucide lucide-user w-4 h-4"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> Login
+                  </a>
+                  <a href="#" class="text-white/40 hover:text-light-blue text-[0.6875rem] font-bold uppercase tracking-[0.15em] flex items-center gap-2 transition-colors">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="users" class="lucide lucide-users w-4 h-4"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg> Faculty
+                  </a>
+                  <a href="#" class="text-white/40 hover:text-light-blue text-[0.6875rem] font-bold uppercase tracking-[0.15em] flex items-center gap-2 transition-colors">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="graduation-cap" class="lucide lucide-graduation-cap w-4 h-4"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg> Alumni
+                  </a>
+              </div>
+          </div>
+
+          <!-- Menu List (Scrollable) -->
+          <div class="flex-1 overflow-y-auto px-8 lg:px-24 py-8">
+              <ul class="flex flex-col gap-6">
+                  <!-- Desktop Nav Items (Mobile Only) -->
+                  <li class="lg:hidden">
+                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop">
+                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl">01.</span>
+                          About
+                      </a>
+                  </li>
+                  <li class="lg:hidden">
+                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop">
+                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl">02.</span>
+                          Campus
+                      </a>
+                  </li>
+                  <li class="lg:hidden">
+                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop">
+                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl">03.</span>
+                          Academics
+                      </a>
+                  </li>
+                  <li class="lg:hidden">
+                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop">
+                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl">04.</span>
+                          Admissions
+                      </a>
+                  </li>
+                  <li class="lg:hidden">
+                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop">
+                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl">05.</span>
+                          Contact
+                      </a>
+                  </li>
+                  
+                  <!-- Main Menu Items -->
+                  <li>
+                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop">
+                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl">01.</span>
+                          Academics
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop">
+                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl">02.</span>
+                          Campus Life
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop">
+                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl">03.</span>
+                          Admissions
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="menu-item group flex items-center gap-6 text-4xl lg:text-5xl font-black text-white/30 hover:text-white hover:translate-x-4 transition-all duration-300 uppercase tracking-tight" data-img="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop">
+                          <span class="text-light-blue opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-2xl">04.</span>
+                          Gallery
+                      </a>
+                  </li>
+              </ul>
+          </div>
+
+          <!-- Socials (Fixed Bottom) -->
+          <div class="flex-shrink-0 p-8 lg:p-24 pt-8 lg:pt-16 border-t border-white/10">
+              <div class="flex gap-4">
+                  <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:bg-primary-blue hover:text-white hover:border-primary-blue hover:-translate-y-1 transition-all duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="facebook" class="lucide lucide-facebook w-5 h-5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                  </a>
+                  <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:bg-primary-blue hover:text-white hover:border-primary-blue hover:-translate-y-1 transition-all duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="instagram" class="lucide lucide-instagram w-5 h-5"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                  </a>
+                  <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:bg-primary-blue hover:text-white hover:border-primary-blue hover:-translate-y-1 transition-all duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="youtube" class="lucide lucide-youtube w-5 h-5"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="w-full h-dvh lg:min-h-[100dvh] relative overflow-hidden bg-black">
+      <div class="swiper mySwiper w-full h-full lg:min-h-[100dvh]">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide relative overflow-hidden">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[8000ms] ease-linear scale-100 [&.swiper-slide-active_&]:scale-110" style="background-image: url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=2069&auto=format&fit=crop');"></div>
+                  
+                  <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-black/30 z-10"></div>
+                  
+                  <div class="hero-content absolute top-0 left-1/2 -translate-x-1/2 h-full flex flex-col justify-center items-center z-20 text-center w-full text-white opacity-0 translate-y-12 transition-all duration-1000 ease-out delay-300 lg:pt-24 [.swiper-slide-active_&]:opacity-100 [.swiper-slide-active_&]:translate-x-[-50%]">
+                      
+                      <div class="mb-4 md:mb-6 flex items-center gap-2 md:gap-4">
+                          <span class="h-[0.125rem] w-8 md:w-12 bg-white"></span>
+                          <span class="uppercase tracking-[0.3em] text-xs md:text-sm font-bold text-white">Welcome to Excellence</span>
+                          <span class="h-[0.125rem] w-8 md:w-12 bg-white"></span>
+                      </div>
+
+                      <h1 class="text-2xl md:text-4xl lg:text-6xl font-black mb-6 md:mb-8 leading-tight md:leading-[0.9] drop-shadow-2xl px-4 md:px-0">
+                          Building Futures, <span class="text-transparent bg-clip-text bg-gradient-to-r from-light-blue to-white">Creating Leaders</span>
+                      </h1>
+                      
+                      <p class="text-base md:text-xl text-gray-200 font-normal mb-8 md:mb-12 max-w-2xl leading-relaxed text-balance px-4 md:px-0">
+                          Experience a world-class education rooted in values, innovation, and holistic excellence.
+                      </p>
+                      
+                      <!-- IMPROVED BUTTONS START -->
+                      <div class="flex flex-col sm:flex-row gap-4 md:gap-6 px-4 md:px-0">
+                          
+                          <!-- Primary Button: Solid Gradient + Shine Effect -->
+                          <a href="#" class="relative overflow-hidden group bg-gradient-to-r from-primary-blue to-[#0A5C96] text-white px-6 py-3 md:px-10 md:py-5 rounded-full shadow-[0_0.625rem_1.875rem_-0.625rem_rgba(7,71,117,0.5)] transition-all duration-300 hover:shadow-[0_1.25rem_2.5rem_-0.625rem_rgba(72,179,225,0.4)] hover:-translate-y-1 after:content-[''] after:absolute after:top-0 after:left-[-100%] after:w-1/2 after:h-full after:bg-gradient-to-r after:from-transparent after:via-white/30 after:to-transparent after:skew-x-[-25deg] after:transition-none hover:after:animate-[shine_0.75s_cubic-bezier(0.4,0,0.2,1)_forwards]">
+                              <div class="relative z-10 flex items-center justify-center gap-2 md:gap-3 font-bold uppercase tracking-[0.15em] text-xs md:text-sm">
+                                  <span>Admissions Open</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right w-3 h-3 md:w-4 md:h-4 transition-transform duration-300 group-hover:translate-x-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                              </div>
+                          </a>
+
+                          <!-- Secondary Button: Outline + Slide Fill Effect -->
+                          <a href="#" class="relative overflow-hidden group px-6 py-3 md:px-10 md:py-5 rounded-full border border-white/40 backdrop-blur-sm transition-all duration-300 hover:border-white hover:-translate-y-1">
+                              <span class="absolute inset-0 bg-white translate-y-full transition-transform duration-300 ease-custom-ease group-hover:translate-y-0"></span>
+                              <div class="relative z-10 flex items-center justify-center gap-2 md:gap-3 font-bold uppercase tracking-[0.15em] text-xs md:text-sm text-white transition-colors duration-300 group-hover:text-primary-blue">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="play-circle" class="lucide lucide-play-circle w-3 h-3 md:w-4 md:h-4"><path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                  <span>Virtual Tour</span>
+                              </div>
+                          </a>
+
+                      </div>
+                      <!-- IMPROVED BUTTONS END -->
+                  </div>
+              </div>
+              <div class="swiper-slide relative overflow-hidden">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[8000ms] ease-linear scale-100 [&.swiper-slide-active_&]:scale-110" style="background-image: url('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=2069&auto=format&fit=crop');"></div>
+                  <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-black/30 z-10"></div>
+                  
+                  <div class="hero-content absolute top-0 left-1/2 -translate-x-1/2 h-full flex flex-col justify-center items-center z-20 text-center w-full text-white opacity-0 translate-y-12 transition-all duration-1000 ease-out delay-300 lg:pt-24 [.swiper-slide-active_&]:opacity-100 [.swiper-slide-active_&]:translate-x-[-50%]">
+                      
+                      <div class="mb-4 md:mb-6 flex items-center gap-2 md:gap-4">
+                          <span class="h-[0.125rem] w-8 md:w-12 bg-white"></span>
+                          <span class="uppercase tracking-[0.3em] text-xs md:text-sm font-bold text-white">Holistic Growth</span>
+                          <span class="h-[0.125rem] w-8 md:w-12 bg-white"></span>
+                      </div>
+
+                      <h1 class="text-2xl md:text-4xl lg:text-6xl font-black mb-6 md:mb-8 leading-tight md:leading-[0.9] drop-shadow-2xl px-4 md:px-0">
+                          Discover <span class="text-transparent bg-clip-text bg-gradient-to-r from-light-blue to-white">Potential</span>
+                      </h1>
+                      
+                      <p class="text-base md:text-xl text-gray-200 font-normal mb-8 md:mb-12 max-w-2xl leading-relaxed text-balance px-4 md:px-0">
+                          A curriculum designed to challenge, inspire, and transform young minds.
+                      </p>
+                      
+                      <div class="flex flex-col sm:flex-row gap-4 md:gap-6 px-4 md:px-0">
+                          <!-- Primary Button -->
+                          <a href="#" class="relative overflow-hidden group bg-gradient-to-r from-primary-blue to-[#0A5C96] text-white px-6 py-3 md:px-10 md:py-5 rounded-full shadow-[0_0.625rem_1.875rem_-0.625rem_rgba(7,71,117,0.5)] transition-all duration-300 hover:shadow-[0_1.25rem_2.5rem_-0.625rem_rgba(72,179,225,0.4)] hover:-translate-y-1 after:content-[''] after:absolute after:top-0 after:left-[-100%] after:w-1/2 after:h-full after:bg-gradient-to-r after:from-transparent after:via-white/30 after:to-transparent after:skew-x-[-25deg] after:transition-none hover:after:animate-[shine_0.75s_cubic-bezier(0.4,0,0.2,1)_forwards]">
+                              <div class="relative z-10 flex items-center justify-center gap-2 md:gap-3 font-bold uppercase tracking-[0.15em] text-xs md:text-sm">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="book-open-check" class="lucide lucide-book-open-check w-3 h-3 md:w-4 md:h-4"><path d="M12 21V7"></path><path d="m16 12 2 2 4-4"></path><path d="M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3"></path></svg>
+                                  <span>Curriculum</span>
+                              </div>
+                          </a>
+
+                          <!-- Secondary Button -->
+                          <a href="#" class="relative overflow-hidden group px-6 py-3 md:px-10 md:py-5 rounded-full border border-white/40 backdrop-blur-sm transition-all duration-300 hover:border-white hover:-translate-y-1">
+                              <span class="absolute inset-0 bg-white translate-y-full transition-transform duration-300 ease-custom-ease group-hover:translate-y-0"></span>
+                              <div class="relative z-10 flex items-center justify-center gap-2 md:gap-3 font-bold uppercase tracking-[0.15em] text-xs md:text-sm text-white transition-colors duration-300 group-hover:text-primary-blue">
+                                  <span>Enquire Now</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right w-3 h-3 md:w-4 md:h-4"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <section class="h-dvh">
+
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+      // Init Icons
+      lucide.createIcons();
+
+      // Init Swiper
+      const swiper = new Swiper(".mySwiper", {
+          spaceBetween: 0,
+          effect: "fade",
+          speed: 1000,
+          loop: true,
+          autoplay: {
+              delay: 6000,
+              disableOnInteraction: false,
+          },
+      });
+
+      // Sidebar Logic
+      function toggleMenu() {
+          const sidebar = document.getElementById('sidebar');
+          if (sidebar.classList.contains('-right-full')) {
+              sidebar.classList.remove('-right-full');
+              sidebar.classList.add('right-0');
+              document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+          } else {
+              sidebar.classList.add('-right-full');
+              sidebar.classList.remove('right-0');
+              document.body.style.overflow = '';
+          }
+      }
+
+      // Hover Image Logic
+      const menuItems = document.querySelectorAll('.menu-item');
+      const previewImage = document.getElementById('sidebar-preview');
+
+      menuItems.forEach(item => {
+          item.addEventListener('mouseenter', function() {
+              const newImageSrc = this.getAttribute('data-img');
+              if(previewImage.src !== newImageSrc) {
+                  previewImage.style.opacity = '0';
+                  setTimeout(() => {
+                      previewImage.src = newImageSrc;
+                      previewImage.onload = () => {
+                          previewImage.style.opacity = '1';
+                      };
+                  }, 200);
+              }
+          });
+      });
+
+      // Header Scroll Behavior
+      const header = document.getElementById('header');
+      let lastScrollTop = 0;
+
+      function handleScroll() {
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          
+          if (scrollTop > 50) {
+              // Scrolled down - add background and reduce height
+              header.classList.add('scrolled');
+              header.classList.remove('bg-transparent');
+          } else {
+              // At top - remove background, restore height
+              header.classList.remove('scrolled');
+              header.classList.add('bg-transparent');
+          }
+          
+          lastScrollTop = scrollTop;
+      }
+
+      // Initial check
+      handleScroll();
+      
+      // Listen to scroll events
+      window.addEventListener('scroll', handleScroll, { passive: true });
+  </script>
+
+
+</body></html>
