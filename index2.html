@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mount Litera Zee School Alwar | Redefined</title>
+    
+    <!-- Fonts: Playfair Display for Elite feel, Plus Jakarta for Modern Tech feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Animation Library (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- Tailwind CSS v3.4 (Stable CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#0F172A',
+                            blue: '#1E40AF',
+                            gold: '#D4AF37',
+                            light: '#F8FAFC'
+                        }
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    },
+                    animation: {
+                        'spin-slow': 'spin 12s linear infinite',
+                        'scroll': 'scroll 40s linear infinite',
+                    },
+                    keyframes: {
+                        scroll: {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #1E40AF; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #0F172A; }
+        
+        /* Smooth Text Reveal */
+        .reveal-text {
+            background-size: 200% 100%;
+            background-image: linear-gradient(to right, #0F172A 50%, #D4AF37 50%);
+            transition: background-position 0.5s ease-out;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .group:hover .reveal-text {
+            background-position: -100% 0;
+        }
+
+        /* Glassmorphism */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .glass-dark {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-navy bg-brand-light antialiased overflow-x-hidden selection:bg-brand-blue selection:text-white">
+
+    <!-- Floating Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-4 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto glass-card rounded-full px-6 py-3 flex justify-between items-center shadow-lg hover:shadow-xl transition-shadow">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2">
+              <img src="./assets/img/logo.webp" alt="MLZS Logo" class="h-12 md:h-14 relative z-10">
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="#" class="text-sm font-semibold hover:text-brand-blue transition-colors">About</a>
+                <a href="#" class="text-sm font-semibold hover:text-brand-blue transition-colors">Academics</a>
+                <a href="#" class="text-sm font-semibold hover:text-brand-blue transition-colors">Admissions</a>
+                <a href="#" class="text-sm font-semibold hover:text-brand-blue transition-colors">Facilities</a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="flex items-center gap-4">
+                <a href="#" class="hidden md:flex items-center gap-2 bg-brand-navy text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-blue transition-all duration-300 shadow-lg hover:shadow-brand-blue/30 group">
+                    <span>Enquire Now</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <button class="lg:hidden text-brand-navy p-2">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section: Immersive & Bold -->
+    <header class="relative w-full h-screen overflow-hidden flex items-center justify-center">
+        <!-- Video Background -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover scale-105 animate-[spin_60s_linear_infinite_reverse] md:animate-none" alt="Campus">
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-navy/60 via-brand-navy/40 to-brand-light"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 container mx-auto px-4 text-center mt-20">
+            <div class="inline-block mb-6" data-aos="fade-down" data-aos-duration="1000">
+                <span class="py-2 px-4 rounded-full border border-white/30 bg-white/10 text-white backdrop-blur-md text-xs font-bold uppercase tracking-[0.2em]">
+                    Welcome to Excellence
+                </span>
+            </div>
+            
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl text-white font-medium leading-tight mb-8" data-aos="zoom-in" data-aos-duration="1200">
+                Building <span class="italic text-brand-gold">Leaders</span> <br>
+                For Tomorrow
+            </h1>
+
+            <p class="text-gray-200 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-light" data-aos="fade-up" data-aos-delay="300">
+                Where tradition meets innovation. A world-class campus in Alwar fostering holistic growth, critical thinking, and global values.
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-delay="500">
+                <button class="w-full md:w-auto px-8 py-4 bg-white text-brand-navy rounded-full font-bold hover:bg-brand-gold hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                    Start Admission 2025
+                </button>
+                <button class="w-full md:w-auto px-8 py-4 border border-white/40 text-white rounded-full font-bold hover:bg-white/10 backdrop-blur-sm transition-all duration-300 flex items-center justify-center gap-2">
+                    <i data-lucide="play-circle" class="w-5 h-5"></i>
+                    Watch Campus Tour
+                </button>
+            </div>
+        </div>
+
+        <!-- Floating Stats at Bottom -->
+        <!-- <div class="absolute bottom-10 left-0 w-full hidden lg:block" data-aos="fade-up" data-aos-delay="800">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-4 gap-8 border-t border-white/20 pt-6">
+                    <div class="text-white">
+                        <div class="text-3xl font-serif font-bold">160+</div>
+                        <div class="text-xs uppercase tracking-widest opacity-70">Acre Campus</div>
+                    </div>
+                    <div class="text-white">
+                        <div class="text-3xl font-serif font-bold">25:1</div>
+                        <div class="text-xs uppercase tracking-widest opacity-70">Student Ratio</div>
+                    </div>
+                    <div class="text-white">
+                        <div class="text-3xl font-serif font-bold">100%</div>
+                        <div class="text-xs uppercase tracking-widest opacity-70">Pass Result</div>
+                    </div>
+                    <div class="text-white">
+                        <div class="text-3xl font-serif font-bold">20+</div>
+                        <div class="text-xs uppercase tracking-widest opacity-70">Sports</div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </header>
+
+    <!-- Bento Grid Section: About & Highlights -->
+    <section class="py-20 px-4 bg-brand-light relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12 text-center">
+                <h2 class="font-serif text-4xl md:text-5xl text-brand-navy mb-4">The MLZS Advantage</h2>
+                <div class="w-24 h-1 bg-brand-gold mx-auto"></div>
+            </div>
+
+            <!-- Bento Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-6 h-auto md:h-[800px]">
+                
+                <!-- Principal Message (Large) -->
+                <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-3xl shadow-xl" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Principal">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/90 to-transparent p-8 flex flex-col justify-end">
+                        <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <span class="text-brand-gold text-sm font-bold tracking-wider uppercase mb-2 block">Visionary Leadership</span>
+                            <h3 class="text-white font-serif text-3xl mb-2">"Education is not preparation for life; education is life itself."</h3>
+                            <p class="text-gray-300 text-sm line-clamp-2 mb-4">We strive to create an environment where every child discovers their unique potential.</p>
+                            <a href="#" class="text-white underline decoration-brand-gold underline-offset-4 hover:text-brand-gold">Read Principal's Message</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 1: Academics (Medium) -->
+                <div class="md:col-span-2 md:row-span-1 bg-white p-8 rounded-3xl shadow-lg border border-gray-100 flex items-center justify-between group hover:border-brand-blue/30 transition-all" data-aos="fade-down">
+                    <div>
+                        <div class="w-12 h-12 bg-brand-blue/10 rounded-full flex items-center justify-center mb-4 text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                            <i data-lucide="book-open" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl text-brand-navy mb-2">Litera Octave</h3>
+                        <p class="text-gray-500 text-sm">Our proprietary curriculum designed for 360° development.</p>
+                    </div>
+                    <div class="hidden md:block">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" class="w-24 h-24 opacity-20" alt="Icon">
+                    </div>
+                </div>
+
+                <!-- Feature 2: Sports (Small) -->
+                <div class="md:col-span-1 md:row-span-2 bg-brand-navy text-white p-8 rounded-3xl shadow-xl relative overflow-hidden group" data-aos="fade-up">
+                    <div class="absolute -right-4 -top-4 w-32 h-32 bg-brand-blue rounded-full blur-3xl opacity-50"></div>
+                    <i data-lucide="trophy" class="w-10 h-10 text-brand-gold mb-6 relative z-10"></i>
+                    <h3 class="font-serif text-2xl mb-4 relative z-10">Beyond Academics</h3>
+                    <p class="text-gray-300 text-sm relative z-10 mb-6">World-class sports infrastructure tailored for champions.</p>
+                    <a href="#" class="inline-flex items-center gap-2 text-brand-gold text-sm font-bold relative z-10 group-hover:gap-3 transition-all">Explore Sports <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Feature 3: Innovation (Small) -->
+                <div class="md:col-span-1 md:row-span-2 bg-white p-8 rounded-3xl shadow-lg border border-gray-100 group hover:shadow-2xl transition-all" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-full flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-brand-gold/10 rounded-full flex items-center justify-center mb-4 text-brand-gold">
+                                <i data-lucide="cpu" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl text-brand-navy mb-2">Robotics & AI</h3>
+                            <p class="text-gray-500 text-sm">Future-ready labs.</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2070&auto=format&fit=crop" class="w-full h-32 object-cover rounded-xl mt-4 grayscale group-hover:grayscale-0 transition-all" alt="Robotics">
+                    </div>
+                </div>
+
+                <!-- CTA Box (Medium) -->
+                <div class="md:col-span-2 md:row-span-1 bg-gradient-to-r from-brand-blue to-brand-navy p-8 rounded-3xl shadow-xl flex items-center justify-between relative overflow-hidden" data-aos="fade-left">
+                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-white font-serif text-2xl mb-1">Join the Family</h3>
+                        <p class="text-blue-200 text-sm">Admissions open for Academic Year 2025-26</p>
+                    </div>
+                    <button class="relative z-10 bg-brand-gold text-brand-navy px-6 py-3 rounded-full font-bold hover:bg-white transition-colors">Apply Now</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Horizontal Sticky Scroll Section: Litera Octave -->
+    <section class="bg-brand-navy text-white py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-16">
+                
+                <!-- Sticky Content (Left) -->
+                <div class="md:w-1/2 md:h-screen md:sticky md:top-20 flex flex-col justify-center mb-12 md:mb-0">
+                    <span class="text-brand-gold font-bold tracking-[0.3em] uppercase mb-4">Our Philosophy</span>
+                    <h2 class="font-serif text-5xl md:text-7xl mb-6">The Litera <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-light">Octave</span></h2>
+                    <p class="text-gray-400 text-lg max-w-md leading-relaxed">
+                        Education isn't just about books. It's about a rhythm of learning that encompasses every aspect of a child's growth. We focus on 8 pillars of development.
+                    </p>
+                    
+                    <div class="mt-10 flex gap-4">
+                        <div class="p-4 border border-white/10 rounded-2xl bg-white/5 backdrop-blur-sm">
+                            <h3 class="text-3xl font-bold text-brand-gold">8</h3>
+                            <p class="text-xs text-gray-400 uppercase">Pillars</p>
+                        </div>
+                        <div class="p-4 border border-white/10 rounded-2xl bg-white/5 backdrop-blur-sm">
+                            <h3 class="text-3xl font-bold text-brand-gold">360°</h3>
+                            <p class="text-xs text-gray-400 uppercase">Growth</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scrolling Cards (Right) -->
+                <div class="md:w-1/2 flex flex-col gap-12 pb-20">
+                    
+                    <!-- Card 1 -->
+                    <div class="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md hover:bg-white/10 transition-colors" data-aos="fade-up">
+                        <div class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 text-white shadow-lg shadow-blue-600/30">
+                            <i data-lucide="book-open-check" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif mb-3">Litera Curriculum</h3>
+                        <p class="text-gray-400 leading-relaxed">A proprietary curriculum that focuses on understanding concepts rather than rote learning. Integrated with national standards but delivered globally.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md hover:bg-white/10 transition-colors" data-aos="fade-up">
+                        <div class="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6 text-white shadow-lg shadow-purple-600/30">
+                            <i data-lucide="palette" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif mb-3">Litera Enrichment</h3>
+                        <p class="text-gray-400 leading-relaxed">Exposing students to art, music, dance, and theatre to ensure they develop a refined aesthetic sense and creative expression.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md hover:bg-white/10 transition-colors" data-aos="fade-up">
+                        <div class="w-14 h-14 bg-green-600 rounded-xl flex items-center justify-center mb-6 text-white shadow-lg shadow-green-600/30">
+                            <i data-lucide="leaf" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif mb-3">Litera Life Skills</h3>
+                        <p class="text-gray-400 leading-relaxed">Teaching critical thinking, decision making, and emotional intelligence. Preparing them not just for exams, but for life.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md hover:bg-white/10 transition-colors" data-aos="fade-up">
+                        <div class="w-14 h-14 bg-orange-600 rounded-xl flex items-center justify-center mb-6 text-white shadow-lg shadow-orange-600/30">
+                            <i data-lucide="users" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif mb-3">Litera Parents</h3>
+                        <p class="text-gray-400 leading-relaxed">We believe parents are partners. Regular workshops and transparent communication channels ensure we work together.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite Scroll Gallery -->
+    <section class="py-20 bg-white overflow-hidden">
+        <div class="text-center mb-12">
+            <h2 class="font-serif text-4xl text-brand-navy">Life at Campus</h2>
+            <p class="text-gray-500 mt-2">Moments of joy, learning, and victory.</p>
+        </div>
+
+        <!-- Marquee Container -->
+        <div class="relative w-full overflow-hidden">
+            <div class="flex animate-scroll gap-6 w-max">
+                <!-- Duplicate images for infinite loop effect -->
+                <!-- Image Set 1 -->
+                <div class="w-80 h-96 rounded-2xl overflow-hidden relative group">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex items-end">
+                        <p class="text-white font-bold">Science Fair 2024</p>
+                    </div>
+                </div>
+                <div class="w-80 h-96 rounded-2xl overflow-hidden relative group">
+                    <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="w-80 h-96 rounded-2xl overflow-hidden relative group">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="w-80 h-96 rounded-2xl overflow-hidden relative group">
+                    <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="w-80 h-96 rounded-2xl overflow-hidden relative group">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                
+                <!-- Image Set 2 (Duplicate) -->
+                <div class="w-80 h-96 rounded-2xl overflow-hidden relative group">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="w-80 h-96 rounded-2xl overflow-hidden relative group">
+                    <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="w-80 h-96 rounded-2xl overflow-hidden relative group">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="w-80 h-96 rounded-2xl overflow-hidden relative group">
+                    <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="w-80 h-96 rounded-2xl overflow-hidden relative group">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Slider -->
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="swiper mySwiper pb-12">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white p-10 rounded-3xl shadow-lg border border-gray-100 relative mt-10">
+                            <div class="absolute -top-10 left-10 w-20 h-20 rounded-full border-4 border-white shadow-md overflow-hidden">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-full h-full object-cover">
+                            </div>
+                            <div class="mt-8">
+                                <div class="flex gap-1 text-brand-gold mb-4">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <p class="text-gray-600 italic mb-6">"Choosing MLZS Alwar was the best decision for my daughter. The focus on robotics and modern skills has given her so much confidence."</p>
+                                <h4 class="font-bold text-brand-navy">Mrs. Priya Sharma</h4>
+                                <span class="text-xs text-gray-500 uppercase tracking-wider">Parent of Grade 8 Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white p-10 rounded-3xl shadow-lg border border-gray-100 relative mt-10">
+                            <div class="absolute -top-10 left-10 w-20 h-20 rounded-full border-4 border-white shadow-md overflow-hidden">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-full h-full object-cover">
+                            </div>
+                            <div class="mt-8">
+                                <div class="flex gap-1 text-brand-gold mb-4">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <p class="text-gray-600 italic mb-6">"The sports facilities are unmatched in Alwar. The coaches are professional and the environment is very safe."</p>
+                                <h4 class="font-bold text-brand-navy">Mr. Rajesh Gupta</h4>
+                                <span class="text-xs text-gray-500 uppercase tracking-wider">Parent of Grade 5 Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white p-10 rounded-3xl shadow-lg border border-gray-100 relative mt-10">
+                            <div class="absolute -top-10 left-10 w-20 h-20 rounded-full border-4 border-white shadow-md overflow-hidden">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" class="w-full h-full object-cover">
+                            </div>
+                            <div class="mt-8">
+                                <div class="flex gap-1 text-brand-gold mb-4">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <p class="text-gray-600 italic mb-6">"The balance between studies and extracurriculars is perfect. The teachers are very approachable."</p>
+                                <h4 class="font-bold text-brand-navy">Dr. Anjali Verma</h4>
+                                <span class="text-xs text-gray-500 uppercase tracking-wider">Parent of Grade 10 Student</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer: Clean & Modern -->
+    <footer class="bg-brand-navy text-white pt-20 pb-10 rounded-t-[3rem] mt-10 relative overflow-hidden">
+        <!-- Decorative Circle -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-blue rounded-full blur-[100px] opacity-20 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="md:col-span-1">
+                    <img src="./assets/img/logo.webp" alt="Logo" class="h-16 w-auto mb-6 brightness-0 invert">
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Nurturing the leaders of tomorrow with values, innovation, and excellence.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-blue transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-blue transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-blue transition-colors"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-serif text-xl mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Admissions</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Mandatory Disclosures</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Academics -->
+                <div>
+                    <h4 class="font-serif text-xl mb-6">Academics</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Pre-Primary</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Primary</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Middle School</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Secondary</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Senior Secondary</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-serif text-xl mb-6">Visit Us</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-brand-gold mt-1"></i>
+                            <span>6th Milestone, Jharkheda, Sirmoli Village Road, Alwar, Rajasthan</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-brand-gold"></i>
+                            <span>+91 9672797979</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-brand-gold"></i>
+                            <span>info@mlzsalwar.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                <p>&copy; 2025 Mount Litera Zee School Alwar. All rights reserved.</p>
+                <p>Designed with excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+            easing: 'ease-out-cubic',
+        });
+
+        // Initialize Swiper
+        const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        // Sticky Navbar Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2');
+            }
+        });
+    </script>
+</body>
+</html>
