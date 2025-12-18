@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -164,38 +166,174 @@
             box-shadow: 0 0 8px rgba(34, 211, 238, 0.6);
             border-radius: 4px;
         }
+        /* Header UI Styles */
+        .font-display-header {
+            font-family: 'Playfair Display', serif;
+        }
+        .header-scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            height: 4rem !important;
+            color: #1a1a1a !important;
+        }
+        .logo-scrolled img {
+            height: 2.5rem !important; /* 40px - smaller on scroll */
+            filter: none !important; /* Remove white filter on scroll - show original colors */
+        }
+        .menu-overlay-open {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+        .hover-underline {
+            position: relative;
+        }
+        .hover-underline::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        .hover-underline:hover::after {
+            width: 100%;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 font-display overflow-x-hidden antialiased selection:bg-secondary selection:text-indigo-900">
     <!-- Hero Section -->
     <div class="relative min-h-screen flex flex-col">
-        <div class="fixed top-0 left-0 right-0 z-50 flex justify-center w-full px-4 sm:px-6 lg:px-8 pt-4 lg:pt-6">
-            <nav class="w-full max-w-7xl bg-white/85 backdrop-blur-xl border border-white/60 shadow-lg shadow-indigo-900/5 rounded-full px-4 py-3 md:px-6 md:py-3 transition-all duration-300">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center gap-3">
-                        <div class="flex items-center justify-center size-10 rounded-full bg-primary text-white shadow-md shadow-primary/20">
-                            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+        <!-- Header Section -->
+        <header id="main-header" class="fixed w-full top-0 z-40 transition-all duration-500 ease-in-out h-24 text-white flex items-center border-b border-white/10 px-4 sm:px-6 lg:px-8">
+            <div class="w-full max-w-7xl mx-auto h-full relative flex justify-between items-center">
+
+                <!-- LEFT MENU ITEMS -->
+                <nav class="hidden lg:flex items-center justify-start w-5/12 pr-12 space-x-8">
+                    <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Home</a>
+                    <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">About</a>
+                    <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Academics</a>
+                </nav>
+
+                <!-- CENTER LOGO -->
+                <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-50">
+                    <a href="#" id="brand-logo" class="transition-all duration-500 flex items-center justify-center">
+                        <img src="assets/img/logo.webp" alt="Apex International" class="h-12 md:h-14 lg:h-16 w-auto object-contain transition-all duration-500 brightness-0 invert">
+                    </a>
+                </div>
+
+                <!-- RIGHT MENU ITEMS -->
+                <nav class="hidden lg:flex items-center justify-end w-5/12 pl-12 space-x-8">
+                    <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Admissions</a>
+                    <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Campus Life</a>
+                    
+                    <!-- MENU BUTTON with Icon & Label -->
+                    <button onclick="toggleMenu()" class="flex items-center gap-3 group focus:outline-none ml-4 pl-6 border-l border-current">
+                        <span class="text-xs font-bold tracking-[0.2em] uppercase group-hover:opacity-70 transition-opacity">Menu</span>
+                        <div class="space-y-1.5 group-hover:scale-110 transition-transform duration-300">
+                            <span class="block w-6 h-0.5 bg-current transition-all"></span>
+                            <span class="block w-4 h-0.5 bg-current ml-auto transition-all group-hover:w-6"></span>
                         </div>
-                        <span class="text-slate-800 font-bold text-lg tracking-tight hidden sm:block">Apex International</span>
+                    </button>
+                </nav>
+
+                <!-- Mobile Menu Icon (Visible on small screens only) -->
+                <button onclick="toggleMenu()" class="lg:hidden text-2xl">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Full Page Sidebar / Overlay -->
+        <div id="full-menu" class="fixed inset-0 bg-[#111] text-white z-50 transform -translate-y-full transition-transform duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] flex flex-col">
+            
+            <!-- Sidebar Header (Close Button) -->
+            <div class="absolute top-0 w-full h-24 flex items-center justify-between px-6 container mx-auto">
+                <span class="font-display-header text-2xl italic text-gray-400">Navigation</span>
+                <button onclick="toggleMenu()" class="group flex items-center gap-3 hover:text-red-400 transition-colors">
+                    <span class="text-xs font-bold tracking-[0.2em] uppercase">Close</span>
+                    <div class="relative w-8 h-8 flex items-center justify-center border border-white/20 rounded-full group-hover:border-red-400 group-hover:rotate-90 transition-all duration-500">
+                        <i class="fa-solid fa-times"></i>
                     </div>
-                    <div class="hidden lg:flex items-center gap-1">
-                        <a class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-primary transition-colors hover:bg-indigo-50 rounded-full" href="#">Home</a>
-                        <a class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-primary transition-colors hover:bg-indigo-50 rounded-full" href="#">About</a>
-                        <a class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-primary transition-colors hover:bg-indigo-50 rounded-full" href="#">Academics</a>
-                        <a class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-primary transition-colors hover:bg-indigo-50 rounded-full" href="#">Admissions</a>
-                        <a class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-primary transition-colors hover:bg-indigo-50 rounded-full" href="#">Campus Life</a>
+                </button>
+            </div>
+
+            <!-- Sidebar Content -->
+            <div class="flex-1 flex items-center justify-center container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-5xl">
+                    
+                    <!-- Main Navigation Links -->
+                    <div class="space-y-2">
+                        <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-6 uppercase">Explore</h3>
+                        <ul class="space-y-4">
+                            <li class="overflow-hidden">
+                                <a href="#" class="block font-display-header text-4xl md:text-5xl hover:italic hover:text-gray-300 transition-all transform hover:translate-x-4 duration-300">Home</a>
+                            </li>
+                            <li class="overflow-hidden">
+                                <a href="#" class="block font-display-header text-4xl md:text-5xl hover:italic hover:text-gray-300 transition-all transform hover:translate-x-4 duration-300">About</a>
+                            </li>
+                            <li class="overflow-hidden">
+                                <a href="#" class="block font-display-header text-4xl md:text-5xl hover:italic hover:text-gray-300 transition-all transform hover:translate-x-4 duration-300">Academics</a>
+                            </li>
+                            <li class="overflow-hidden">
+                                <a href="#" class="block font-display-header text-4xl md:text-5xl hover:italic hover:text-gray-300 transition-all transform hover:translate-x-4 duration-300">Admissions</a>
+                            </li>
+                            <li class="overflow-hidden">
+                                <a href="#" class="block font-display-header text-4xl md:text-5xl hover:italic hover:text-gray-300 transition-all transform hover:translate-x-4 duration-300">Campus Life</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="flex items-center gap-3">
-                        <a class="flex items-center gap-2 bg-gradient-to-r from-primary to-indigo-500 hover:to-indigo-600 text-white px-5 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 shadow-[0_4px_14px_0_rgba(79,70,229,0.39)]" href="#">
-                            <span>Apply Now</span>
-                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                        </a>
-                        <button class="lg:hidden flex items-center justify-center size-10 rounded-full text-slate-600 hover:bg-slate-100">
-                            <i data-lucide="menu" class="w-5 h-5"></i>
-                        </button>
+
+                    <!-- Secondary Info -->
+                    <div class="flex flex-col justify-between space-y-10 md:pl-20 md:border-l border-white/10">
+                        
+                        <!-- Quick Actions -->
+                        <div>
+                            <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-6 uppercase">Quick Actions</h3>
+                            <ul class="space-y-4">
+                                <li>
+                                    <a href="#" class="flex items-center gap-3 text-lg text-gray-300 hover:text-white transition-colors group">
+                                        <span class="w-1 h-6 bg-white/20 group-hover:bg-white transition-colors"></span>
+                                        <span>Apply Now</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center gap-3 text-lg text-gray-300 hover:text-white transition-colors group">
+                                        <span class="w-1 h-6 bg-white/20 group-hover:bg-white transition-colors"></span>
+                                        <span>Virtual Tour</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center gap-3 text-lg text-gray-300 hover:text-white transition-colors group">
+                                        <span class="w-1 h-6 bg-white/20 group-hover:bg-white transition-colors"></span>
+                                        <span>Contact Us</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Contact & Social -->
+                        <div>
+                            <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-4 uppercase">Connect</h3>
+                            <p class="text-gray-400 mb-4 text-sm font-light">info@apexinternational.com <br> +1 (555) 123-4567</p>
+                            <div class="flex gap-4">
+                                <a href="#" class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
         <div class="relative flex-grow flex items-center justify-center min-h-[100svh] w-full overflow-hidden px-4 sm:px-6 lg:px-8">
             <div class="absolute inset-0 z-0">
@@ -1177,6 +1315,49 @@
                 setAcademicsTab(defaultKey);
             }
         });
+
+        // --- HEADER SCROLL EFFECT ---
+        const header = document.getElementById('main-header');
+        const logo = document.getElementById('brand-logo');
+
+        if (header && logo) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    // Add Scroll Styles (White BG, Black Text, Smaller Height)
+                    header.classList.add('header-scrolled');
+                    header.classList.remove('text-white', 'h-24', 'border-white/10');
+                    header.classList.add('text-black', 'border-transparent');
+                    
+                    // Logo Shrink - add class to parent so CSS can target img
+                    logo.classList.add('logo-scrolled');
+                } else {
+                    // Remove Scroll Styles (Back to Transparent)
+                    header.classList.remove('header-scrolled');
+                    header.classList.add('text-white', 'h-24', 'border-white/10');
+                    header.classList.remove('text-black', 'border-transparent');
+                    
+                    // Logo Reset
+                    logo.classList.remove('logo-scrolled');
+                }
+            });
+        }
+
+        // --- MENU TOGGLE ---
+        const menuOverlay = document.getElementById('full-menu');
+        
+        function toggleMenu() {
+            if (menuOverlay) {
+                const isOpen = !menuOverlay.classList.contains('-translate-y-full');
+                
+                if (isOpen) {
+                    // Close Menu
+                    menuOverlay.classList.add('-translate-y-full');
+                } else {
+                    // Open Menu
+                    menuOverlay.classList.remove('-translate-y-full');
+                }
+            }
+        }
     </script>
 </body>
 </html>
