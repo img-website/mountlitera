@@ -231,26 +231,26 @@
         <header id="main-header" class="fixed w-full top-0 z-40 transition-all duration-500 ease-in-out h-24 text-white flex items-center border-b border-white/10 px-4 sm:px-6 lg:px-8">
             <div class="w-full max-w-7xl mx-auto h-full relative flex justify-between items-center">
 
-                <!-- LEFT MENU ITEMS -->
+                <!-- LEFT MENU ITEMS (Desktop) -->
                 <nav class="hidden lg:flex items-center justify-start w-5/12 pr-12 space-x-8">
                     <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Home</a>
                     <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">About</a>
                     <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Academics</a>
                 </nav>
 
-                <!-- CENTER LOGO -->
-                <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-50">
+                <!-- LOGO - Left on Mobile, Center on Desktop -->
+                <div class="lg:absolute lg:left-1/2 lg:top-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center lg:z-50">
                     <a href="#" id="brand-logo" class="transition-all duration-500 flex items-center justify-center">
-                        <img src="assets/img/logo.webp" alt="Apex International" class="h-12 md:h-14 lg:h-16 w-auto object-contain transition-all duration-500 brightness-0 invert">
+                        <img src="assets/img/logo.webp" alt="Mount Litera Zee School" class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain transition-all duration-500 brightness-0 invert">
                     </a>
                 </div>
 
-                <!-- RIGHT MENU ITEMS -->
+                <!-- RIGHT MENU ITEMS (Desktop) -->
                 <nav class="hidden lg:flex items-center justify-end w-5/12 pl-12 space-x-8">
                     <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Admissions</a>
                     <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Campus Life</a>
                     
-                    <!-- MENU BUTTON with Icon & Label -->
+                    <!-- MENU BUTTON with Icon & Label (Desktop) -->
                     <button onclick="toggleMenu()" class="flex items-center gap-3 group focus:outline-none ml-4 pl-6 border-l border-current">
                         <span class="text-xs font-bold tracking-[0.2em] uppercase group-hover:opacity-70 transition-opacity">Menu</span>
                         <div class="space-y-1.5 group-hover:scale-110 transition-transform duration-300">
@@ -260,75 +260,75 @@
                     </button>
                 </nav>
 
-                <!-- Mobile Menu Icon (Visible on small screens only) -->
-                <button onclick="toggleMenu()" class="lg:hidden text-2xl">
-                    <i class="fa-solid fa-bars-staggered"></i>
+                <!-- Mobile Menu Icon (Visible on small screens only) - Right aligned -->
+                <button onclick="toggleMenu()" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-full hover:bg-white/10 transition-colors">
+                    <i class="fa-solid fa-bars-staggered text-xl"></i>
                 </button>
             </div>
         </header>
 
         <!-- Full Page Sidebar / Overlay -->
-        <div id="full-menu" class="fixed inset-0 bg-[#111] text-white z-50 transform -translate-y-full transition-transform duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] flex flex-col">
+        <div id="full-menu" class="fixed inset-0 bg-[#111] text-white z-50 transform -translate-y-full transition-transform duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] flex flex-col overflow-y-auto">
             
             <!-- Sidebar Header (Close Button) -->
-            <div class="absolute top-0 w-full h-24 flex items-center justify-between px-6 container mx-auto">
-                <span class="font-display-header text-2xl italic text-gray-400">Navigation</span>
-                <button onclick="toggleMenu()" class="group flex items-center gap-3 hover:text-red-400 transition-colors">
-                    <span class="text-xs font-bold tracking-[0.2em] uppercase">Close</span>
-                    <div class="relative w-8 h-8 flex items-center justify-center border border-white/20 rounded-full group-hover:border-red-400 group-hover:rotate-90 transition-all duration-500">
-                        <i class="fa-solid fa-times"></i>
+            <div class="sticky top-0 w-full py-5 flex items-center justify-between px-4 sm:px-6 container mx-auto bg-[#111] z-10 border-b border-white/10">
+                <span class="font-display-header text-xl sm:text-2xl italic text-gray-400">Navigation</span>
+                <button onclick="toggleMenu()" class="group flex items-center gap-2 sm:gap-3 hover:text-red-400 transition-colors">
+                    <span class="text-xs font-bold tracking-[0.2em] uppercase hidden sm:inline">Close</span>
+                    <div class="relative w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center border border-white/20 rounded-full group-hover:border-red-400 group-hover:rotate-90 transition-all duration-500">
+                        <i class="fa-solid fa-times text-sm sm:text-base"></i>
                     </div>
                 </button>
             </div>
 
             <!-- Sidebar Content -->
-            <div class="flex-1 flex items-center justify-center container mx-auto px-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-5xl">
+            <div class="flex-1 flex items-center justify-center container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 w-full max-w-5xl">
                     
                     <!-- Main Navigation Links -->
                     <div class="space-y-2">
-                        <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-6 uppercase">Explore</h3>
-                        <ul class="space-y-4">
+                        <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-4 sm:mb-6 uppercase">Explore</h3>
+                        <ul class="space-y-3 sm:space-y-4">
                             <li class="overflow-hidden">
-                                <a href="#" class="block font-display-header text-4xl md:text-5xl hover:italic hover:text-gray-300 transition-all transform hover:translate-x-4 duration-300">Home</a>
+                                <a href="#" class="block font-display-header text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-gray-300 transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">Home</a>
                             </li>
                             <li class="overflow-hidden">
-                                <a href="#" class="block font-display-header text-4xl md:text-5xl hover:italic hover:text-gray-300 transition-all transform hover:translate-x-4 duration-300">About</a>
+                                <a href="#" class="block font-display-header text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-gray-300 transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">About</a>
                             </li>
                             <li class="overflow-hidden">
-                                <a href="#" class="block font-display-header text-4xl md:text-5xl hover:italic hover:text-gray-300 transition-all transform hover:translate-x-4 duration-300">Academics</a>
+                                <a href="#" class="block font-display-header text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-gray-300 transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">Academics</a>
                             </li>
                             <li class="overflow-hidden">
-                                <a href="#" class="block font-display-header text-4xl md:text-5xl hover:italic hover:text-gray-300 transition-all transform hover:translate-x-4 duration-300">Admissions</a>
+                                <a href="#" class="block font-display-header text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-gray-300 transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">Admissions</a>
                             </li>
                             <li class="overflow-hidden">
-                                <a href="#" class="block font-display-header text-4xl md:text-5xl hover:italic hover:text-gray-300 transition-all transform hover:translate-x-4 duration-300">Campus Life</a>
+                                <a href="#" class="block font-display-header text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-gray-300 transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">Campus Life</a>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Secondary Info -->
-                    <div class="flex flex-col justify-between space-y-10 md:pl-20 md:border-l border-white/10">
+                    <div class="flex flex-col justify-between space-y-8 sm:space-y-10 mt-8 md:mt-0 md:pl-20 md:border-l border-white/10">
                         
                         <!-- Quick Actions -->
                         <div>
-                            <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-6 uppercase">Quick Actions</h3>
-                            <ul class="space-y-4">
+                            <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-4 sm:mb-6 uppercase">Quick Actions</h3>
+                            <ul class="space-y-3 sm:space-y-4">
                                 <li>
-                                    <a href="#" class="flex items-center gap-3 text-lg text-gray-300 hover:text-white transition-colors group">
-                                        <span class="w-1 h-6 bg-white/20 group-hover:bg-white transition-colors"></span>
+                                    <a href="#" class="flex items-center gap-3 text-base sm:text-lg text-gray-300 hover:text-white transition-colors group">
+                                        <span class="w-1 h-5 sm:h-6 bg-white/20 group-hover:bg-white transition-colors"></span>
                                         <span>Apply Now</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="flex items-center gap-3 text-lg text-gray-300 hover:text-white transition-colors group">
-                                        <span class="w-1 h-6 bg-white/20 group-hover:bg-white transition-colors"></span>
+                                    <a href="#" class="flex items-center gap-3 text-base sm:text-lg text-gray-300 hover:text-white transition-colors group">
+                                        <span class="w-1 h-5 sm:h-6 bg-white/20 group-hover:bg-white transition-colors"></span>
                                         <span>Virtual Tour</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="flex items-center gap-3 text-lg text-gray-300 hover:text-white transition-colors group">
-                                        <span class="w-1 h-6 bg-white/20 group-hover:bg-white transition-colors"></span>
+                                    <a href="#" class="flex items-center gap-3 text-base sm:text-lg text-gray-300 hover:text-white transition-colors group">
+                                        <span class="w-1 h-5 sm:h-6 bg-white/20 group-hover:bg-white transition-colors"></span>
                                         <span>Contact Us</span>
                                     </a>
                                 </li>
@@ -337,17 +337,17 @@
 
                         <!-- Contact & Social -->
                         <div>
-                            <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-4 uppercase">Connect</h3>
-                            <p class="text-gray-400 mb-4 text-sm font-light">info@apexinternational.com <br> +1 (555) 123-4567</p>
-                            <div class="flex gap-4">
-                                <a href="#" class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all">
-                                    <i class="fa-brands fa-instagram"></i>
+                            <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-3 sm:mb-4 uppercase">Connect</h3>
+                            <p class="text-gray-400 mb-4 text-xs sm:text-sm font-light">mlzs.alwar@mountlitera.com <br> +91 9672797979</p>
+                            <div class="flex gap-3 sm:gap-4">
+                                <a href="#" class="w-9 h-9 sm:w-10 sm:h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all">
+                                    <i class="fa-brands fa-instagram text-sm sm:text-base"></i>
                                 </a>
-                                <a href="#" class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all">
-                                    <i class="fa-brands fa-twitter"></i>
+                                <a href="#" class="w-9 h-9 sm:w-10 sm:h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all">
+                                    <i class="fa-brands fa-twitter text-sm sm:text-base"></i>
                                 </a>
-                                <a href="#" class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all">
-                                    <i class="fa-brands fa-linkedin-in"></i>
+                                <a href="#" class="w-9 h-9 sm:w-10 sm:h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all">
+                                    <i class="fa-brands fa-linkedin-in text-sm sm:text-base"></i>
                                 </a>
                             </div>
                         </div>
@@ -918,7 +918,7 @@
     </section>
 
     <!-- Academics Section -->
-    <section class="flex-1 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative bg-gradient-to-b from-background-light to-white">
+    <section class="flex-1 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative bg-gradient-to-b from-background-light to-white overflow-hidden">
         <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-50 rounded-full blur-[120px] pointer-events-none opacity-60"></div>
         <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-green-50 rounded-full blur-[100px] pointer-events-none opacity-60"></div>
         <div class="w-full max-w-7xl mx-auto z-10">
