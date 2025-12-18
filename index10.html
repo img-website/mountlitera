@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<html lang="en" class="md:text-[1vw]">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mount Litera Zee School Alwar</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Material Symbols for extra options if needed -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+
+    <!-- Tailwind CSS v4 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primary-blue: #074775;
+            --color-primary-dark: #042b4a;
+            --color-light-blue: #48b3e1;
+            --color-sidebar-bg: #042b4a;
+            
+            --font-family-montserrat: 'Montserrat', sans-serif;
+            
+            --ease-custom-ease: cubic-bezier(0.77, 0, 0.175, 1);
+            --ease-bounce-slight: cubic-bezier(0.34, 1.56, 0.64, 1);
+            
+            --animate-shine: shine 1s forwards;
+        }
+        
+        @keyframes shine {
+            100% {
+                left: 125%;
+            }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+  </style>
+
+  </head>
+<body class="font-montserrat bg-white text-white overflow-x-hidden selection:bg-light-blue selection:text-white">
+
+  <!-- Header -->
+  <header id="header" class="fixed top-0 left-0 w-full z-50 px-4 lg:px-6 py-4 lg:py-6 transition-all duration-300 bg-transparent [&.scrolled]:bg-gradient-to-b [&.scrolled]:from-black [&.scrolled]:via-black/60 [&.scrolled]:to-transparent [&.scrolled]:py-2 lg:[&.scrolled]:py-3 [&.scrolled]:backdrop-blur-md group/nav">
+      <div class="max-w-[112.5rem] mx-auto flex justify-between lg:justify-center items-center relative gap-8 lg:gap-16">
+          
+          <!-- Mobile Logo (Left) -->
+          <div class="lg:hidden shrink-0 relative z-10 group cursor-pointer">
+              <div class="absolute inset-0 bg-primary-blue/50 blur-[2.5rem] opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+              <img src="./assets/img/logo.webp" alt="Logo" class="h-12 w-auto relative transition-transform duration-500 group-hover:scale-105 brightness-0 invert">
+          </div>
+
+          <!-- Desktop Nav Left - Only 3 Menus -->
+          <div class="hidden lg:flex items-center">
+              <nav class="flex items-center gap-6 xl:gap-8">
+                  <!-- About Dropdown -->
+                  <div class="group relative">
+                      <button class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out group-hover:after:w-full flex items-center gap-1">
+                          About
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300 group-hover:rotate-180">
+                              <path d="m6 9 6 6 6-6"></path>
+                          </svg>
+                      </button>
+                      <div class="absolute top-full left-0 mt-2 w-64 bg-white/98 backdrop-blur-xl rounded-xl shadow-2xl border border-gray-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
+                          <div class="p-2">
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Vision / Mission</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Our Core Values</a>
+                              <div class="relative group/submenu">
+                                  <button class="w-full flex items-center justify-between px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">
+                                      <span>Administration</span>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-200 group-hover/submenu:rotate-90">
+                                          <path d="m9 18 6-6-6-6"></path>
+                                      </svg>
+                                  </button>
+                                  <div class="absolute left-full top-0 ml-2 w-64 bg-white/98 backdrop-blur-xl rounded-xl shadow-2xl border border-gray-200/50 opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible transition-all duration-300 transform translate-x-2 group-hover/submenu:translate-x-0 z-[60] pointer-events-none group-hover/submenu:pointer-events-auto">
+                                      <div class="p-2">
+                                          <a href="#" class="block px-4 py-3 text-sm text-gray-600 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Makkar Education Trust</a>
+                                          <a href="#" class="block px-4 py-3 text-sm text-gray-600 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Principal Message</a>
+                                          <a href="#" class="block px-4 py-3 text-sm text-gray-600 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Teaching Staff</a>
+                                          <a href="#" class="block px-4 py-3 text-sm text-gray-600 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Non-Teaching Staff</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">ESP</a>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Academics Dropdown -->
+                  <div class="group relative">
+                      <button class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out group-hover:after:w-full flex items-center gap-1">
+                          Academics
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300 group-hover:rotate-180">
+                              <path d="m6 9 6 6 6-6"></path>
+                          </svg>
+                      </button>
+                      <div class="absolute top-full left-0 mt-2 w-64 bg-white/98 backdrop-blur-xl rounded-xl shadow-2xl border border-gray-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
+                          <div class="p-2">
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Exam / Activity Planner</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Academic Calendar / Saturday Activity</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">School Uniform</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">School Timing</a>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Facilities Dropdown -->
+                  <div class="group relative">
+                      <button class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out group-hover:after:w-full flex items-center gap-1">
+                          Facilities
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300 group-hover:rotate-180">
+                              <path d="m6 9 6 6 6-6"></path>
+                          </svg>
+                      </button>
+                      <div class="absolute top-full left-0 mt-2 w-72 bg-white/98 backdrop-blur-xl rounded-xl shadow-2xl border border-gray-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 max-h-96 overflow-y-auto">
+                          <div class="p-2">
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Our Campus</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Life at MLZS</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">House System</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Classroom</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Multimedia Classes</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Laboratory</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Library</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Safety & Security</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Infirmary</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Open Air Theatre</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Momentum Classes</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Eco Friendly Environment</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Transportation</a>
+                              <a href="#" class="block px-4 py-3 text-sm font-semibold text-gray-700 hover:text-primary-blue hover:bg-primary-blue/10 rounded-lg transition-all duration-200">Sports</a>
+                          </div>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+
+          <!-- Desktop Logo (Center) -->
+          <div class="hidden lg:block shrink-0 relative z-10 group cursor-pointer">
+              <div class="absolute inset-0 bg-primary-blue/50 blur-[2.5rem] opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+              <img src="./assets/img/logo.webp" alt="Logo" class="h-20 md:h-24 group-[&.scrolled]/nav:h-20 w-auto relative transition-all duration-500 group-hover:scale-105 brightness-0 invert">
+          </div>
+
+          <!-- Desktop Nav Right - Only 2 Menus + Menu Button -->
+          <div class="hidden lg:flex items-center">
+              <nav class="flex items-center gap-6 xl:gap-8">
+                  <!-- Admissions -->
+                  <a href="#" class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out hover:after:w-full">Admissions</a>
+                  
+                  <!-- Contact -->
+                  <a href="#" class="text-xs font-bold uppercase tracking-[0.15em] opacity-90 hover:opacity-100 hover:text-light-blue transition-colors relative after:content-[''] after:absolute after:bottom-[-0.25rem] after:left-0 after:w-0 after:h-[0.125rem] after:bg-light-blue after:transition-[width] after:duration-300 after:ease-out hover:after:w-full">Contact</a>
+              
+                  <!-- Menu Toggle Button -->
+                  <button onclick="toggleMenu()" class="group flex items-center gap-4 cursor-pointer">
+                      <span class="font-bold uppercase text-xs tracking-[0.2em] group-hover:text-light-blue transition-colors duration-300">Menu</span>
+                      <div class="w-12 h-12 rounded-full border border-white/20 flex flex-col items-center justify-center gap-[0.3125rem] group-hover:bg-white/10 group-hover:border-white/40 transition-all duration-300 relative overflow-hidden">
+                          <span class="w-5 h-[0.125rem] bg-white transition-all duration-300 group-hover:w-6 group-hover:bg-light-blue"></span>
+                          <span class="w-5 h-[0.125rem] bg-white transition-all duration-300 group-hover:w-4 group-hover:-translate-x-1 group-hover:bg-light-blue"></span>
+                          <span class="w-5 h-[0.125rem] bg-white transition-all duration-300 group-hover:w-6 group-hover:bg-light-blue"></span>
+                      </div>
+                  </button>
+              </nav>
+          </div>
+
+          <!-- Mobile Menu Toggle (Right) -->
+          <div class="lg:hidden">
+              <button onclick="toggleMenu()" class="p-2 text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" class="lucide lucide-menu w-8 h-8"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+              </button>
+          </div>
+      </div>
+  </header>
+
+  <!-- Right Side Sticky Actions -->
+  <div class="hidden md:flex fixed right-0 top-1/2 -translate-y-1/2 z-40 flex-col gap-0 shadow-2xl">
+      <a href="#" class="group [writing-mode:vertical-rl] [text-orientation:mixed] bg-primary-blue/90 backdrop-blur-xl border border-primary-blue border-b-primary-dark shadow-[0_0.5rem_2rem_-0.5rem_rgba(4,42,74,0.5)] p-5 text-white flex items-center gap-4 transition-all duration-300 hover:bg-primary-blue hover:border-light-blue hover:shadow-[0_0.75rem_2.5rem_-0.5rem_rgba(72,179,225,0.5)] hover:pl-7 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-b before:from-light-blue/10 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300 rounded-tl-2xl">
+          <span class="absolute inset-0 bg-gradient-to-r from-light-blue/30 to-transparent translate-x-full group-hover:translate-x-0 transition-transform duration-300"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="help-circle" class="lucide lucide-help-circle rotate-90 w-5 h-5 relative z-10"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg>
+          <span class="font-bold text-[0.625rem] uppercase tracking-[0.2em] relative z-10">Enquiry</span>
+      </a>
+      <a href="#" class="group [writing-mode:vertical-rl] [text-orientation:mixed] bg-primary-blue/90 backdrop-blur-xl border border-primary-blue border-t-primary-dark shadow-[0_0.5rem_2rem_-0.5rem_rgba(4,42,74,0.5)] p-5 text-white flex items-center gap-4 transition-all duration-300 hover:bg-primary-blue hover:border-light-blue hover:shadow-[0_0.75rem_2.5rem_-0.5rem_rgba(72,179,225,0.5)] hover:pl-7 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-b before:from-light-blue/10 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300 rounded-bl-2xl">
+          <span class="absolute inset-0 bg-gradient-to-r from-light-blue/30 to-transparent translate-x-full group-hover:translate-x-0 transition-transform duration-300"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" class="lucide lucide-map-pin rotate-90 w-5 h-5 relative z-10"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span class="font-bold text-[0.625rem] uppercase tracking-[0.2em] relative z-10">Visit Us</span>
+      </a>
+  </div>
+
+  <!-- Full Screen Sidebar Overlay -->
+  <div id="sidebar" class="fixed top-0 w-full h-screen bg-sidebar-bg z-[60] flex transition-all duration-700 ease-custom-ease -right-full">
+      
+      <!-- Sidebar Image Side -->
+      <div class="hidden lg:block w-1/2 h-full relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-r from-sidebar-bg via-sidebar-bg/60 to-transparent z-10"></div>
+          <img id="sidebar-preview" src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transition-opacity duration-500 scale-105" alt="Menu Preview" style="opacity: 1;">
+      </div>
+
+      <!-- Sidebar Content Side -->
+      <div class="w-full lg:w-1/2 h-dvh flex flex-col relative bg-sidebar-bg overflow-hidden">
+          
+
+          <!-- Quick Links (Fixed Top) -->
+          <div id="quick-links" class="flex-shrink-0 p-4 lg:p-8 lg:px-24 border-b border-white/10 transition-all duration-300 ease-in-out z-10">
+              <div class="flex flex-wrap gap-x-4 lg:gap-x-8 gap-y-4">
+          <!-- Close Button -->
+                <button onclick="toggleMenu()" class="text-white/50 hover:text-white hover:rotate-90 transition-all duration-300 group z-10">
+                    <div class="p-2 lg:p-3 border border-white/10 rounded-full group-hover:border-white/40 group-hover:bg-white/5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x w-6 h-6 lg:w-8 lg:h-8"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+              </div>
+          </button>
+                  <a href="#" class="text-white/40 hover:text-light-blue text-[0.6875rem] font-bold uppercase tracking-[0.15em] flex items-center gap-2 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="user" class="lucide lucide-user w-4 h-4"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> Login
+              </a>
+                  <a href="#" class="text-white/40 hover:text-light-blue text-[0.6875rem] font-bold uppercase tracking-[0.15em] flex items-center gap-2 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="users" class="lucide lucide-users w-4 h-4"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg> Faculty
+              </a>
+                  <a href="#" class="text-white/40 hover:text-light-blue text-[0.6875rem] font-bold uppercase tracking-[0.15em] flex items-center gap-2 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="graduation-cap" class="lucide lucide-graduation-cap w-4 h-4"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg> Alumni
+              </a>
+              </div>
+          </div>
+
+          <!-- Menu List (Scrollable) - Main Menu -->
+          <div id="main-menu" class="flex-1 overflow-y-auto px-8 lg:px-24 py-8 transition-all duration-300 ease-in-out relative z-10">
+              <ul class="flex flex-col gap-4">
+                  
+                  <!-- Main Navigation Items (All Devices) -->
+                  <li>
+                      <button onclick="openSubmenu('about')" class="menu-item group w-full flex items-center justify-between text-2xl lg:text-3xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop">
+                          <span>About</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300">
+                              <path d="m9 18 6-6-6-6"></path>
+                          </svg>
+                      </button>
+                  </li>
+                  
+                  <li>
+                      <button onclick="openSubmenu('academics')" class="menu-item group w-full flex items-center justify-between text-2xl lg:text-3xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop">
+                          <span>Academics</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300">
+                              <path d="m9 18 6-6-6-6"></path>
+                          </svg>
+                      </button>
+                  </li>
+                  
+                  <li>
+                      <button onclick="openSubmenu('facilities')" class="menu-item group w-full flex items-center justify-between text-2xl lg:text-3xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop">
+                          <span>Facilities</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300">
+                              <path d="m9 18 6-6-6-6"></path>
+                          </svg>
+                      </button>
+                  </li>
+                  
+                  <li>
+                      <button onclick="openSubmenu('activity')" class="menu-item group w-full flex items-center justify-between text-2xl lg:text-3xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop">
+                          <span>Activity</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300">
+                              <path d="m9 18 6-6-6-6"></path>
+                          </svg>
+                      </button>
+                  </li>
+                  
+                  <!-- Simple Menu Items -->
+                  <li>
+                      <a href="#" class="menu-item group flex items-center text-2xl lg:text-3xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop">
+                          Circular
+                  </a>
+              </li>
+              <li>
+                      <a href="#" class="menu-item group flex items-center text-2xl lg:text-3xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop">
+                          Gallery
+                  </a>
+              </li>
+                  
+                  <li>
+                      <button onclick="openSubmenu('alumni')" class="menu-item group w-full flex items-center justify-between text-2xl lg:text-3xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop">
+                          <span>Alumni</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300">
+                              <path d="m9 18 6-6-6-6"></path>
+                          </svg>
+                      </button>
+                  </li>
+                  
+                  <li>
+                      <a href="#" class="menu-item group flex items-center text-2xl lg:text-3xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop">
+                      Admissions
+                  </a>
+              </li>
+              <li>
+                      <a href="#" class="menu-item group flex items-center text-2xl lg:text-3xl font-black text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop">
+                          Contact
+                  </a>
+              </li>
+                  
+          </ul>
+          </div>
+
+          <!-- Submenu Overlay -->
+          <div id="submenu-overlay" class="absolute inset-0 bg-sidebar-bg transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col z-20">
+              <!-- Back Button -->
+              <div class="flex-shrink-0 p-8 lg:p-24 pb-6 lg:pb-8 border-b border-white/10">
+                  <button onclick="closeSubmenu()" class="flex items-center gap-4 text-white/50 hover:text-white transition-colors duration-300 group">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300 group-hover:-translate-x-1">
+                          <path d="m15 18-6-6 6-6"></path>
+                      </svg>
+                      <span class="text-xl lg:text-2xl font-bold capitalize">Back</span>
+                  </button>
+              </div>
+
+              <!-- Submenu Content (Scrollable) -->
+              <div class="flex-1 overflow-y-auto px-8 lg:px-24 py-8">
+                  <ul id="submenu-list" class="flex flex-col gap-4 transition-all duration-300 ease-in-out">
+                      <!-- Submenu items will be dynamically inserted here -->
+                  </ul>
+              </div>
+          </div>
+
+          <!-- Socials (Fixed Bottom) -->
+          <div id="socials" class="flex-shrink-0 p-4 lg:p-8 lg:px-24 lg:py-10 border-t border-white/10 transition-all duration-300 ease-in-out z-10">
+              <div class="flex gap-4">
+              <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:bg-primary-blue hover:text-white hover:border-primary-blue hover:-translate-y-1 transition-all duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="facebook" class="lucide lucide-facebook w-5 h-5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
+              <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:bg-primary-blue hover:text-white hover:border-primary-blue hover:-translate-y-1 transition-all duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="instagram" class="lucide lucide-instagram w-5 h-5"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+              </a>
+              <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:bg-primary-blue hover:text-white hover:border-primary-blue hover:-translate-y-1 transition-all duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="youtube" class="lucide lucide-youtube w-5 h-5"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
+              </a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="w-full h-dvh lg:min-h-[100dvh] relative overflow-hidden bg-black">
+      <div class="swiper mySwiper w-full h-full lg:min-h-[100dvh]">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide relative overflow-hidden group/hero">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[8000ms] ease-linear scale-100 group-[.swiper-slide-active]/hero:scale-110" style="background-image: url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=2069&auto=format&fit=crop');"></div>
+                  
+                  <div class="absolute inset-0 bg-gradient-to-b from-black via-black/30 to-black/30 z-10"></div>
+                  
+                  <div class="hero-content absolute top-0 left-1/2 -translate-x-1/2 h-full flex flex-col justify-center items-center z-20 text-center w-full text-white opacity-0 translate-y-12 transition-all duration-1000 ease-out delay-300 lg:pt-24 group-[.swiper-slide-active]/hero:opacity-100 group-[.swiper-slide-active]/hero:-translate-x-1/2 group-[.swiper-slide-active]/hero:translate-y-0">
+                      
+                      <div class="mb-4 md:mb-6 flex items-center gap-2 md:gap-4">
+                          <span class="h-[0.125rem] w-8 md:w-12 bg-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"></span>
+                          <span class="uppercase tracking-[0.3em] text-sm md:text-sm font-bold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">Welcome to Excellence</span>
+                          <span class="h-[0.125rem] w-8 md:w-12 bg-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"></span>
+                      </div>
+
+                      <h1 class="text-3xl md:text-4xl lg:text-6xl font-black mb-6 md:mb-8 leading-tight md:leading-[0.9] drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] px-4 md:px-0">
+                          Building Futures, <span class="text-transparent bg-clip-text bg-gradient-to-r from-light-blue to-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">Creating Leaders</span>
+                      </h1>
+                      
+                      <p class="text-base md:text-xl text-gray-200 font-normal mb-8 md:mb-12 max-w-2xl leading-relaxed text-balance px-4 md:px-0 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+                          Experience a world-class education rooted in values, innovation, and holistic excellence.
+                      </p>
+                      
+                      <!-- IMPROVED BUTTONS START -->
+                      <div class="flex flex-col sm:flex-row gap-4 md:gap-6 px-4 md:px-0">
+                          
+                          <!-- Primary Button: Solid Gradient + Shine Effect -->
+                          <a href="#" class="relative overflow-hidden group bg-gradient-to-r from-primary-blue to-[#0A5C96] text-white px-5 py-2.5 md:px-10 md:py-5 rounded-full shadow-[0_0.625rem_1.875rem_-0.625rem_rgba(7,71,117,0.5)] transition-all duration-300 hover:shadow-[0_1.25rem_2.5rem_-0.625rem_rgba(72,179,225,0.4)] hover:-translate-y-1 after:content-[''] after:absolute after:top-0 after:left-[-100%] after:w-1/2 after:h-full after:bg-gradient-to-r after:from-transparent after:via-white/30 after:to-transparent after:skew-x-[-25deg] after:transition-none hover:after:animate-[shine_0.75s_cubic-bezier(0.4,0,0.2,1)_forwards]">
+                              <div class="relative z-10 flex items-center justify-center gap-2 md:gap-3 font-bold uppercase tracking-[0.15em] text-xs md:text-sm">
+                                  <span>Admissions Open</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right w-3 h-3 md:w-4 md:h-4 transition-transform duration-300 group-hover:translate-x-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                              </div>
+                          </a>
+
+                          <!-- Secondary Button: Outline + Slide Fill Effect -->
+                          <a href="#" class="relative overflow-hidden group px-5 py-2.5 md:px-10 md:py-5 rounded-full border border-white/40 backdrop-blur-sm transition-all duration-300 hover:border-white hover:-translate-y-1">
+                              <span class="absolute inset-0 bg-white translate-y-full transition-transform duration-300 ease-custom-ease group-hover:translate-y-0"></span>
+                              <div class="relative z-10 flex items-center justify-center gap-2 md:gap-3 font-bold uppercase tracking-[0.15em] text-xs md:text-sm text-white transition-colors duration-300 group-hover:text-primary-blue">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="play-circle" class="lucide lucide-play-circle w-3 h-3 md:w-4 md:h-4"><path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                  <span>Virtual Tour</span>
+                              </div>
+                          </a>
+
+                      </div>
+                      <!-- IMPROVED BUTTONS END -->
+                  </div>
+              </div>
+              <div class="swiper-slide relative overflow-hidden group/hero">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[8000ms] ease-linear scale-100 group-[.swiper-slide-active]/hero:scale-110" style="background-image: url('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=2069&auto=format&fit=crop');"></div>
+                  <div class="absolute inset-0 bg-gradient-to-b from-black via-black/30 to-black/30 z-10"></div>
+                  
+                  <div class="hero-content absolute top-0 left-1/2 -translate-x-1/2 h-full flex flex-col justify-center items-center z-20 text-center w-full text-white opacity-0 translate-y-12 transition-all duration-1000 ease-out delay-300 lg:pt-24 group-[.swiper-slide-active]/hero:opacity-100 group-[.swiper-slide-active]/hero:-translate-x-1/2 group-[.swiper-slide-active]/hero:translate-y-0">
+                      
+                      <div class="mb-4 md:mb-6 flex items-center gap-2 md:gap-4">
+                          <span class="h-[0.125rem] w-8 md:w-12 bg-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"></span>
+                          <span class="uppercase tracking-[0.3em] text-sm md:text-sm font-bold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">Holistic Growth</span>
+                          <span class="h-[0.125rem] w-8 md:w-12 bg-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"></span>
+                      </div>
+
+                      <h1 class="text-3xl md:text-4xl lg:text-6xl font-black mb-6 md:mb-8 leading-tight md:leading-[0.9] drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] px-4 md:px-0">
+                          Discover <span class="text-transparent bg-clip-text bg-gradient-to-r from-light-blue to-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">Potential</span>
+                      </h1>
+                      
+                      <p class="text-base md:text-xl text-gray-200 font-normal mb-8 md:mb-12 max-w-2xl leading-relaxed text-balance px-4 md:px-0 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+                          A curriculum designed to challenge, inspire, and transform young minds.
+                      </p>
+                      
+                      <div class="flex flex-col sm:flex-row gap-4 md:gap-6 px-4 md:px-0">
+                          <!-- Primary Button -->
+                          <a href="#" class="relative overflow-hidden group bg-gradient-to-r from-primary-blue to-[#0A5C96] text-white px-5 py-2.5 md:px-10 md:py-5 rounded-full shadow-[0_0.625rem_1.875rem_-0.625rem_rgba(7,71,117,0.5)] transition-all duration-300 hover:shadow-[0_1.25rem_2.5rem_-0.625rem_rgba(72,179,225,0.4)] hover:-translate-y-1 after:content-[''] after:absolute after:top-0 after:left-[-100%] after:w-1/2 after:h-full after:bg-gradient-to-r after:from-transparent after:via-white/30 after:to-transparent after:skew-x-[-25deg] after:transition-none hover:after:animate-[shine_0.75s_cubic-bezier(0.4,0,0.2,1)_forwards]">
+                              <div class="relative z-10 flex items-center justify-center gap-2 md:gap-3 font-bold uppercase tracking-[0.15em] text-xs md:text-sm">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="book-open-check" class="lucide lucide-book-open-check w-3 h-3 md:w-4 md:h-4"><path d="M12 21V7"></path><path d="m16 12 2 2 4-4"></path><path d="M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3"></path></svg>
+                                  <span>Curriculum</span>
+                              </div>
+                          </a>
+
+                          <!-- Secondary Button -->
+                          <a href="#" class="relative overflow-hidden group px-5 py-2.5 md:px-10 md:py-5 rounded-full border border-white/40 backdrop-blur-sm transition-all duration-300 hover:border-white hover:-translate-y-1">
+                              <span class="absolute inset-0 bg-white translate-y-full transition-transform duration-300 ease-custom-ease group-hover:translate-y-0"></span>
+                              <div class="relative z-10 flex items-center justify-center gap-2 md:gap-3 font-bold uppercase tracking-[0.15em] text-xs md:text-sm text-white transition-colors duration-300 group-hover:text-primary-blue">
+                                  <span>Enquire Now</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right w-3 h-3 md:w-4 md:h-4"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <!-- Mission, Vision & Core Values Section -->
+  <section class="relative py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16 xl:px-24 bg-gradient-to-br from-white via-gray-50/50 to-primary-blue/5 overflow-hidden">
+    <!-- Enhanced Decorative Background Elements -->
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+      <div class="absolute top-20 left-10 w-96 h-96 bg-primary-blue/8 rounded-full blur-3xl animate-pulse"></div>
+      <div class="absolute bottom-20 right-10 w-[500px] h-[500px] bg-light-blue/8 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-primary-dark/5 rounded-full blur-3xl"></div>
+      <!-- Grid Pattern Overlay -->
+      <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle, #074775 1px, transparent 1px); background-size: 40px 40px;"></div>
+  </div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      <!-- Enhanced Section Header -->
+      <div class="text-center mb-10 lg:mb-12">
+        <div class="inline-flex items-center gap-3 mb-4">
+          <span class="h-[3px] w-16 bg-gradient-to-r from-transparent via-primary-blue to-transparent"></span>
+          <span class="text-primary-blue font-bold text-sm uppercase tracking-[0.2em] px-4 py-2 bg-primary-blue/10 rounded-full">Our Foundation</span>
+          <span class="h-[3px] w-16 bg-gradient-to-r from-transparent via-primary-blue to-transparent"></span>
+        </div>
+        <h2 class="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+          Mission, Vision & <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue via-light-blue to-primary-blue">Core Values</span>
+        </h2>
+        <p class="text-gray-600 text-base lg:text-lg max-w-3xl mx-auto leading-relaxed">
+          The fundamental principles that shape our educational philosophy and guide every student's journey towards becoming global citizens
+        </p>
+      </div>
+
+      <!-- Mission & Vision Row -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-10 lg:mb-12">
+        <!-- Mission Card -->
+        <div class="group relative bg-white rounded-3xl p-6 lg:p-8 xl:p-10 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(7,71,117,0.3)] transition-all duration-700 hover:-translate-y-4 border border-gray-100/80 overflow-hidden">
+          <!-- Animated Background Gradient -->
+          <div class="absolute inset-0 bg-gradient-to-br from-primary-blue/10 via-primary-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+          
+          <!-- Decorative Pattern -->
+          <div class="absolute top-0 right-0 w-40 h-40 bg-primary-blue/5 rounded-bl-full transform translate-x-10 -translate-y-10 group-hover:translate-x-5 group-hover:-translate-y-5 transition-transform duration-700"></div>
+          <div class="absolute bottom-0 left-0 w-32 h-32 bg-light-blue/5 rounded-tr-full transform -translate-x-8 translate-y-8 group-hover:-translate-x-4 group-hover:translate-y-4 transition-transform duration-700"></div>
+          
+          <div class="relative z-10 flex items-start gap-5 lg:gap-6">
+            <!-- Icon on Left -->
+            <div class="flex-shrink-0">
+              <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary-blue/30 to-primary-blue/10 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-700 scale-110"></div>
+                <div class="relative w-20 h-20 lg:w-24 lg:h-24 rounded-3xl bg-gradient-to-br from-primary-blue via-primary-blue to-primary-dark flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-700">
+                  <i data-lucide="target" class="w-10 h-10 lg:w-12 lg:h-12 text-white"></i>
+                </div>
+                <!-- Floating Particles -->
+                <div class="absolute -top-3 -right-3 w-4 h-4 bg-primary-blue rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping shadow-lg"></div>
+                <div class="absolute -bottom-3 -left-3 w-3 h-3 bg-light-blue rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping delay-300 shadow-lg"></div>
+              </div>
+            </div>
+
+            <!-- Content on Right -->
+            <div class="flex-1">
+              <h3 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-900 mb-2 group-hover:text-primary-blue transition-colors duration-300">
+                Mission
+              </h3>
+              <div class="h-1.5 w-20 bg-gradient-to-r from-primary-blue via-light-blue to-primary-blue mb-4 rounded-full"></div>
+              <p class="text-gray-600 text-sm lg:text-base xl:text-lg leading-relaxed mb-4">
+                To prepare future world citizens who have the virtues of excellence, discipline, and respect.
+              </p>
+              <div class="flex items-center gap-3 text-xs text-gray-500">
+                <i data-lucide="check-circle" class="w-4 h-4 text-primary-blue"></i>
+                <span>Excellence in Education</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vision Card -->
+        <div class="group relative bg-white rounded-3xl p-6 lg:p-8 xl:p-10 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(72,179,225,0.3)] transition-all duration-700 hover:-translate-y-4 border border-gray-100/80 overflow-hidden">
+          <!-- Animated Background Gradient -->
+          <div class="absolute inset-0 bg-gradient-to-br from-light-blue/10 via-light-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+          
+          <!-- Decorative Pattern -->
+          <div class="absolute top-0 left-0 w-40 h-40 bg-light-blue/5 rounded-br-full transform -translate-x-10 -translate-y-10 group-hover:-translate-x-5 group-hover:-translate-y-5 transition-transform duration-700"></div>
+          <div class="absolute bottom-0 right-0 w-32 h-32 bg-primary-blue/5 rounded-tl-full transform translate-x-8 translate-y-8 group-hover:translate-x-4 group-hover:translate-y-4 transition-transform duration-700"></div>
+          
+          <div class="relative z-10 flex items-start gap-5 lg:gap-6">
+            <!-- Icon on Left -->
+            <div class="flex-shrink-0">
+              <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-br from-light-blue/30 to-light-blue/10 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-700 scale-110"></div>
+                <div class="relative w-20 h-20 lg:w-24 lg:h-24 rounded-3xl bg-gradient-to-br from-light-blue via-primary-blue to-primary-blue flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:-rotate-6 transition-all duration-700">
+                  <i data-lucide="eye" class="w-10 h-10 lg:w-12 lg:h-12 text-white"></i>
+                </div>
+                <!-- Floating Particles -->
+                <div class="absolute -top-3 -left-3 w-4 h-4 bg-light-blue rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping shadow-lg"></div>
+                <div class="absolute -bottom-3 -right-3 w-3 h-3 bg-primary-blue rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping delay-300 shadow-lg"></div>
+              </div>
+            </div>
+
+            <!-- Content on Right -->
+            <div class="flex-1">
+              <h3 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-900 mb-2 group-hover:text-light-blue transition-colors duration-300">
+                Vision
+              </h3>
+              <div class="h-1.5 w-20 bg-gradient-to-r from-light-blue via-primary-blue to-light-blue mb-4 rounded-full"></div>
+              <p class="text-gray-600 text-sm lg:text-base xl:text-lg leading-relaxed mb-4">
+                To be in the league of the best schools of the world.
+              </p>
+              <div class="flex items-center gap-3 text-xs text-gray-500">
+                <i data-lucide="award" class="w-4 h-4 text-light-blue"></i>
+                <span>Global Recognition</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Values Section -->
+      <div class="relative bg-white rounded-3xl p-6 lg:p-8 xl:p-10 shadow-2xl border border-gray-100/80 overflow-hidden">
+        <!-- Animated Background Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-br from-primary-dark/5 via-transparent to-transparent"></div>
+        
+        <!-- Decorative Pattern -->
+        <div class="absolute bottom-0 right-0 w-64 h-64 bg-primary-dark/5 rounded-tl-full transform translate-x-20 translate-y-20"></div>
+        <div class="absolute top-0 left-0 w-48 h-48 bg-primary-blue/5 rounded-br-full transform -translate-x-16 -translate-y-16"></div>
+        
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-8 gap-6 lg:gap-8">
+          <!-- Left Side: Icon & Heading -->
+          <div class="lg:col-span-2">
+            <div class="flex flex-col items-start gap-5 mb-6">
+              <!-- Icon on Left -->
+              <div class="flex-shrink-0">
+                <div class="relative">
+                  <div class="absolute inset-0 bg-gradient-to-br from-primary-dark/30 to-primary-dark/10 rounded-3xl blur-2xl scale-110"></div>
+                  <div class="relative w-20 h-20 lg:w-24 lg:h-24 rounded-3xl bg-gradient-to-br from-primary-dark via-primary-blue to-primary-dark flex items-center justify-center shadow-2xl">
+                    <i data-lucide="sparkles" class="w-10 h-10 lg:w-12 lg:h-12 text-white"></i>
+                  </div>
+                  <!-- Floating Particles -->
+                  <div class="absolute -top-3 -right-3 w-4 h-4 bg-primary-dark rounded-full animate-pulse"></div>
+                  <div class="absolute -bottom-3 -left-3 w-3 h-3 bg-primary-blue rounded-full animate-pulse delay-300"></div>
+                </div>
+              </div>
+
+              <!-- Heading -->
+              <div class="flex-1">
+                <h3 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-900 mb-2">
+                  Core Values
+                </h3>
+                <div class="h-1.5 w-20 bg-gradient-to-r from-primary-dark via-primary-blue to-primary-dark rounded-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side: Value Cards -->
+          <div class="lg:col-span-6 space-y-4 flex flex-col md:flex-row gap-3">
+            <!-- Confidence Card -->
+            <div class="group/item relative bg-gradient-to-r from-primary-blue/8 via-primary-blue/5 to-transparent rounded-2xl p-5 hover:from-primary-blue/15 hover:via-primary-blue/10 transition-all duration-300">
+              <div class="flex items-start gap-3 flex-col">
+                <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-to-br from-primary-blue to-primary-dark flex items-center justify-center shadow-lg group-hover/item:scale-110 group-hover/item:rotate-3 transition-all duration-300">
+                  <i data-lucide="star" class="w-6 h-6 text-white"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-bold text-gray-900 mb-1.5 text-base lg:text-lg">Confidence</h4>
+                  <p class="text-gray-600 text-xs lg:text-sm leading-relaxed">Building self-assurance and belief in one's abilities through positive reinforcement and achievement recognition.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Inquisitiveness Card -->
+            <div class="group/item relative bg-gradient-to-r from-light-blue/8 via-light-blue/5 to-transparent rounded-2xl p-5 hover:from-light-blue/15 hover:via-light-blue/10 transition-all duration-300">
+              <div class="flex items-start gap-3 flex-col">
+                <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-to-br from-light-blue to-primary-blue flex items-center justify-center shadow-lg group-hover/item:scale-110 group-hover/item:rotate-3 transition-all duration-300">
+                  <i data-lucide="brain" class="w-6 h-6 text-white"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-bold text-gray-900 mb-1.5 text-base lg:text-lg">Inquisitiveness</h4>
+                  <p class="text-gray-600 text-xs lg:text-sm leading-relaxed">Fostering curiosity and a love for learning through inquiry-based teaching and exploration opportunities.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Independence Card -->
+            <div class="group/item relative bg-gradient-to-r from-primary-dark/8 via-primary-dark/5 to-transparent rounded-2xl p-5 hover:from-primary-dark/15 hover:via-primary-dark/10 transition-all duration-300">
+              <div class="flex items-start gap-3 flex-col">
+                <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-to-br from-primary-dark to-primary-blue flex items-center justify-center shadow-lg group-hover/item:scale-110 group-hover/item:rotate-3 transition-all duration-300">
+                  <i data-lucide="flag" class="w-6 h-6 text-white"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-bold text-gray-900 mb-1.5 text-base lg:text-lg">Independence</h4>
+                  <p class="text-gray-600 text-xs lg:text-sm leading-relaxed">Encouraging self-reliance and critical thinking through project-based learning and leadership opportunities.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Litera Octave Interactive Section -->
+  <section class="py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16 xl:px-24 bg-gradient-to-br from-gray-900 via-primary-dark to-gray-900 relative">
+    <!-- Decorative Background -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-primary-blue/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-light-blue/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      <!-- Header -->
+      <div class="text-center mb-12 md:mb-16">
+        <h2 class="text-light-blue font-semibold tracking-wide uppercase text-sm mb-3">Our Features</h2>
+        <h2 class="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-light-blue via-white to-primary-blue mb-4">
+          Litera Octave
+        </h2>
+        <p class="text-gray-400 mt-4 max-w-2xl mx-auto text-base lg:text-lg">
+          Explore our core capabilities designed to elevate your educational experience. Click on the features below to learn more.
+        </p>
+      </div>
+
+      <!-- Mobile: Swiper -->
+      <div class="lg:hidden">
+        <div class="swiper literaSwiper w-full !pb-8 [&_.swiper-pagination-bullet]:bg-white/30 [&_.swiper-pagination-bullet]:opacity-100 [&_.swiper-pagination-bullet-active]:bg-light-blue">
+          <div class="swiper-wrapper flex items-stretch" id="litera-swiper-wrapper">
+            <!-- Slides will be injected here via JavaScript -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- Desktop: Content Grid -->
+      <div class="hidden lg:grid grid-cols-12 gap-8 lg:gap-12 items-start">
+        
+        <!-- Left Side: Navigation / Icons -->
+        <div class="col-span-4 flex flex-col gap-4" id="litera-tab-container">
+          <!-- Tabs will be injected here via JavaScript -->
+        </div>
+
+        <!-- Right Side: Dynamic Content Display -->
+        <div class="col-span-8 sticky top-28 self-start">
+          <!-- Background decorative elements -->
+          <div class="absolute -top-10 -right-10 w-64 h-64 bg-primary-blue/20 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+          <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-light-blue/20 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse" style="animation-delay: 2s;"></div>
+
+          <!-- Main Card -->
+          <div class="relative rounded-3xl p-1 border border-white/10 overflow-hidden shadow-2xl bg-gray-900/50 backdrop-blur-md">
+            <div id="litera-content-display" class="relative z-10">
+              <!-- Content will be injected here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Best Learning Methods Section -->
+  <section class="relative py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16 xl:px-24 bg-white overflow-hidden">
+    <!-- Decorative Background -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-primary-blue/5 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-light-blue/5 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-12 gap-4 md:gap-6">
+        <div class="max-w-2xl w-full md:w-auto">
+          <h2 class="text-primary-blue font-semibold tracking-wide uppercase text-xs md:text-sm mb-2 md:mb-3">Why Choose Us</h2>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-0 md:mb-4 leading-tight">
+            Building the Future with <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-light-blue">Excellence</span>
+          </h1>
+        </div>
+        <button class="px-4 py-2.5 md:px-6 md:py-3 rounded-full bg-primary-blue/10 hover:bg-primary-blue/20 border border-primary-blue/20 transition-colors flex items-center gap-2 group text-primary-blue text-sm md:text-base w-full md:w-auto justify-center md:justify-start flex-shrink-0">
+          View All Services
+          <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+        </button>
+      </div>
+
+      <!-- Grid Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+        
+        <!-- Card 1: The Best Learning Methods -->
+        <div class="relative p-8 rounded-2xl overflow-hidden group bg-white border border-gray-200 hover:border-primary-blue/30 hover:shadow-xl transition-all duration-300">
+          <div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+            <i data-lucide="layers" class="w-24 h-24 text-primary-blue"></i>
+          </div>
+          <div class="w-12 h-12 rounded-xl bg-primary-blue/10 flex items-center justify-center text-primary-blue mb-6 group-hover:scale-110 transition-transform duration-300">
+            <i data-lucide="book-open" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl lg:text-2xl font-bold mb-3 text-gray-900">The Best Learning Methods</h3>
+          <p class="text-gray-600 leading-relaxed mb-6 text-sm lg:text-base">
+            Mount Litera Zee School will provide a complete and unique educational experience for the child, preparing the child for a successful life in the contemporary society. MLZS create an excellent educational institution synthesizing the human values with the highest quality of teaching–learning using modern technology-driven tools for preparing a well-rounded personality for our society.
+          </p>
+          <a href="#" class="text-sm font-semibold text-primary-blue hover:text-light-blue flex items-center gap-1">
+            Learn more 
+            <i data-lucide="chevron-right" class="w-3 h-3"></i>
+          </a>
+        </div>
+
+        <!-- Card 2: Awesome Results Of Our Students -->
+        <div class="relative p-8 rounded-2xl overflow-hidden group bg-white border border-gray-200 hover:border-light-blue/30 hover:shadow-xl transition-all duration-300">
+          <div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+            <i data-lucide="award" class="w-24 h-24 text-light-blue"></i>
+          </div>
+          <div class="w-12 h-12 rounded-xl bg-light-blue/10 flex items-center justify-center text-light-blue mb-6 group-hover:scale-110 transition-transform duration-300">
+            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Awesome Results Of Our Students</h3>
+          <p class="text-gray-600 leading-relaxed mb-6 text-sm lg:text-base">
+            We believe that every child is born unique. Each child has a unique brain network that shapes how she absorbs and responds to stimuli. One way of teaching does not work for every child. We need to teach the way they learn, not force them to learn the way we teach. We help children make meaning of life and develop the muscle to lead life effectively.
+          </p>
+          <a href="#" class="text-sm font-semibold text-light-blue hover:text-primary-blue flex items-center gap-1">
+            Learn more 
+            <i data-lucide="chevron-right" class="w-3 h-3"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- School Statistics & Introduction Section -->
+  <section class="relative py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16 xl:px-24 bg-gradient-to-br from-primary-blue via-primary-blue to-primary-dark overflow-hidden">
+    <!-- Diagonal Split Background -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/5 via-transparent 50% to-transparent"></div>
+      <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-light-blue/10 via-transparent to-transparent"></div>
+      <!-- Diagonal Line -->
+      <div class="absolute top-0 left-1/2 h-full w-px bg-gradient-to-b from-transparent via-white/20 to-transparent hidden lg:block"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-0">
+        <!-- Left Side: Statistics in Vertical Timeline Style -->
+        <div class="relative lg:pr-12 py-4 md:py-6 lg:py-12 md:order-first order-last">
+          <div class="space-y-4 md:space-y-6 lg:space-y-12 relative">
+            <!-- Vertical Line for Timeline - starts from first icon center, ends at last icon center -->
+            <div class="absolute left-[28px] md:left-[32px] lg:left-[40px] top-[40px] bottom-[40px] md:top-[60px] md:bottom-[60px] w-0.5 bg-gradient-to-b from-white/40 via-white/60 to-white/40 hidden md:block"></div>
+            
+            <!-- Stat 1: Campus -->
+            <div class="group relative pl-14 md:pl-20 lg:pl-24">
+              <div class="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center shadow-xl z-10 group-hover:scale-110 group-hover:bg-white/30 transition-all duration-300">
+                <i data-lucide="map-pin" class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 text-white"></i>
+              </div>
+              <div class="bg-white/10 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-5 lg:p-6 shadow-lg border-l-4 border-white/40 group-hover:shadow-2xl group-hover:-translate-x-2 group-hover:bg-white/15 transition-all duration-300">
+                <div class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-1 md:mb-2 leading-none">160+</div>
+                <div class="text-white/90 text-xs md:text-sm lg:text-base font-semibold uppercase tracking-wider">Acre Campus</div>
+                <div class="mt-2 md:mt-3 text-xs text-white/70">Sprawling green campus</div>
+              </div>
+            </div>
+
+            <!-- Stat 2: Nationalities -->
+            <div class="group relative pl-14 md:pl-20 lg:pl-24">
+              <div class="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center shadow-xl z-10 group-hover:scale-110 group-hover:bg-white/30 transition-all duration-300">
+                <i data-lucide="globe" class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 text-white"></i>
+              </div>
+              <div class="bg-white/10 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-5 lg:p-6 shadow-lg border-l-4 border-white/40 group-hover:shadow-2xl group-hover:-translate-x-2 group-hover:bg-white/15 transition-all duration-300">
+                <div class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-1 md:mb-2 leading-none">22+</div>
+                <div class="text-white/90 text-xs md:text-sm lg:text-base font-semibold uppercase tracking-wider">Nationalities</div>
+                <div class="mt-2 md:mt-3 text-xs text-white/70">Global diversity</div>
+              </div>
+            </div>
+
+            <!-- Stat 3: Ratio -->
+            <div class="group relative pl-14 md:pl-20 lg:pl-24">
+              <div class="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center shadow-xl z-10 group-hover:scale-110 group-hover:bg-white/30 transition-all duration-300">
+                <i data-lucide="users" class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 text-white"></i>
+              </div>
+              <div class="bg-white/10 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-5 lg:p-6 shadow-lg border-l-4 border-white/40 group-hover:shadow-2xl group-hover:-translate-x-2 group-hover:bg-white/15 transition-all duration-300">
+                <div class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-1 md:mb-2 leading-none">6:1</div>
+                <div class="text-white/90 text-xs md:text-sm lg:text-base font-semibold uppercase tracking-wider">Student-Teacher Ratio</div>
+                <div class="mt-2 md:mt-3 text-xs text-white/70">Personalized attention</div>
+              </div>
+            </div>
+
+            <!-- Stat 4: Results -->
+            <div class="group relative pl-14 md:pl-20 lg:pl-24">
+              <div class="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center shadow-xl z-10 group-hover:scale-110 group-hover:bg-white/30 transition-all duration-300">
+                <i data-lucide="award" class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 text-white"></i>
+              </div>
+              <div class="bg-white/10 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-5 lg:p-6 shadow-lg border-l-4 border-white/40 group-hover:shadow-2xl group-hover:-translate-x-2 group-hover:bg-white/15 transition-all duration-300">
+                <div class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-1 md:mb-2 leading-none">100%</div>
+                <div class="text-white/90 text-xs md:text-sm lg:text-base font-semibold uppercase tracking-wider">Results</div>
+                <div class="mt-2 md:mt-3 text-xs text-white/70">Consistent excellence</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Content with Large Number Overlay -->
+        <div class="relative lg:pl-12 py-8 lg:py-12">
+          <!-- Large Background Number -->
+          <div class="absolute top-0 right-0 text-[200px] lg:text-[300px] font-black text-white/10 leading-none select-none pointer-events-none">
+            160
+          </div>
+
+          <div class="relative z-10">
+            <!-- Year Badge -->
+            <div class="inline-block mb-6 px-5 py-2.5 bg-white/20 backdrop-blur-sm border border-white/30 text-white text-sm font-bold rounded-full shadow-lg">
+              EST. 2024
+            </div>
+
+            <h2 class="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-6 leading-[1.1]">
+              Mount Litera<br>
+              <span class="text-light-blue">Zee School</span>
+            </h2>
+            
+            <div class="h-1 w-24 bg-gradient-to-r from-white/60 via-white to-white/60 mb-8"></div>
+
+            <div class="space-y-6 mb-10">
+              <p class="text-base md:text-lg lg:text-xl text-white/90 leading-relaxed font-medium">
+                Crowned with the majestic <span class="text-white font-bold">Aravalli Hills</span>, and nestled on a vast expanse of <span class="text-light-blue font-bold">160+ acre campus</span>.
+              </p>
+              <p class="text-sm md:text-base lg:text-lg text-white/80 leading-relaxed">
+                Mount Litera Zee School is a confluence of world-class academics and character enriching co-curriculars. With cutting-edge classrooms, progressive science labs, dynamic art studios, and extensive sports facilities.
+              </p>
+              <p class="text-sm md:text-base lg:text-lg text-white/80 leading-relaxed">
+                We offer a <span class="font-semibold text-white">holistic environment</span> where students are nurtured into conscious citizens of the world.
+              </p>
+            </div>
+
+            <!-- Highlight Boxes -->
+            <div class="grid grid-cols-2 gap-4 mb-10">
+              <!-- Infinite Possibilities Card -->
+              <div class="group relative bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-md border-2 border-white/30 rounded-2xl p-5 lg:p-6 hover:bg-gradient-to-br hover:from-white/20 hover:via-white/15 hover:to-white/10 hover:border-white/50 hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.3)] hover:-translate-y-1 transition-all duration-500 overflow-hidden">
+                <!-- Animated Background Glow -->
+                <div class="absolute inset-0 bg-gradient-to-br from-light-blue/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <!-- Decorative Corner -->
+                <div class="absolute top-0 right-0 w-16 h-16 bg-white/10 rounded-bl-full transform translate-x-8 -translate-y-8 group-hover:translate-x-4 group-hover:-translate-y-4 transition-transform duration-500"></div>
+                
+                <div class="relative z-10">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
+                      <div class="text-2xl lg:text-3xl font-black text-white">∞</div>
+                    </div>
+                    <div class="h-8 w-0.5 bg-white/30 group-hover:bg-white/50 transition-colors duration-300"></div>
+                  </div>
+                  <div class="text-xs lg:text-sm font-bold text-white uppercase tracking-[0.15em] leading-tight">Infinite<br>Possibilities</div>
+                </div>
+              </div>
+
+              <!-- Excellence Card -->
+              <div class="group relative bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-md border-2 border-white/30 rounded-2xl p-5 lg:p-6 hover:bg-gradient-to-br hover:from-white/20 hover:via-white/15 hover:to-white/10 hover:border-white/50 hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.3)] hover:-translate-y-1 transition-all duration-500 overflow-hidden">
+                <!-- Animated Background Glow -->
+                <div class="absolute inset-0 bg-gradient-to-br from-primary-blue/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <!-- Decorative Corner -->
+                <div class="absolute top-0 left-0 w-16 h-16 bg-white/10 rounded-br-full transform -translate-x-8 -translate-y-8 group-hover:-translate-x-4 group-hover:-translate-y-4 transition-transform duration-500"></div>
+                
+                <div class="relative z-10">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
+                      <div class="text-2xl lg:text-3xl font-black text-white">★</div>
+                    </div>
+                    <div class="h-8 w-0.5 bg-white/30 group-hover:bg-white/50 transition-colors duration-300"></div>
+                  </div>
+                  <div class="text-xs lg:text-sm font-bold text-white uppercase tracking-[0.15em] leading-tight">Excellence</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Button - Hero Section Style -->
+            <a href="#" class="relative overflow-hidden group bg-gradient-to-r from-white to-white/95 text-primary-blue px-5 py-2.5 md:px-10 md:py-5 rounded-full shadow-[0_0.625rem_1.875rem_-0.625rem_rgba(255,255,255,0.4)] transition-all duration-300 hover:shadow-[0_1.25rem_2.5rem_-0.625rem_rgba(255,255,255,0.5)] hover:-translate-y-1 after:content-[''] after:absolute after:top-0 after:left-[-100%] after:w-1/2 after:h-full after:bg-gradient-to-r after:from-transparent after:via-white/40 after:to-transparent after:skew-x-[-25deg] after:transition-none hover:after:animate-[shine_0.75s_cubic-bezier(0.4,0,0.2,1)_forwards] inline-block">
+              <div class="relative z-10 flex items-center justify-center gap-2 md:gap-3 font-bold uppercase tracking-[0.15em] text-xs md:text-sm">
+                <span>Start Your Journey</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right w-3 h-3 md:w-4 md:h-4 transition-transform duration-300 group-hover:translate-x-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Happenings @ MLZS / Gallery Grid -->
+  <section class="relative py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16 xl:px-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <!-- Decorative Background -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-primary-blue/5 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-light-blue/5 rounded-full blur-3xl"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto relative z-10">
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-12 gap-4 md:gap-6">
+        <div class="max-w-2xl w-full md:w-auto">
+          <h2 class="text-primary-blue font-semibold tracking-wide uppercase text-xs md:text-sm mb-2 md:mb-3">Our Gallery</h2>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 md:mb-4 leading-tight">
+            Happenings @ <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-light-blue">MLZS</span>
+          </h1>
+          <p class="text-gray-600 text-sm md:text-base lg:text-lg">Boys and Girls at Mount Litera Zee School experience something new each day.</p>
+        </div>
+        <button class="px-4 py-2.5 md:px-6 md:py-3 rounded-full bg-primary-blue/10 hover:bg-primary-blue/20 border border-primary-blue/20 transition-colors flex items-center gap-2 group text-primary-blue text-sm md:text-base w-full md:w-auto justify-center md:justify-start flex-shrink-0 mt-4 md:mt-0">
+          View All Events
+          <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+        </button>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
+        <div class="group relative h-48 lg:h-64 rounded-xl overflow-hidden cursor-pointer">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 md:group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1000&auto=format&fit=crop');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-3 md:p-4 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-white font-bold text-sm md:text-lg">Sports Championship</h3>
+          </div>
+        </div>
+        <div class="group relative h-48 lg:h-64 rounded-xl overflow-hidden cursor-pointer">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 md:group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1000&auto=format&fit=crop');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-3 md:p-4 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-white font-bold text-sm md:text-lg">Annual Celebration</h3>
+          </div>
+        </div>
+        <div class="group relative h-48 lg:h-64 rounded-xl overflow-hidden cursor-pointer">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 md:group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1000&auto=format&fit=crop');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-3 md:p-4 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-white font-bold text-sm md:text-lg">Science Exhibition</h3>
+          </div>
+        </div>
+        <div class="group relative h-48 lg:h-64 rounded-xl overflow-hidden cursor-pointer">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 md:group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?q=80&w=1000&auto=format&fit=crop');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-3 md:p-4 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-white font-bold text-sm md:text-lg">Art Workshop</h3>
+          </div>
+        </div>
+        <div class="group relative h-48 lg:h-64 rounded-xl overflow-hidden cursor-pointer">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 md:group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1000&auto=format&fit=crop');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-3 md:p-4 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-white font-bold text-sm md:text-lg">Music Concert</h3>
+          </div>
+        </div>
+        <div class="group relative h-48 lg:h-64 rounded-xl overflow-hidden cursor-pointer">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 md:group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=1000&auto=format&fit=crop');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-3 md:p-4 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-white font-bold text-sm md:text-lg">Swimming Competition</h3>
+          </div>
+        </div>
+        <div class="group relative h-48 lg:h-64 rounded-xl overflow-hidden cursor-pointer">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 md:group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=1000&auto=format&fit=crop');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-3 md:p-4 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-white font-bold text-sm md:text-lg">Swimming Competition</h3>
+          </div>
+        </div>
+        <div class="group relative h-48 lg:h-64 rounded-xl overflow-hidden cursor-pointer">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 md:group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=1000&auto=format&fit=crop');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-3 md:p-4 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-white font-bold text-sm md:text-lg">Swimming Competition</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- "We Will Take Care Of Your Kids" Banner -->
+  <section class="relative py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16 xl:px-24 bg-gradient-to-br from-primary-blue via-primary-dark to-primary-blue overflow-hidden">
+    <!-- Decorative Background -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute inset-0 opacity-10" style="background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2000&auto=format&fit=crop'); background-size: cover; background-position: center;"></div>
+      <div class="absolute top-0 right-0 w-96 h-96 bg-light-blue/20 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-primary-blue/20 rounded-full blur-3xl"></div>
+    </div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <div class="inline-flex items-center gap-3 mb-6">
+        <span class="h-[3px] w-16 bg-gradient-to-r from-transparent via-light-blue to-transparent"></span>
+        <span class="text-light-blue font-bold text-sm uppercase tracking-[0.2em] px-4 py-2 bg-light-blue/10 rounded-full">Our Promise</span>
+        <span class="h-[3px] w-16 bg-gradient-to-r from-transparent via-light-blue to-transparent"></span>
+      </div>
+      <h2 class="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight">
+        We Will Take Care<br>Of Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-light-blue via-white to-light-blue">Kids</span>
+      </h2>
+      <p class="text-white/90 text-base md:text-xl lg:text-2xl mb-8">Ensuring their safety, growth, and happiness every step of the way</p>
+      <button class="px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 transition-colors flex items-center gap-2 group text-white mx-auto">
+        Learn More
+        <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="relative py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16 xl:px-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <!-- Decorative Background -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-primary-blue/5 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-light-blue/5 rounded-full blur-3xl"></div>
+    </div>
+    
+    <div class="w-full relative z-10">
+      
+      <div class="relative group cursor-pointer rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2000&auto=format&fit=crop');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/50"></div>
+        <div class="relative z-10 h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center">
+          <div class="text-center">
+            <div class="w-20 h-20 lg:w-24 lg:h-24 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center mx-auto mb-6 group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300">
+              <i data-lucide="play" class="w-10 h-10 lg:w-12 lg:h-12 text-white ml-1"></i>
+            </div>
+            <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4">Experience Our Campus</h2>
+            <p class="text-white/90 text-base md:text-xl">Through this virtual tour</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Advantage Section -->
+  <section class="relative px-0 bg-white overflow-hidden">
+    <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[500px] lg:min-h-[600px]">
+      <!-- Left: Content -->
+      <div class="bg-gradient-to-br from-primary-dark via-primary-dark to-primary-blue p-8 md:p-12 lg:p-16 xl:p-20 flex flex-col justify-center text-white relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-light-blue/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-blue/10 rounded-full blur-3xl"></div>
+        
+        <div class="relative z-10">
+          <div class="inline-flex items-center gap-3 mb-6">
+            <span class="h-[3px] w-12 bg-gradient-to-r from-transparent via-light-blue to-transparent"></span>
+            <span class="text-light-blue font-bold text-sm uppercase tracking-[0.2em] px-4 py-2 bg-light-blue/10 rounded-full">Location</span>
+            <span class="h-[3px] w-12 bg-gradient-to-r from-transparent via-light-blue to-transparent"></span>
+          </div>
+          <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">
+            Advantage Mount Litera<br>Zee <span class="text-transparent bg-clip-text bg-gradient-to-r from-light-blue to-white">School</span>
+          </h2>
+          <h3 class="text-lg md:text-xl lg:text-2xl font-semibold mb-8 text-light-blue">How to Reach Us</h3>
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <i data-lucide="map-pin" class="w-5 h-5 md:w-6 md:h-6 text-light-blue mt-1 flex-shrink-0"></i>
+            <div>
+              <p class="text-base md:text-lg lg:text-xl font-semibold mb-2">From Delhi Airport</p>
+              <p class="text-white/80 text-sm md:text-base lg:text-lg">A four-hour drive from Delhi Airport</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <i data-lucide="map-pin" class="w-5 h-5 md:w-6 md:h-6 text-light-blue mt-1 flex-shrink-0"></i>
+            <div>
+              <p class="text-base md:text-lg lg:text-xl font-semibold mb-2">From Jaipur</p>
+              <p class="text-white/80 text-sm md:text-base lg:text-lg">A four-hour drive from Jaipur</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <i data-lucide="map-pin" class="w-5 h-5 md:w-6 md:h-6 text-light-blue mt-1 flex-shrink-0"></i>
+            <div>
+              <p class="text-base md:text-lg lg:text-xl font-semibold mb-2">Campus Location</p>
+              <p class="text-white/80 text-sm md:text-base lg:text-lg">6th Milestone, Jharkheda, Sirmoli Village Road, Alwar - Bhiwadi State Highway, Alwar - 301028 (Raj.)</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- Right: Image -->
+      <div class="h-[400px] lg:h-auto bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=2000&auto=format&fit=crop');"></div>
+    </div>
+  </section>
+
+  <!-- Parent Reviews & Testimonials Section -->
+  <section class="relative py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16 xl:px-24 bg-gradient-to-br from-gray-50 via-white to-primary-blue/5 overflow-hidden">
+    <!-- Decorative Background -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-primary-blue/8 rounded-full blur-3xl animate-pulse"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-light-blue/8 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+      <!-- Grid Pattern -->
+      <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle, #074775 1px, transparent 1px); background-size: 40px 40px;"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto relative z-10">
+      <!-- Section Header -->
+      <div class="text-center mb-12 lg:mb-16">
+        <div class="inline-flex items-center gap-3 mb-4">
+          <span class="h-[3px] w-16 bg-gradient-to-r from-transparent via-primary-blue to-transparent"></span>
+          <span class="text-primary-blue font-bold text-sm uppercase tracking-[0.2em] px-4 py-2 bg-primary-blue/10 rounded-full">Testimonials</span>
+          <span class="h-[3px] w-16 bg-gradient-to-r from-transparent via-primary-blue to-transparent"></span>
+        </div>
+        <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          What <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue via-light-blue to-primary-blue">Parents Say</span>
+        </h1>
+      </div>
+      
+      <div class="swiper testimonialsSwiper !pb-12 [&_.swiper-pagination-bullet]:bg-primary-blue/30 [&_.swiper-pagination-bullet]:opacity-100 [&_.swiper-pagination-bullet-active]:bg-primary-blue [&_.swiper-slide-active_.group]:bg-gradient-to-br [&_.swiper-slide-active_.group]:from-white [&_.swiper-slide-active_.group]:via-sky-50 [&_.swiper-slide-active_.group]:to-sky-100 [&_.swiper-slide-active_.group]:border-light-blue [&_.swiper-slide-active_.group]:shadow-[0_20px_40px_-10px_rgba(7,71,117,0.2),0_0_0_1px_rgba(72,179,225,0.1)] [&_.swiper-slide-active_.group]:before:content-[''] [&_.swiper-slide-active_.group]:before:absolute [&_.swiper-slide-active_.group]:before:top-0 [&_.swiper-slide-active_.group]:before:left-0 [&_.swiper-slide-active_.group]:before:right-0 [&_.swiper-slide-active_.group]:before:h-1 [&_.swiper-slide-active_.group]:before:bg-gradient-to-r [&_.swiper-slide-active_.group]:before:from-primary-blue [&_.swiper-slide-active_.group]:before:via-light-blue [&_.swiper-slide-active_.group]:before:to-primary-blue [&_.swiper-slide-active_.group]:before:rounded-t-lg">
+        <div class="swiper-wrapper !flex !items-stretch">
+          <!-- Testimonial 1 -->
+          <div class="swiper-slide !h-auto">
+            <div class="group relative bg-white rounded-3xl p-8 lg:p-10 shadow-2xl border-2 border-gray-100 hover:border-primary-blue/30 transition-all duration-500 h-full overflow-hidden">
+              <!-- Decorative Corner -->
+              <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary-blue/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div class="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-light-blue/10 to-transparent rounded-tr-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <!-- Quote Icon -->
+              <div class="absolute top-6 right-6 w-16 h-16 bg-primary-blue/5 rounded-full flex items-center justify-center opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300">
+                <i data-lucide="quote" class="w-8 h-8 text-primary-blue"></i>
+              </div>
+              
+              <div class="relative z-10">
+                <!-- Stars -->
+                <div class="flex gap-1 mb-6">
+                  <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                </div>
+                
+                <!-- Testimonial Text -->
+                <p class="text-gray-700 text-base lg:text-lg leading-relaxed mb-8 font-medium italic relative">
+                  <span class="absolute -top-2 -left-2 text-6xl text-primary-blue/10 font-serif leading-none">"</span>
+                  <span class="relative z-10">Mount Litera Zee School has provided an excellent environment for my child's holistic development. The teachers are dedicated and the facilities are world-class.</span>
+                </p>
+                
+                <!-- Author Info -->
+                <div class="flex items-center gap-4 pt-6 border-t-2 border-gray-100">
+                  <div class="relative">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-blue to-primary-dark text-white flex items-center justify-center text-xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      RS
+                    </div>
+                    <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 rounded-full border-2 border-white"></div>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900 text-lg mb-1">Rajesh Sharma</h4>
+                    <p class="text-gray-500 text-sm flex items-center gap-2">
+                      <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+                      Parent of Class X Student
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="swiper-slide !h-auto">
+            <div class="group relative bg-white rounded-3xl p-8 lg:p-10 shadow-2xl border-2 border-gray-100 hover:border-light-blue/30 transition-all duration-500 h-full overflow-hidden">
+              <!-- Decorative Corner -->
+              <div class="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-light-blue/10 to-transparent rounded-br-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div class="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-tl from-primary-blue/10 to-transparent rounded-tl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <!-- Quote Icon -->
+              <div class="absolute top-6 right-6 w-16 h-16 bg-light-blue/5 rounded-full flex items-center justify-center opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300">
+                <i data-lucide="quote" class="w-8 h-8 text-light-blue"></i>
+              </div>
+              
+              <div class="relative z-10">
+                <!-- Stars -->
+                <div class="flex gap-1 mb-6">
+                  <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                </div>
+                
+                <!-- Testimonial Text -->
+                <p class="text-gray-700 text-base lg:text-lg leading-relaxed mb-8 font-medium italic relative">
+                  <span class="absolute -top-2 -left-2 text-6xl text-light-blue/10 font-serif leading-none">"</span>
+                  <span class="relative z-10">The school's focus on both academics and co-curricular activities has helped my child grow into a confident and well-rounded individual.</span>
+                </p>
+                
+                <!-- Author Info -->
+                <div class="flex items-center gap-4 pt-6 border-t-2 border-gray-100">
+                  <div class="relative">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-light-blue to-primary-blue text-white flex items-center justify-center text-xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      PK
+                    </div>
+                    <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 rounded-full border-2 border-white"></div>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900 text-lg mb-1">Priya Kumar</h4>
+                    <p class="text-gray-500 text-sm flex items-center gap-2">
+                      <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+                      Parent of Class VIII Student
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="swiper-slide !h-auto">
+            <div class="group relative bg-white rounded-3xl p-8 lg:p-10 shadow-2xl border-2 border-gray-100 hover:border-primary-dark/30 transition-all duration-500 h-full overflow-hidden">
+              <!-- Decorative Corner -->
+              <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary-dark/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div class="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-primary-blue/10 to-transparent rounded-tr-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <!-- Quote Icon -->
+              <div class="absolute top-6 right-6 w-16 h-16 bg-primary-dark/5 rounded-full flex items-center justify-center opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300">
+                <i data-lucide="quote" class="w-8 h-8 text-primary-dark"></i>
+              </div>
+              
+              <div class="relative z-10">
+                <!-- Stars -->
+                <div class="flex gap-1 mb-6">
+                  <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                  <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                </div>
+                
+                <!-- Testimonial Text -->
+                <p class="text-gray-700 text-base lg:text-lg leading-relaxed mb-8 font-medium italic relative">
+                  <span class="absolute -top-2 -left-2 text-6xl text-primary-dark/10 font-serif leading-none">"</span>
+                  <span class="relative z-10">I am impressed by the school's commitment to excellence. The infrastructure and teaching methods are truly world-class, preparing students for global challenges.</span>
+                </p>
+                
+                <!-- Author Info -->
+                <div class="flex items-center gap-4 pt-6 border-t-2 border-gray-100">
+                  <div class="relative">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-dark to-primary-blue text-white flex items-center justify-center text-xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      AS
+                    </div>
+                    <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 rounded-full border-2 border-white"></div>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900 text-lg mb-1">Amit Singh</h4>
+                    <p class="text-gray-500 text-sm flex items-center gap-2">
+                      <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+                      Parent of Class XII Student
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination testimonials-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- School Affiliations Section -->
+  <section class="relative py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16 xl:px-24 bg-white overflow-hidden">
+    <!-- Decorative Background -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-primary-blue/5 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-light-blue/5 rounded-full blur-3xl"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto relative z-10">
+      <!-- Section Header -->
+      <div class="text-center mb-12 lg:mb-16">
+        <h2 class="text-primary-blue font-semibold tracking-wide uppercase text-sm mb-3">Partnerships</h2>
+        <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          Our Affiliations & <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-light-blue">Partners</span>
+        </h1>
+      </div>
+      <div class="swiper partnersSwiper !pb-12 [&_.swiper-pagination-bullet]:bg-primary-blue/30 [&_.swiper-pagination-bullet]:opacity-100 [&_.swiper-pagination-bullet-active]:bg-primary-blue">
+        <div class="swiper-wrapper !flex !items-stratch">
+          <div class="swiper-slide !h-auto">
+            <div class="flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100 h-full">
+              <div class="w-24 h-24 bg-gray-200 rounded-lg flex items-center justify-center">
+                <span class="text-gray-400 font-semibold text-sm">Partner 1</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide !h-auto">
+            <div class="flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100 h-full">
+              <div class="w-24 h-24 bg-gray-200 rounded-lg flex items-center justify-center">
+                <span class="text-gray-400 font-semibold text-sm">Partner 2</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide !h-auto">
+            <div class="flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100 h-full">
+              <div class="w-24 h-24 bg-gray-200 rounded-lg flex items-center justify-center">
+                <span class="text-gray-400 font-semibold text-sm">Partner 3</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide !h-auto">
+            <div class="flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100 h-full">
+              <div class="w-24 h-24 bg-gray-200 rounded-lg flex items-center justify-center">
+                <span class="text-gray-400 font-semibold text-sm">Partner 4</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide !h-auto">
+            <div class="flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100 h-full">
+              <div class="w-24 h-24 bg-gray-200 rounded-lg flex items-center justify-center">
+                <span class="text-gray-400 font-semibold text-sm">Partner 5</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide !h-auto">
+            <div class="flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100 h-full">
+              <div class="w-24 h-24 bg-gray-200 rounded-lg flex items-center justify-center">
+                <span class="text-gray-400 font-semibold text-sm">Partner 6</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination partners-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <footer class="relative bg-gradient-to-br from-primary-dark via-primary-blue to-primary-dark text-white overflow-hidden">
+    <!-- Decorative Wave Top -->
+    <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+        <svg class="relative block w-[calc(100%+1.3px)] h-[50px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-white"></path>
+        </svg>
+    </div>
+
+    <!-- Decorative Background Elements -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-20 right-0 w-96 h-96 bg-light-blue/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 left-0 w-96 h-96 bg-primary-blue/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24 pt-20 pb-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+            
+            <!-- Column 1: Logo & Description -->
+            <div class="space-y-4">
+                <div class="bg-white backdrop-blur-md p-4 w-fit rounded-2xl mb-4 border border-white/20 hover:border-light-blue/50 transition-all duration-300">
+                    <div class="flex items-center gap-3 mb-2">
+                        <img src="./assets/img/logo.webp" alt="Logo" class="h-14 w-auto relative transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                </div>
+                <p class="text-white/80 text-sm leading-relaxed">
+                    Nurturing potential, unleashing brilliance. A new level of education where the future is built.
+                </p>
+                <div class="flex gap-3 mt-4">
+                    <a href="#" class="group w-10 h-10 rounded-xl bg-white/10 hover:bg-light-blue border border-white/20 hover:border-light-blue flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-light-blue/50">
+                        <i data-lucide="facebook" class="w-5 h-5 text-white group-hover:scale-110 transition-transform"></i>
+                    </a>
+                    <a href="#" class="group w-10 h-10 rounded-xl bg-white/10 hover:bg-light-blue border border-white/20 hover:border-light-blue flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-light-blue/50">
+                        <i data-lucide="instagram" class="w-5 h-5 text-white group-hover:scale-110 transition-transform"></i>
+                    </a>
+                    <a href="#" class="group w-10 h-10 rounded-xl bg-white/10 hover:bg-light-blue border border-white/20 hover:border-light-blue flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-light-blue/50">
+                        <i data-lucide="youtube" class="w-5 h-5 text-white group-hover:scale-110 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div>
+                <h3 class="text-xl font-bold mb-6 pb-1 flex items-center gap-2">
+                    <span class="w-1 h-6 bg-gradient-to-b from-light-blue to-primary-blue rounded-full"></span>
+                    Quick Links
+                </h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="#" class="group text-white/80 hover:text-light-blue hover:translate-x-2 transition-all duration-300 flex items-center text-sm lg:text-base">
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-light-blue mr-2 group-hover:translate-x-1 transition-transform"></i>
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="group text-white/80 hover:text-light-blue hover:translate-x-2 transition-all duration-300 flex items-center text-sm lg:text-base">
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-light-blue mr-2 group-hover:translate-x-1 transition-transform"></i>
+                            Litera Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="group text-white/80 hover:text-light-blue hover:translate-x-2 transition-all duration-300 flex items-center text-sm lg:text-base">
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-light-blue mr-2 group-hover:translate-x-1 transition-transform"></i>
+                            School Timing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="group text-white/80 hover:text-light-blue hover:translate-x-2 transition-all duration-300 flex items-center text-sm lg:text-base">
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-light-blue mr-2 group-hover:translate-x-1 transition-transform"></i>
+                            Academic Planner
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Information -->
+            <div>
+                <h3 class="text-xl font-bold mb-6 pb-1 flex items-center gap-2">
+                    <span class="w-1 h-6 bg-gradient-to-b from-light-blue to-primary-blue rounded-full"></span>
+                    Information
+                </h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="#" class="group text-white/80 hover:text-light-blue hover:translate-x-2 transition-all duration-300 flex items-center text-sm lg:text-base">
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-light-blue mr-2 group-hover:translate-x-1 transition-transform"></i>
+                            Gallery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="group text-white/80 hover:text-light-blue hover:translate-x-2 transition-all duration-300 flex items-center text-sm lg:text-base">
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-light-blue mr-2 group-hover:translate-x-1 transition-transform"></i>
+                            CBSE Disclosure
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="group text-white/80 hover:text-light-blue hover:translate-x-2 transition-all duration-300 flex items-center text-sm lg:text-base">
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-light-blue mr-2 group-hover:translate-x-1 transition-transform"></i>
+                            Contact Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="group text-white/80 hover:text-light-blue hover:translate-x-2 transition-all duration-300 flex items-center text-sm lg:text-base">
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-light-blue mr-2 group-hover:translate-x-1 transition-transform"></i>
+                            Admission Inquiry
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Get In Touch -->
+            <div>
+                <h3 class="text-xl font-bold mb-6 pb-1 flex items-center gap-2">
+                    <span class="w-1 h-6 bg-gradient-to-b from-light-blue to-primary-blue rounded-full"></span>
+                    Get In Touch
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-light-blue/20 border border-light-blue/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-light-blue"></i>
+                        </div>
+                        <span class="text-white/80 text-sm leading-relaxed">6th Milestone, Jharkheda, Sirmoli Village Road, Alwar - Bhiwadi State Highway, Alwar - 301028 (Raj.)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-light-blue/20 border border-light-blue/30 flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="phone" class="w-5 h-5 text-light-blue"></i>
+                        </div>
+                        <a href="tel:+919672797979" class="text-white/80 hover:text-light-blue transition-colors text-sm lg:text-base">+91 9672797979</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-light-blue/20 border border-light-blue/30 flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="mail" class="w-5 h-5 text-light-blue"></i>
+                        </div>
+                        <a href="mailto:mlzs.alwar@mountlitera.com" class="text-white/80 hover:text-light-blue transition-colors text-sm lg:text-base break-all">mlzs.alwar@mountlitera.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Copyright Section -->
+    <div class="bg-primary-dark/80 backdrop-blur-sm border-t border-white/20">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24 py-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
+            <p>&copy; 2025 Mount Litera Zee School, Alwar. All Rights Reserved.</p>
+            <p class="flex items-center gap-2">
+                Design & Developed By 
+                <a href="https://imgglobalinfotech.com" target="_blank" class="text-light-blue hover:text-white transition-colors">
+                  <img src="./assets/img/img.png" alt="IMG Global Infotech" class="h-6 w-auto relative transition-transform duration-500 group-hover:scale-105">
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+      // Init Icons
+      function initIcons() {
+      lucide.createIcons();
+      }
+      
+      // Initialize icons on page load
+      if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initIcons);
+      } else {
+          initIcons();
+      }
+      
+      // Re-initialize icons after a short delay to ensure all elements are rendered
+      setTimeout(initIcons, 100);
+
+      // Init Swiper
+      const swiper = new Swiper(".mySwiper", {
+          spaceBetween: 0,
+          effect: "fade",
+          speed: 1000,
+          loop: true,
+          autoplay: {
+              delay: 6000,
+              disableOnInteraction: false,
+          },
+      });
+
+      // Testimonials Swiper
+      const testimonialsSwiper = new Swiper(".testimonialsSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: true,
+          centeredSlides: true,
+          autoplay: {
+              delay: 4000,
+              disableOnInteraction: false,
+          },
+          pagination: {
+              el: ".testimonials-pagination",
+              clickable: true,
+              dynamicBullets: true,
+          },
+          breakpoints: {
+              640: {
+                  slidesPerView: 2,
+                  spaceBetween: 24,
+              },
+              1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 32,
+              },
+          },
+      });
+
+      // Partners Swiper
+      const partnersSwiper = new Swiper(".partnersSwiper", {
+          slidesPerView: 3,
+          spaceBetween: 10,
+          loop: true,
+          autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+          },
+          pagination: {
+              el: ".partners-pagination",
+              clickable: true,
+              dynamicBullets: true,
+          },
+          breakpoints: {
+              640: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+              },
+              768: {
+                  slidesPerView: 4,
+                  spaceBetween: 32,
+              },
+              1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 40,
+              },
+              1280: {
+                  slidesPerView: 6,
+                  spaceBetween: 48,
+              },
+          },
+      });
+
+      // Sidebar Logic
+      function toggleMenu() {
+          const sidebar = document.getElementById('sidebar');
+          if (sidebar.classList.contains('-right-full')) {
+              sidebar.classList.remove('-right-full');
+              sidebar.classList.add('right-0');
+              document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+          } else {
+              sidebar.classList.add('-right-full');
+              sidebar.classList.remove('right-0');
+              document.body.style.overflow = '';
+          }
+      }
+
+      // Submenu Data
+      const submenuData = {
+          about: [
+              { name: 'Vision / Mission', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Our Core Values', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Administration', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop', submenu: [
+                  { name: 'Makkar Education Trust', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+                  { name: 'Principal Message', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+                  { name: 'Teaching Staff', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+                  { name: 'Non-Teaching Staff', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' }
+              ]},
+              { name: 'ESP', href: '#', img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop' }
+          ],
+          academics: [
+              { name: 'Exam / Activity Planner', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Academic Calendar / Saturday Activity', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'School Uniform', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'School Timing', href: '#', img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop' }
+          ],
+          facilities: [
+              { name: 'Our Campus', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Life at MLZS', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'House System', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Classroom', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Multimedia Classes', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Laboratory', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Library', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Safety & Security', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Infirmary', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Open Air Theatre', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Momentum Classes', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Eco Friendly Environment', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Transportation', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Sports', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' }
+          ],
+          activity: [
+              { name: 'Events', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Co-Scholastic', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop', submenu: [
+                  { name: 'Art & Craft', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+                  { name: 'Music & Dance', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+                  { name: 'Spiritual Programme', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+                  { name: 'Parents Testimonial', href: '#', img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop' }
+              ]},
+              { name: 'Value Added Services', href: '#', img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop', submenu: [
+                  { name: 'Excursions', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+                  { name: 'Teacher Training', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+                  { name: 'Disaster Management', href: '#', img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop' }
+              ]}
+          ],
+          alumni: [
+              { name: 'Alumni Network', href: '#', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Success Stories', href: '#', img: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop' },
+              { name: 'Register', href: '#', img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop' }
+          ]
+      };
+
+      // Track current menu path for nested submenus
+      let currentMenuPath = [];
+      let currentMenuData = null;
+
+      // Open Submenu Overlay
+      function openSubmenu(menuKey, itemIndex = null) {
+          const overlay = document.getElementById('submenu-overlay');
+          const submenuList = document.getElementById('submenu-list');
+          const mainMenu = document.getElementById('main-menu');
+          
+          let menuData;
+          
+          // If itemIndex is provided, it means we're opening a nested submenu
+          if (itemIndex !== null && currentMenuData && currentMenuData[itemIndex] && currentMenuData[itemIndex].submenu) {
+              menuData = currentMenuData[itemIndex].submenu;
+              currentMenuPath.push({ key: menuKey, index: itemIndex, data: currentMenuData });
+              currentMenuData = menuData;
+          } else {
+              // Opening first level submenu
+              menuData = submenuData[menuKey];
+              currentMenuPath = [{ key: menuKey, index: null, data: null }];
+              currentMenuData = menuData;
+          }
+          
+          if (!menuData) return;
+          
+          // Hide main menu, quick links, and socials completely
+          mainMenu.style.opacity = '0';
+          mainMenu.style.pointerEvents = 'none';
+          mainMenu.style.visibility = 'hidden';
+          
+          const quickLinks = document.getElementById('quick-links');
+          const socials = document.getElementById('socials');
+          if (quickLinks) {
+              quickLinks.style.opacity = '0';
+              quickLinks.style.pointerEvents = 'none';
+              quickLinks.style.visibility = 'hidden';
+          }
+          if (socials) {
+              socials.style.opacity = '0';
+              socials.style.pointerEvents = 'none';
+              socials.style.visibility = 'hidden';
+          }
+          
+          // If opening nested submenu, animate out current content first
+          if (itemIndex !== null && currentMenuPath.length > 1) {
+              // Fade out current content
+              submenuList.style.opacity = '0';
+              submenuList.style.transform = 'translateX(-20px)';
+              
+              // After fade out, update content and fade in
+              setTimeout(() => {
+                  // Generate submenu HTML
+                  submenuList.innerHTML = menuData.map((item, idx) => {
+                      if (item.submenu) {
+                          // Item with nested submenu
+                          return `
+                              <li>
+                                  <button onclick="openSubmenu('${menuKey}', ${idx})" class="menu-item group w-full flex items-center justify-between text-xl lg:text-2xl font-bold text-white/30 hover:text-white transition-colors duration-300 capitalize">
+                                      <span>${item.name}</span>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300">
+                                          <path d="m9 18 6-6-6-6"></path>
+                                      </svg>
+                                  </button>
+                              </li>
+                          `;
+                      } else {
+                          // Regular item
+                          return `
+                              <li>
+                                  <a href="${item.href}" class="menu-item group flex items-center text-xl lg:text-2xl font-bold text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="${item.img}">
+                                      ${item.name}
+                                  </a>
+                              </li>
+                          `;
+                      }
+                  }).join('');
+                  
+                  // Fade in new content
+                  submenuList.style.opacity = '1';
+                  submenuList.style.transform = 'translateX(0)';
+              }, 150);
+              
+              // Ensure overlay is visible
+              overlay.classList.remove('translate-x-full');
+              overlay.classList.add('translate-x-0');
+          } else {
+              // First level submenu - generate HTML immediately
+              submenuList.innerHTML = menuData.map((item, idx) => {
+                  if (item.submenu) {
+                      // Item with nested submenu
+                      return `
+                          <li>
+                              <button onclick="openSubmenu('${menuKey}', ${idx})" class="menu-item group w-full flex items-center justify-between text-xl lg:text-2xl font-bold text-white/30 hover:text-white transition-colors duration-300 capitalize">
+                                  <span>${item.name}</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300">
+                                      <path d="m9 18 6-6-6-6"></path>
+                                  </svg>
+                              </button>
+                          </li>
+                      `;
+                  } else {
+                      // Regular item
+                      return `
+                          <li>
+                              <a href="${item.href}" class="menu-item group flex items-center text-xl lg:text-2xl font-bold text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="${item.img}">
+                                  ${item.name}
+                              </a>
+                          </li>
+                      `;
+                  }
+              }).join('');
+              
+              // Reset submenu list styles
+              submenuList.style.opacity = '1';
+              submenuList.style.transform = 'translateX(0)';
+              
+              // Show overlay with animation
+              overlay.classList.remove('translate-x-full');
+              overlay.classList.add('translate-x-0');
+          }
+      }
+
+      // Close Submenu Overlay
+      function closeSubmenu() {
+          const overlay = document.getElementById('submenu-overlay');
+          const submenuList = document.getElementById('submenu-list');
+          const mainMenu = document.getElementById('main-menu');
+          
+          // If we have nested menus, go back one level
+          if (currentMenuPath.length > 1) {
+              // Fade out current content
+              submenuList.style.opacity = '0';
+              submenuList.style.transform = 'translateX(20px)';
+              
+              setTimeout(() => {
+                  currentMenuPath.pop();
+                  const previousMenu = currentMenuPath[currentMenuPath.length - 1];
+                  
+                  let menuData;
+                  if (previousMenu.index !== null && previousMenu.data) {
+                      // We're in a nested submenu, go back to parent
+                      menuData = previousMenu.data;
+                      currentMenuData = menuData;
+                  } else {
+                      // Go back to first level
+                      menuData = submenuData[previousMenu.key];
+                      currentMenuData = menuData;
+                  }
+                  
+                  // Generate submenu HTML for previous level
+                  submenuList.innerHTML = menuData.map((item, index) => {
+                      if (item.submenu) {
+                          return `
+                              <li>
+                                  <button onclick="openSubmenu('${previousMenu.key}', ${index})" class="menu-item group w-full flex items-center justify-between text-xl lg:text-2xl font-bold text-white/30 hover:text-white transition-colors duration-300 capitalize">
+                                      <span>${item.name}</span>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform duration-300">
+                                          <path d="m9 18 6-6-6-6"></path>
+                                      </svg>
+                                  </button>
+                              </li>
+                          `;
+                      } else {
+                          return `
+                              <li>
+                                  <a href="${item.href}" class="menu-item group flex items-center text-xl lg:text-2xl font-bold text-white/30 hover:text-white transition-colors duration-300 capitalize" data-img="${item.img}">
+                                      ${item.name}
+                                  </a>
+                              </li>
+                          `;
+                      }
+                  }).join('');
+                  
+                  // Fade in previous content
+                  submenuList.style.opacity = '1';
+                  submenuList.style.transform = 'translateX(0)';
+              }, 150);
+          } else {
+              // Hide overlay completely
+              overlay.classList.remove('translate-x-0');
+              overlay.classList.add('translate-x-full');
+              
+              // Show main menu, quick links, and socials
+              mainMenu.style.opacity = '1';
+              mainMenu.style.pointerEvents = 'auto';
+              mainMenu.style.visibility = 'visible';
+              
+              const quickLinks = document.getElementById('quick-links');
+              const socials = document.getElementById('socials');
+              if (quickLinks) {
+                  quickLinks.style.opacity = '1';
+                  quickLinks.style.pointerEvents = 'auto';
+                  quickLinks.style.visibility = 'visible';
+              }
+              if (socials) {
+                  socials.style.opacity = '1';
+                  socials.style.pointerEvents = 'auto';
+                  socials.style.visibility = 'visible';
+              }
+              
+              // Reset menu path
+              currentMenuPath = [];
+              currentMenuData = null;
+          }
+      }
+
+      // Fix second level dropdown hover for desktop header
+      document.addEventListener('DOMContentLoaded', function() {
+          const submenuGroups = document.querySelectorAll('.group\\/submenu');
+          
+          submenuGroups.forEach(group => {
+              const submenu = group.querySelector('div[class*="absolute left-full"]');
+              
+              if (submenu) {
+                  // Mouse enter on group
+                  group.addEventListener('mouseenter', function() {
+                      submenu.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
+                      submenu.classList.add('opacity-100', 'visible', 'pointer-events-auto');
+                      submenu.style.transform = 'translateX(0)';
+                  });
+                  
+                  // Mouse leave from group
+                  group.addEventListener('mouseleave', function() {
+                      submenu.classList.remove('opacity-100', 'visible', 'pointer-events-auto');
+                      submenu.classList.add('opacity-0', 'invisible', 'pointer-events-none');
+                      submenu.style.transform = 'translateX(0.5rem)';
+                  });
+                  
+                  // Keep submenu open when hovering over it
+                  submenu.addEventListener('mouseenter', function() {
+                      submenu.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
+                      submenu.classList.add('opacity-100', 'visible', 'pointer-events-auto');
+                      submenu.style.transform = 'translateX(0)';
+                  });
+                  
+                  submenu.addEventListener('mouseleave', function() {
+                      submenu.classList.remove('opacity-100', 'visible', 'pointer-events-auto');
+                      submenu.classList.add('opacity-0', 'invisible', 'pointer-events-none');
+                      submenu.style.transform = 'translateX(0.5rem)';
+                  });
+              }
+          });
+      });
+
+      // Hover Image Logic
+      const menuItems = document.querySelectorAll('.menu-item');
+      const previewImage = document.getElementById('sidebar-preview');
+
+      menuItems.forEach(item => {
+          item.addEventListener('mouseenter', function() {
+              const newImageSrc = this.getAttribute('data-img');
+              if(previewImage.src !== newImageSrc) {
+                  previewImage.style.opacity = '0';
+                  setTimeout(() => {
+                      previewImage.src = newImageSrc;
+                      previewImage.onload = () => {
+                          previewImage.style.opacity = '1';
+                      };
+                  }, 200);
+              }
+          });
+      });
+
+      // Header Scroll Behavior
+      const header = document.getElementById('header');
+      let lastScrollTop = 0;
+
+      function handleScroll() {
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          
+          if (scrollTop > 50) {
+              // Scrolled down - add background and reduce height
+              header.classList.add('scrolled');
+              header.classList.remove('bg-transparent');
+          } else {
+              // At top - remove background, restore height
+              header.classList.remove('scrolled');
+              header.classList.add('bg-transparent');
+          }
+          
+          lastScrollTop = scrollTop;
+      }
+
+      // Initial check
+      handleScroll();
+      
+      // Listen to scroll events
+      window.addEventListener('scroll', handleScroll, { passive: true });
+
+      // Scroll Animation using Intersection Observer
+      document.addEventListener('DOMContentLoaded', function() {
+          const observerOptions = {
+              threshold: 0.1,
+              rootMargin: '0px 0px -50px 0px'
+          };
+
+          const observer = new IntersectionObserver(function(entries) {
+              entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      entry.target.style.opacity = '1';
+                      entry.target.style.transform = 'translateY(0)';
+                  }
+              });
+          }, observerOptions);
+
+          // Observe all sections for fade-in animation
+          const sections = document.querySelectorAll('section');
+          sections.forEach(section => {
+              section.style.opacity = '0';
+              section.style.transform = 'translateY(30px)';
+              section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+              observer.observe(section);
+          });
+      });
+
+      // Litera Octave Interactive Section
+      document.addEventListener('DOMContentLoaded', function() {
+          // Features Data
+          const literaFeatures = [
+              {
+                  id: 1,
+                  title: "Litera Assessment",
+                  subtitle: "Comprehensive Evaluation System",
+                  description: "Our advanced assessment system provides real-time monitoring, comprehensive reports, and data-driven insights to track student progress. With personalized evaluation methods, we ensure every child's learning journey is accurately measured and supported.",
+                  icon: "clipboard-check",
+                  image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2070&auto=format&fit=crop",
+                  color: "text-primary-blue"
+              },
+              {
+                  id: 2,
+                  title: "Litera Teacher",
+                  subtitle: "Expert Faculty Guidance",
+                  description: "Our dedicated team of experienced educators brings passion and expertise to every classroom. With continuous professional development and innovative teaching methodologies, our teachers inspire and guide students towards academic excellence and personal growth.",
+                  icon: "user-check",
+                  image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2000&auto=format&fit=crop",
+                  color: "text-light-blue"
+              },
+              {
+                  id: 3,
+                  title: "Litera Content",
+                  subtitle: "Rich Educational Resources",
+                  description: "Access a vast library of curated educational content designed to enhance learning outcomes. From interactive digital resources to comprehensive study materials, we provide everything students need to excel in their academic journey.",
+                  icon: "book",
+                  image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2076&auto=format&fit=crop",
+                  color: "text-primary-dark"
+              },
+              {
+                  id: 4,
+                  title: "Litera Infra",
+                  subtitle: "World-Class Infrastructure",
+                  description: "Experience state-of-the-art facilities designed to support holistic learning. Our modern classrooms, advanced laboratories, extensive libraries, and sports facilities create an environment where students can explore, learn, and thrive.",
+                  icon: "building",
+                  image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=2000&auto=format&fit=crop",
+                  color: "text-primary-blue"
+              },
+              {
+                  id: 5,
+                  title: "Litera Network",
+                  subtitle: "Connected Learning Community",
+                  description: "Join a vibrant network of learners, educators, and parents working together towards educational excellence. Our connected platform enables seamless communication, collaboration, and knowledge sharing across the entire school community.",
+                  icon: "network",
+                  image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop",
+                  color: "text-light-blue"
+              },
+              {
+                  id: 6,
+                  title: "Litera Life Skills",
+                  subtitle: "Essential Life Competencies",
+                  description: "Beyond academics, we focus on developing essential life skills that prepare students for real-world challenges. Through practical workshops, leadership programs, and character-building activities, students learn to navigate life with confidence and competence.",
+                  icon: "heart-handshake",
+                  image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=2089&auto=format&fit=crop",
+                  color: "text-primary-dark"
+              },
+              {
+                  id: 7,
+                  title: "Litera Enrichment",
+                  subtitle: "Beyond Curriculum Programs",
+                  description: "Explore a diverse range of enrichment programs that go beyond traditional curriculum. From arts and music to robotics and entrepreneurship, we offer opportunities for students to discover their passions and develop unique talents.",
+                  icon: "sparkles",
+                  image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2000&auto=format&fit=crop",
+                  color: "text-primary-blue"
+              },
+              {
+                  id: 8,
+                  title: "Litera Parents",
+                  subtitle: "Active Parent Engagement",
+                  description: "We believe in the power of partnership between school and home. Our parent engagement platform provides regular updates, progress reports, and opportunities for active participation in your child's educational journey.",
+                  icon: "users-round",
+                  image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070&auto=format&fit=crop",
+                  color: "text-light-blue"
+              }
+          ];
+
+          let activeLiteraId = 1;
+          let literaSwiper = null;
+
+          // Function to render Swiper Slides (Mobile)
+          function renderLiteraSwiper() {
+              const wrapper = document.getElementById('litera-swiper-wrapper');
+              if (!wrapper) return;
+              
+              wrapper.innerHTML = literaFeatures.map(feature => {
+                  return `
+                      <div class="swiper-slide !h-auto">
+                          <div class="relative rounded-3xl p-1 border border-white/10 overflow-hidden shadow-2xl bg-gray-900/50 backdrop-blur-md mb-12 h-full">
+                              <div class="grid grid-cols-1 h-full min-h-[500px]">
+                                  
+                                  <!-- Text Content -->
+                                  <div class="p-6 md:p-8 pt-2 flex flex-col justify-center order-2">
+                                      <div class="flex items-center gap-2 mb-4">
+                                          <span class="text-white bg-white/10 px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase border ${feature.color === 'text-primary-blue' ? 'border-primary-blue/50' : feature.color === 'text-light-blue' ? 'border-light-blue/50' : 'border-primary-dark/50'}">
+                                              Feature 0${feature.id}
+                                          </span>
+                                      </div>
+                                      <h2 class="text-2xl md:text-3xl font-bold mb-4 text-white">${feature.subtitle}</h2>
+                                      <p class="text-gray-300 leading-relaxed mb-6 text-sm md:text-base">
+                                          ${feature.description}
+                                      </p>
+                                      
+                                      <div class="mt-auto">
+                                          <button class="flex items-center gap-2 text-white font-semibold group hover:text-light-blue transition-colors">
+                                              Learn more about ${feature.title}
+                                              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                          </button>
+                                      </div>
+                                  </div>
+
+                                  <!-- Image Content -->
+                                  <div class="relative h-64 order-1 overflow-hidden rounded-2xl">
+                                      <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent z-10"></div>
+                                      <img 
+                                          src="${feature.image}" 
+                                          alt="${feature.title}" 
+                                          class="absolute inset-0 w-full h-full object-cover"
+                                      >
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  `;
+              }).join('');
+              
+              // Initialize Swiper if not already initialized
+              if (typeof Swiper !== 'undefined' && !literaSwiper) {
+                  literaSwiper = new Swiper('.literaSwiper', {
+                      slidesPerView: 1,
+                      spaceBetween: 20,
+                      pagination: {
+                          el: '.swiper-pagination',
+                          clickable: true,
+                          dynamicBullets: true,
+                      },
+                      autoplay: {
+                          delay: 5000,
+                          disableOnInteraction: false,
+                      },
+                  });
+              }
+          }
+
+          // Function to render Tabs (Left Side - Desktop)
+          function renderLiteraTabs() {
+              const container = document.getElementById('litera-tab-container');
+              if (!container) return;
+              
+              container.innerHTML = literaFeatures.map(feature => {
+                  const isActive = feature.id === activeLiteraId;
+                  return `
+                      <button 
+                          onclick="setActiveLitera(${feature.id})"
+                          class="group w-full text-left p-5 rounded-2xl transition-all duration-300 border flex items-center gap-4
+                          ${isActive 
+                              ? 'bg-gradient-to-br from-primary-blue via-primary-blue to-primary-dark text-white border-transparent shadow-lg shadow-primary-blue/30' 
+                              : 'bg-white/5 border-white/10 hover:bg-white/10 text-white hover:text-white'
+                          }"
+                      >
+                          <div class="p-2 rounded-lg ${isActive ? 'bg-white/20' : 'bg-white/10 group-hover:bg-white/20'} transition-colors">
+                              <i data-lucide="${feature.icon}" class="w-6 h-6 text-white"></i>
+                          </div>
+                          <div class="flex-1">
+                              <h3 class="font-semibold text-base lg:text-lg leading-tight ${isActive ? 'text-white' : 'text-white'}">${feature.title}</h3>
+                              <p class="text-xs mt-1 ${isActive ? 'text-blue-100 opacity-90' : 'text-gray-300 opacity-70'}">
+                                  ${isActive ? 'Currently Viewing' : 'Click to view details'}
+                              </p>
+                          </div>
+                          ${isActive ? `
+                              <div class="ml-auto">
+                                  <svg class="w-5 h-5 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                              </div>
+                          ` : ''}
+                      </button>
+                  `;
+              }).join('');
+              
+              // Initialize icons
+              if (typeof lucide !== 'undefined') {
+                  lucide.createIcons();
+              }
+          }
+
+          // Function to render Content (Right Side)
+          function renderLiteraContent() {
+              const display = document.getElementById('litera-content-display');
+              if (!display) return;
+              
+              const feature = literaFeatures.find(f => f.id === activeLiteraId);
+              if (!feature) return;
+
+              display.innerHTML = `
+                  <div class="grid grid-cols-1 md:grid-cols-2 h-full min-h-[400px] opacity-0 translate-y-5 transition-all duration-500 ease-out" style="animation: fadeInUp 0.5s ease-out 0.1s forwards;">
+                      
+                      <!-- Text Content -->
+                      <div class="p-8 md:p-10 flex flex-col justify-center order-2 md:order-1">
+                          <div class="flex items-center gap-2 mb-4">
+                              <span class="text-white bg-white/10 px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase border ${feature.color === 'text-primary-blue' ? 'border-primary-blue/50' : feature.color === 'text-light-blue' ? 'border-light-blue/50' : 'border-primary-dark/50'}">
+                                  Feature 0${feature.id}
+                              </span>
+                          </div>
+                          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">${feature.subtitle}</h2>
+                          <p class="text-gray-300 leading-relaxed mb-8 text-base lg:text-lg">
+                              ${feature.description}
+                          </p>
+                          
+                          <div class="mt-auto">
+                              <button class="flex items-center gap-2 text-white font-semibold group hover:text-light-blue transition-colors">
+                                  Learn more about ${feature.title}
+                                  <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                              </button>
+                          </div>
+                      </div>
+
+                      <!-- Image Content -->
+                      <div class="relative h-64 md:h-auto order-1 md:order-2 overflow-hidden rounded-2xl">
+                          <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent z-10 md:bg-gradient-to-l"></div>
+                          <img 
+                              src="${feature.image}" 
+                              alt="${feature.title}" 
+                              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                          >
+                      </div>
+                  </div>
+              `;
+          }
+
+          // Click Handler
+          window.setActiveLitera = function(id) {
+              if (activeLiteraId === id) return;
+              activeLiteraId = id;
+              renderLiteraTabs();
+              renderLiteraContent();
+          };
+
+          // Initial Render
+          renderLiteraSwiper(); // Mobile swiper
+          renderLiteraTabs(); // Desktop tabs
+          renderLiteraContent(); // Desktop content
+          
+          // Handle window resize
+          let resizeTimer;
+          window.addEventListener('resize', function() {
+              clearTimeout(resizeTimer);
+              resizeTimer = setTimeout(function() {
+                  if (window.innerWidth < 1024) {
+                      // Mobile view - ensure swiper is initialized
+                      if (!literaSwiper && typeof Swiper !== 'undefined') {
+                          renderLiteraSwiper();
+                      }
+                  }
+              }, 250);
+          });
+      });
+  </script>
+
+
+</body></html>
