@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>School Uniform - Mount Litera Zee School, Alwar</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      tailwind.config = {
+          darkMode: "class",
+          theme: {
+              extend: {
+                  colors: {
+                      "primary": "#3D348B",
+                      "primary-dark": "#2d2566",
+                      "primary-light": "#7678ED",
+                      "primary-lighter": "#9a9cf0",
+                      "secondary": "#F7B801",
+                      "accent": "#F7B801",
+                      "accent-dark": "#F18701",
+                      "accent-light": "#F35B04",
+                      "indigo-velvet": "#3D348B",
+                      "slate-blue": "#7678ED",
+                      "amber-flame": "#F7B801",
+                      "tiger-orange": "#F18701",
+                      "cayenne-red": "#F35B04",
+                      "surface": "#ffffff",
+                      "background-light": "#f8fafc",
+                      "background-dark": "#111827",
+                      "surface-light": "#ffffff",
+                      "surface-dark": "#1f2937",
+                      "text-main-light": "#0f172a",
+                      "text-main-dark": "#f8fafc",
+                      "text-secondary-light": "#475569",
+                      "text-secondary-dark": "#94a3b8",
+                      "border-light": "#e2e8f0",
+                      "border-dark": "#374151",
+                      "dark-text": "#1e293b",
+                      "card-dark": "#1e293b",
+                  },
+                  fontFamily: {
+                      "display": ["Spline Sans", "sans-serif"],
+                      "body": ["Noto Sans", "sans-serif"],
+                  },
+                  // borderRadius: {
+                  //     "DEFAULT": "1rem",
+                  //     "lg": "1.5rem",
+                  //     "xl": "2rem",
+                  //     "2xl": "2.5rem",
+                  //     "full": "9999px"
+                  // },
+                  animation: {
+                      'fade-in-up': 'fadeInUp 0.8s ease-out',
+                      'pulse-slow': 'pulse 3s infinite',
+                  },
+                  keyframes: {
+                      fadeInUp: {
+                          '0%': { opacity: '0', transform: 'translateY(20px)' },
+                          '100%': { opacity: '1', transform: 'translateY(0)' },
+                      }
+                  },
+                  boxShadow: {
+                      'soft': '0 10px 40px -10px rgba(61, 52, 139, 0.05)',
+                      'glow': '0 0 20px -5px rgba(61, 52, 139, 0.3)',
+                      'glow-accent': '0 0 20px -5px rgba(247, 184, 1, 0.4)',
+                  }
+              },
+          },
+      }
+  </script>
+  <style>
+      ::-webkit-scrollbar {
+          width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+          background: #f1f5f9; 
+      }
+      ::-webkit-scrollbar-thumb {
+          background: #cbd5e1; 
+          border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+          background: #3D348B; 
+      }
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-display overflow-x-hidden antialiased selection:bg-[#F7B801] selection:text-white scroll-smooth">
+    <!-- Header Section -->
+    <header id="main-header" class="fixed w-full top-0 z-40 transition-all duration-500 ease-in-out h-24 text-white flex items-center border-b border-white/10 px-4 sm:px-6 lg:px-8">
+        <div class="w-full max-w-7xl mx-auto h-full relative flex justify-between items-center">
+
+            <!-- LEFT MENU ITEMS (Desktop) -->
+            <nav class="hidden lg:flex items-center justify-start w-5/12 pr-12 space-x-8">
+                <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Home</a>
+                <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">About</a>
+                <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Academics</a>
+            </nav>
+
+            <!-- LOGO - Left on Mobile, Center on Desktop -->
+            <div class="lg:absolute lg:left-1/2 lg:top-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center lg:z-50">
+                <a href="#" id="brand-logo" class="transition-all duration-500 flex items-center justify-center">
+                    <img src="assets/img/logo.webp" alt="Mount Litera Zee School" class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain transition-all duration-500 brightness-0 invert">
+                </a>
+            </div>
+
+            <!-- RIGHT MENU ITEMS (Desktop) -->
+            <nav class="hidden lg:flex items-center justify-end w-5/12 pl-12 space-x-8">
+                <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Admissions</a>
+                <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Campus Life</a>
+                
+                <!-- MENU BUTTON with Icon & Label (Desktop) -->
+                <button onclick="toggleMenu()" class="flex items-center gap-3 group focus:outline-none ml-4 pl-6 border-l border-current">
+                    <span class="text-xs font-bold tracking-[0.2em] uppercase group-hover:opacity-70 transition-opacity">Menu</span>
+                    <div class="space-y-1.5 group-hover:scale-110 transition-transform duration-300">
+                        <span class="block w-6 h-0.5 bg-current transition-all"></span>
+                        <span class="block w-4 h-0.5 bg-current ml-auto transition-all group-hover:w-6"></span>
+                    </div>
+                </button>
+            </nav>
+
+            <!-- Mobile Menu Icon (Visible on small screens only) - Right aligned -->
+            <button onclick="toggleMenu()" class="lg:hidden flex items-center justify-center size-10 shrink-0 rounded-full hover:bg-white/10 transition-colors">
+                <i data-lucide="menu" class="w-5 h-5"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Full Page Sidebar / Overlay -->
+    <div id="full-menu" class="fixed inset-0 bg-slate-900 text-white z-50 transform -translate-y-full transition-transform duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] flex flex-col overflow-y-auto">
+        
+        <!-- Sidebar Header (Close Button) -->
+        <div class="sticky top-0 w-full py-5 flex items-center justify-between px-4 sm:px-6 container mx-auto bg-slate-900 z-10 border-b border-primary/30">
+            <span class="font-['Playfair_Display',serif] text-xl sm:text-2xl italic text-gray-300">Navigation</span>
+            <button onclick="toggleMenu()" class="group flex items-center gap-2 sm:gap-3 hover:text-accent transition-colors">
+                <span class="text-xs font-bold tracking-[0.2em] uppercase hidden sm:inline">Close</span>
+                <div class="relative w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center border border-primary/40 rounded-full group-hover:border-accent group-hover:rotate-90 transition-all duration-500">
+                    <i data-lucide="x" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                </div>
+            </button>
+        </div>
+
+        <!-- Sidebar Content -->
+        <div class="flex-1 flex items-center justify-center container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 w-full max-w-5xl">
+                
+                <!-- Main Navigation Links -->
+                <div class="space-y-2">
+                    <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-4 sm:mb-6 uppercase">Explore</h3>
+                    <ul class="space-y-3 sm:space-y-4">
+                        <li class="overflow-hidden">
+                            <a href="#" class="block font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-accent transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">Home</a>
+                        </li>
+                        <li class="overflow-hidden">
+                            <a href="#" class="block font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-accent transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">About</a>
+                        </li>
+                        <li class="overflow-hidden">
+                            <a href="#" class="block font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-accent transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">Academics</a>
+                        </li>
+                        <li class="overflow-hidden">
+                            <a href="#" class="block font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-accent transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">Admissions</a>
+                        </li>
+                        <li class="overflow-hidden">
+                            <a href="#" class="block font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-accent transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">Campus Life</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Secondary Info -->
+                <div class="flex flex-col justify-between space-y-8 sm:space-y-10 mt-8 md:mt-0 md:pl-20 md:border-l border-white/10">
+                    
+                    <!-- Quick Actions -->
+                    <div>
+                        <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-4 sm:mb-6 uppercase">Quick Actions</h3>
+                        <ul class="space-y-3 sm:space-y-4">
+                            <li>
+                                <a href="#" class="flex items-center gap-3 text-base sm:text-lg text-gray-300 hover:text-accent transition-colors group">
+                                    <span class="w-1 h-5 sm:h-6 bg-primary/40 group-hover:bg-accent transition-colors"></span>
+                                    <span>Apply Now</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center gap-3 text-base sm:text-lg text-gray-300 hover:text-accent transition-colors group">
+                                    <span class="w-1 h-5 sm:h-6 bg-primary/40 group-hover:bg-accent transition-colors"></span>
+                                    <span>Virtual Tour</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center gap-3 text-base sm:text-lg text-gray-300 hover:text-accent transition-colors group">
+                                    <span class="w-1 h-5 sm:h-6 bg-primary/40 group-hover:bg-accent transition-colors"></span>
+                                    <span>Contact Us</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact & Social -->
+                    <div>
+                        <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-3 sm:mb-4 uppercase">Connect</h3>
+                        <p class="text-gray-400 mb-4 text-xs sm:text-sm font-light">mlzs.alwar@mountlitera.com <br> +91 9672797979</p>
+                        <div class="flex gap-3 sm:gap-4">
+                            <a href="#" class="w-9 h-9 sm:w-10 sm:h-10 border border-primary/40 rounded-full flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all">
+                                <i data-lucide="instagram" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                            </a>
+                            <a href="#" class="w-9 h-9 sm:w-10 sm:h-10 border border-primary/40 rounded-full flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all">
+                                <i data-lucide="twitter" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                            </a>
+                            <a href="#" class="w-9 h-9 sm:w-10 sm:h-10 border border-primary/40 rounded-full flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all">
+                                <i data-lucide="linkedin" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-primary/90 via-primary to-primary-dark text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 left-10 w-72 h-72 bg-accent/20 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-10 right-10 w-96 h-96 bg-primary-light/20 rounded-full blur-3xl"></div>
+            </div>
+            
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-10 md:pt-40 md:pb-24">
+                <div class="max-w-3xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-4 sm:mb-6 animate-fade-in-up">
+                        <i data-lucide="school" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+                        <span class="text-xs sm:text-sm font-semibold uppercase tracking-wider">Campus Infrastructure</span>
+                    </div>
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                        World-Class <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-flame via-tiger-orange to-cayenne-red">Classrooms</span>
+                    </h1>
+                    <p class="text-sm sm:text-base md:text-lg text-slate-200 mb-8 max-w-2xl leading-relaxed">
+                        Designed to inspire learning and innovation, our classrooms set new standards in educational excellence with cutting-edge technology and spacious design.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-accent animate-pulse"></div>
+                            <span class="text-xs sm:text-sm font-medium">650 SQ FT Classrooms</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-primary-light animate-pulse"></div>
+                            <span class="text-xs sm:text-sm font-medium">Interactive Technology</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-green-500 animate-pulse"></div>
+                            <span class="text-xs sm:text-sm font-medium">International Standards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Classroom Overview -->
+        <section class="py-16 md:py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="animate-fade-in-up">
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-primary/10 text-primary mb-4 sm:mb-6">
+                            <i data-lucide="award" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider">International Standards</span>
+                        </div>
+                        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mb-6">
+                            Learning Spaces That <span class="text-primary">Inspire Excellence</span>
+                        </h2>
+                        <div class="space-y-4 text-slate-600">
+                            <p class="text-sm sm:text-base leading-relaxed">
+                                The classrooms of Mount Litera Zee School, Alwar are at par with international standards. All classrooms are replete with modular furniture and extensive display boards to ensure that students give their best to the process of learning and achievement.
+                            </p>
+                            <p class="text-sm sm:text-base leading-relaxed">
+                                Each classroom spans an impressive area of <strong class="text-primary font-bold">650 SQ FT</strong> which is <strong class="text-accent font-bold">30% above</strong> the normal guidelines issued by CBSE, providing ample space for interactive learning and student movement.
+                            </p>
+                        </div>
+                        
+                        <div class="mt-6 sm:mt-8 flex items-center gap-3 sm:gap-4 p-4 sm:p-6 bg-white rounded-2xl border border-slate-200 shadow-soft">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                                <i data-lucide="maximize-2" class="w-5 h-5 sm:w-6 sm:h-6 text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm sm:text-base font-bold text-slate-900 mb-1">Spacious Design</h4>
+                                <p class="text-xs sm:text-sm text-slate-600">650 SQ FT per classroom, exceeding CBSE guidelines by 30%</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                            <div class="aspect-[4/3] bg-gradient-to-br from-slate-100 to-slate-200 relative">
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="text-center p-8">
+                                        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center mx-auto mb-4 sm:mb-6 shadow-lg">
+                                            <i data-lucide="users" class="w-8 h-8 sm:w-10 sm:h-10 text-primary"></i>
+                                        </div>
+                                        <h3 class="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-2">Interactive Learning Environment</h3>
+                                        <p class="text-xs sm:text-sm md:text-base text-slate-600">Designed for collaborative and engaging education</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Decorative elements -->
+                        <div class="absolute -top-6 -right-6 w-40 h-40 bg-accent/10 rounded-full blur-xl -z-10"></div>
+                        <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/10 rounded-full blur-xl -z-10"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Classroom Features -->
+        <section class="pt-16 md:py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-primary/10 text-primary mb-4 sm:mb-6">
+                        <i data-lucide="cpu" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                        <span class="text-xs sm:text-sm font-bold uppercase tracking-wider">Technology Features</span>
+                    </div>
+                    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mb-6">
+                        Integrated <span class="text-primary">Smart Classroom</span> Technology
+                    </h2>
+                    <p class="text-sm sm:text-base text-slate-600 max-w-3xl mx-auto">
+                        Equipped with state-of-the-art digital infrastructure to create immersive and interactive learning experiences
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <!-- Feature 1 -->
+                    <div class="group bg-slate-50 rounded-2xl p-4 sm:p-6 md:p-8 border border-slate-200 hover:border-primary/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl cursor-pointer">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="monitor" class="w-6 h-6 sm:w-7 sm:h-7 text-white"></i>
+                        </div>
+                        <h3 class="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-3 sm:mb-4">Computer & Projector System</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 mb-4 sm:mb-6 leading-relaxed">
+                            A computer along with a projector installed in each classroom (UKG onwards) where teachers and students can access various information available on the school's local area network server.
+                        </p>
+                        <div class="inline-flex items-center gap-2 text-primary font-medium text-xs sm:text-sm group-hover:gap-3 transition-all">
+                            <span>Learn More</span>
+                            <i data-lucide="arrow-right" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature 2 -->
+                    <div class="group bg-slate-50 rounded-2xl p-4 sm:p-6 md:p-8 border border-slate-200 hover:border-primary/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl cursor-pointer">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="tv" class="w-6 h-6 sm:w-7 sm:h-7 text-white"></i>
+                        </div>
+                        <h3 class="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-3 sm:mb-4">Interactive White Board</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 mb-4 sm:mb-6 leading-relaxed">
+                            Interactive White Board with modern acoustics and Green Boards to facilitate learning along with IWBs, creating a dynamic teaching environment.
+                        </p>
+                        <div class="inline-flex items-center gap-2 text-primary font-medium text-xs sm:text-sm group-hover:gap-3 transition-all">
+                            <span>Learn More</span>
+                            <i data-lucide="arrow-right" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature 3 -->
+                    <div class="group bg-slate-50 rounded-2xl p-4 sm:p-6 md:p-8 border border-slate-200 hover:border-primary/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl cursor-pointer">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-primary-light to-slate-blue flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="book-open" class="w-6 h-6 sm:w-7 sm:h-7 text-white"></i>
+                        </div>
+                        <h3 class="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-3 sm:mb-4">E-Content Library</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 mb-4 sm:mb-6 leading-relaxed">
+                            Class and Subject specific in-house developed e-content, tailored to our curriculum and teaching methodology for enhanced learning outcomes.
+                        </p>
+                        <div class="inline-flex items-center gap-2 text-primary font-medium text-xs sm:text-sm group-hover:gap-3 transition-all">
+                            <span>Learn More</span>
+                            <i data-lucide="arrow-right" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Classroom Details Grid -->
+        <section class="pb-16 md:py-20 bg-gradient-to-b from-white to-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="relative">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white rounded-2xl p-4 sm:p-6 border border-slate-200 shadow-soft">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-blue-100 flex items-center justify-center mb-3 sm:mb-4">
+                                    <i data-lucide="wifi" class="w-5 h-5 sm:w-6 sm:h-6 text-blue-600"></i>
+                                </div>
+                                <h4 class="text-sm sm:text-base font-bold text-slate-900 mb-1 sm:mb-2">High-Speed Internet</h4>
+                                <p class="text-xs sm:text-sm text-slate-600">Dedicated leased line for reliable internet access in every classroom</p>
+                            </div>
+                            
+                            <div class="bg-white rounded-2xl p-4 sm:p-6 border border-slate-200 shadow-soft mt-6 sm:mt-8">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-green-100 flex items-center justify-center mb-3 sm:mb-4">
+                                    <i data-lucide="clipboard-list" class="w-5 h-5 sm:w-6 sm:h-6 text-green-600"></i>
+                                </div>
+                                <h4 class="text-sm sm:text-base font-bold text-slate-900 mb-1 sm:mb-2">Display Boards</h4>
+                                <p class="text-xs sm:text-sm text-slate-600">Extensive modular display boards for student work and information</p>
+                            </div>
+                            
+                            <div class="bg-white rounded-2xl p-4 sm:p-6 border border-slate-200 shadow-soft">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-purple-100 flex items-center justify-center mb-3 sm:mb-4">
+                                    <i data-lucide="chair" class="w-5 h-5 sm:w-6 sm:h-6 text-purple-600"></i>
+                                </div>
+                                <h4 class="text-sm sm:text-base font-bold text-slate-900 mb-1 sm:mb-2">Modular Furniture</h4>
+                                <p class="text-xs sm:text-sm text-slate-600">Ergonomic and flexible furniture for optimal learning comfort</p>
+                            </div>
+                            
+                            <div class="bg-white rounded-2xl p-4 sm:p-6 border border-slate-200 shadow-soft mt-6 sm:mt-8">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-amber-100 flex items-center justify-center mb-3 sm:mb-4">
+                                    <i data-lucide="volume-2" class="w-5 h-5 sm:w-6 sm:h-6 text-amber-600"></i>
+                                </div>
+                                <h4 class="text-sm sm:text-base font-bold text-slate-900 mb-1 sm:mb-2">Modern Acoustics</h4>
+                                <p class="text-xs sm:text-sm text-slate-600">Sound-optimized classrooms for clear audio during lessons</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Decorative element -->
+                        <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
+                    </div>
+                    
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-accent/10 text-accent mb-4 sm:mb-6">
+                            <i data-lucide="check-circle" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider">Complete Package</span>
+                        </div>
+                        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mb-6">
+                            Everything for <span class="text-primary">Optimal Learning</span>
+                        </h2>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-3 sm:gap-4">
+                                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i data-lucide="check" class="w-3 h-3 sm:w-4 sm:h-4 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm sm:text-base font-bold text-slate-900 mb-1">Network Integration</h4>
+                                    <p class="text-xs sm:text-sm text-slate-600">Access to school's local area network server with educational resources</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-3 sm:gap-4">
+                                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i data-lucide="check" class="w-3 h-3 sm:w-4 sm:h-4 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm sm:text-base font-bold text-slate-900 mb-1">Dual Display Systems</h4>
+                                    <p class="text-xs sm:text-sm text-slate-600">Combination of Interactive White Boards and traditional Green Boards</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-3 sm:gap-4">
+                                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i data-lucide="check" class="w-3 h-3 sm:w-4 sm:h-4 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm sm:text-base font-bold text-slate-900 mb-1">Custom E-Content</h4>
+                                    <p class="text-xs sm:text-sm text-slate-600">Specially developed digital content for each class and subject</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-3 sm:gap-4">
+                                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i data-lucide="check" class="w-3 h-3 sm:w-4 sm:h-4 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm sm:text-base font-bold text-slate-900 mb-1">Reliable Connectivity</h4>
+                                    <p class="text-xs sm:text-sm text-slate-600">Dedicated leased line ensuring uninterrupted internet access</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-3 sm:gap-4">
+                                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i data-lucide="check" class="w-3 h-3 sm:w-4 sm:h-4 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm sm:text-base font-bold text-slate-900 mb-1">Spacious Design</h4>
+                                    <p class="text-xs sm:text-sm text-slate-600">650 SQ FT classrooms providing ample space for movement and activities</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-slate-200">
+                            <div class="flex items-center gap-3 sm:gap-4 p-4 sm:p-6 bg-gradient-to-r from-primary/5 to-primary/10 rounded-2xl">
+                                <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white flex items-center justify-center shadow-lg">
+                                    <i data-lucide="ruler" class="w-6 h-6 sm:w-8 sm:h-8 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm sm:text-base font-bold text-slate-900 mb-1">650 SQ FT Classrooms</h4>
+                                    <p class="text-xs sm:text-sm text-slate-600">30% above CBSE guidelines for optimal learning environment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Comparison -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-primary/10 text-primary mb-4 sm:mb-6">
+                        <i data-lucide="trending-up" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                        <span class="text-xs sm:text-sm font-bold uppercase tracking-wider">Advantage</span>
+                    </div>
+                    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mb-6">
+                        Why Our Classrooms <span class="text-primary">Stand Out</span>
+                    </h2>
+                    <p class="text-sm sm:text-base text-slate-600 max-w-3xl mx-auto">
+                        A comparative look at how our classroom infrastructure exceeds standard requirements
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Standard Classroom -->
+                    <div class="bg-slate-50 rounded-2xl p-4 sm:p-6 md:p-8 border border-slate-200">
+                        <div class="text-center mb-6 sm:mb-8">
+                            <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-slate-200 flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                                <i data-lucide="home" class="w-6 h-6 sm:w-8 sm:h-8 text-slate-500"></i>
+                            </div>
+                            <h3 class="text-base sm:text-lg md:text-xl font-bold text-slate-700 mb-1 sm:mb-2">Standard Classroom</h3>
+                            <p class="text-xs sm:text-sm text-slate-500">CBSE Minimum Requirements</p>
+                        </div>
+                        
+                        <div class="space-y-2 sm:space-y-3 md:space-y-4">
+                            <div class="flex items-center justify-between p-2 sm:p-3 bg-white rounded-lg">
+                                <span class="text-xs sm:text-sm text-slate-600">Classroom Size</span>
+                                <span class="text-xs sm:text-sm font-bold text-slate-700">500 SQ FT</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 sm:p-3 bg-white rounded-lg">
+                                <span class="text-xs sm:text-sm text-slate-600">Technology</span>
+                                <span class="text-xs sm:text-sm font-bold text-slate-700">Basic</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 sm:p-3 bg-white rounded-lg">
+                                <span class="text-xs sm:text-sm text-slate-600">Furniture</span>
+                                <span class="text-xs sm:text-sm font-bold text-slate-700">Standard</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 sm:p-3 bg-white rounded-lg">
+                                <span class="text-xs sm:text-sm text-slate-600">Connectivity</span>
+                                <span class="text-xs sm:text-sm font-bold text-slate-700">Limited</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- MLZS Classroom -->
+                    <div class="bg-gradient-to-b from-primary to-primary-dark rounded-2xl p-4 sm:p-6 md:p-8 text-white relative transform scale-105 shadow-2xl">
+                        <div class="absolute -top-3 sm:-top-4 left-1/2 -translate-x-1/2">
+                            <div class="px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-accent text-white text-[10px] sm:text-xs font-bold uppercase tracking-wider">
+                                Our Standard
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mb-6 sm:mb-8">
+                            <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                                <i data-lucide="star" class="w-6 h-6 sm:w-8 sm:h-8 text-white"></i>
+                            </div>
+                            <h3 class="text-base sm:text-lg md:text-xl font-bold text-white mb-1 sm:mb-2">MLZS Classroom</h3>
+                            <p class="text-xs sm:text-sm text-white/80">International Standards</p>
+                        </div>
+                        
+                        <div class="space-y-2 sm:space-y-3 md:space-y-4">
+                            <div class="flex items-center justify-between p-2 sm:p-3 bg-white/10 rounded-lg backdrop-blur-sm">
+                                <span class="text-xs sm:text-sm">Classroom Size</span>
+                                <span class="text-xs sm:text-sm font-bold">650 SQ FT</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 sm:p-3 bg-white/10 rounded-lg backdrop-blur-sm">
+                                <span class="text-xs sm:text-sm">Technology</span>
+                                <span class="text-xs sm:text-sm font-bold">Smart Class</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 sm:p-3 bg-white/10 rounded-lg backdrop-blur-sm">
+                                <span class="text-xs sm:text-sm">Furniture</span>
+                                <span class="text-xs sm:text-sm font-bold">Modular</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 sm:p-3 bg-white/10 rounded-lg backdrop-blur-sm">
+                                <span class="text-xs sm:text-sm">Connectivity</span>
+                                <span class="text-xs sm:text-sm font-bold">Dedicated Line</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-white/20">
+                            <div class="text-center">
+                                <div class="text-lg sm:text-xl md:text-2xl font-bold mb-1">+30%</div>
+                                <p class="text-xs sm:text-sm text-white/80">Above CBSE Guidelines</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- International Standard -->
+                    <div class="bg-slate-50 rounded-2xl p-4 sm:p-6 md:p-8 border border-slate-200">
+                        <div class="text-center mb-6 sm:mb-8">
+                            <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                                <i data-lucide="globe" class="w-6 h-6 sm:w-8 sm:h-8 text-blue-600"></i>
+                            </div>
+                            <h3 class="text-base sm:text-lg md:text-xl font-bold text-slate-700 mb-1 sm:mb-2">Global Standards</h3>
+                            <p class="text-xs sm:text-sm text-slate-500">International Benchmarks</p>
+                        </div>
+                        
+                        <div class="space-y-2 sm:space-y-3 md:space-y-4">
+                            <div class="flex items-center justify-between p-2 sm:p-3 bg-white rounded-lg">
+                                <span class="text-xs sm:text-sm text-slate-600">Interactive Tech</span>
+                                <span class="text-xs sm:text-sm font-bold text-slate-700">✓</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 sm:p-3 bg-white rounded-lg">
+                                <span class="text-xs sm:text-sm text-slate-600">Digital Content</span>
+                                <span class="text-xs sm:text-sm font-bold text-slate-700">✓</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 sm:p-3 bg-white rounded-lg">
+                                <span class="text-xs sm:text-sm text-slate-600">Network Access</span>
+                                <span class="text-xs sm:text-sm font-bold text-slate-700">✓</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 sm:p-3 bg-white rounded-lg">
+                                <span class="text-xs sm:text-sm text-slate-600">Spacious Design</span>
+                                <span class="text-xs sm:text-sm font-bold text-slate-700">✓</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8 sm:mt-12">
+                    <p class="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto">
+                        Our classrooms not only meet but exceed both national and international standards, providing students with an environment conducive to holistic development and academic excellence.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white flex items-center justify-center mx-auto mb-6 sm:mb-8 shadow-lg">
+                    <i data-lucide="eye" class="w-8 h-8 sm:w-10 sm:h-10 text-primary"></i>
+                </div>
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mb-4 sm:mb-6">
+                    Experience Our Classrooms <span class="text-primary">Firsthand</span>
+                </h2>
+                <p class="text-sm sm:text-base text-slate-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
+                    See how our state-of-the-art classrooms create the perfect environment for learning, innovation, and growth.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+                    <button class="inline-flex items-center gap-2 px-4 py-2 sm:px-8 sm:py-4 bg-primary text-white rounded-full font-bold text-sm sm:text-base md:text-lg hover:bg-primary-dark transition-all transform hover:-translate-y-0.5 shadow-lg hover:shadow-xl">
+                        <i data-lucide="calendar" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                        Schedule a Campus Tour
+                    </button>
+                    <button class="inline-flex items-center gap-2 px-4 py-2 sm:px-8 sm:py-4 bg-white text-primary border border-primary/30 rounded-full font-bold text-sm sm:text-base md:text-lg hover:bg-primary/5 transition-all transform hover:-translate-y-0.5 shadow-lg hover:shadow-xl">
+                        <i data-lucide="video" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                        Virtual Classroom Tour
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer Section -->
+    <footer class="relative w-full bg-slate-900 text-white px-4 sm:px-6 lg:px-8 pt-16 md:pt-24 lg:pt-32 pb-8 rounded-t-[40px] overflow-hidden border-t border-primary/30 shadow-[0_-10px_40px_rgba(61,52,139,0.1)] -mt-1">
+      <div class="absolute inset-0 bg-gradient-to-br from-primary-dark via-slate-900 to-slate-950 opacity-95 z-0"></div>
+      <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] pointer-events-none z-0 mix-blend-screen"></div>
+      <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[100px] pointer-events-none z-0 mix-blend-screen"></div>
+      <div class="layout-container flex flex-col max-w-7xl mx-auto w-full relative z-10">
+          <div class="mb-20 rounded-3xl p-8 lg:p-12 relative overflow-hidden group bg-gradient-to-r from-primary-dark via-slate-900 to-primary-dark border border-primary/40 shadow-2xl">
+              <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-20"></div>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start relative z-10">
+                  <div class="flex flex-col gap-4">
+                      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/20 border border-primary/30 w-fit backdrop-blur-sm">
+                          <span class="relative flex h-2 w-2">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+                          </span>
+                          <span class="text-xs font-bold text-accent uppercase tracking-widest">Contact Us</span>
+                      </div>
+                      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white">Get In Touch</h2>
+                      <p class="text-slate-300 text-sm sm:text-base md:text-lg max-w-md font-light">Have questions about admissions, programs, or campus life? We're here to help. Reach out to us and we'll get back to you soon.</p>
+                      <div class="flex flex-col gap-4 mt-4">
+                          <div class="flex items-center gap-3 p-4 rounded-xl bg-primary/10 border border-primary/30 hover:border-accent/50 transition-all group">
+                              <div class="p-2 rounded-lg bg-accent/20 group-hover:bg-accent/30 transition-colors">
+                                  <i data-lucide="mail" class="w-5 h-5 text-accent"></i>
+                              </div>
+                              <div>
+                                  <p class="text-xs text-slate-400 uppercase tracking-wide">Email</p>
+                                  <p class="text-white font-medium">info@mountlitera.edu</p>
+                              </div>
+                          </div>
+                          <div class="flex items-center gap-3 p-4 rounded-xl bg-primary/10 border border-primary/30 hover:border-accent/50 transition-all group">
+                              <div class="p-2 rounded-lg bg-accent/20 group-hover:bg-accent/30 transition-colors">
+                                  <i data-lucide="phone" class="w-5 h-5 text-accent"></i>
+                              </div>
+                              <div>
+                                  <p class="text-xs text-slate-400 uppercase tracking-wide">Phone</p>
+                                  <p class="text-white font-medium">+91 123 456 7890</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="flex justify-start lg:justify-end w-full">
+                      <form class="w-full max-w-lg flex flex-col gap-4">
+                          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                              <div class="relative group/input">
+                                  <i data-lucide="user" class="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-slate-400 group-focus-within/input:text-accent transition-colors z-10"></i>
+                                  <input class="w-full bg-primary/20 border border-primary/40 rounded-xl pl-12 pr-4 py-3.5 text-white placeholder-gray-400 focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all duration-300 shadow-inner" placeholder="Your Name" type="text" required/>
+                              </div>
+                              <div class="relative group/input">
+                                  <i data-lucide="mail" class="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-slate-400 group-focus-within/input:text-accent transition-colors z-10"></i>
+                                  <input class="w-full bg-primary/20 border border-primary/40 rounded-xl pl-12 pr-4 py-3.5 text-white placeholder-gray-400 focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all duration-300 shadow-inner" placeholder="Your Email" type="email" required/>
+                              </div>
+                          </div>
+                          <div class="relative group/input">
+                              <i data-lucide="phone" class="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-slate-400 group-focus-within/input:text-accent transition-colors z-10"></i>
+                              <input class="w-full bg-primary/20 border border-primary/40 rounded-xl pl-12 pr-4 py-3.5 text-white placeholder-gray-400 focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all duration-300 shadow-inner" placeholder="Phone Number (Optional)" type="tel"/>
+                          </div>
+                          <div class="relative group/input">
+                              <i data-lucide="message-square" class="absolute left-4 top-4 size-5 text-slate-400 group-focus-within/input:text-accent transition-colors z-10"></i>
+                              <textarea class="w-full bg-primary/20 border border-primary/40 rounded-xl pl-12 pr-4 py-3.5 text-white placeholder-gray-400 focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all duration-300 shadow-inner resize-none min-h-[120px]" placeholder="Your Message" required></textarea>
+                          </div>
+                          <button class="w-full bg-primary hover:bg-primary-dark text-white font-bold text-base px-8 py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_4px_14px_0_rgba(61,52,139,0.39)] hover:shadow-[0_6px_20px_rgba(61,52,139,0.23)] hover:-translate-y-0.5 active:translate-y-0 group/btn" type="submit">
+                              <span>Send Message</span>
+                              <i data-lucide="send" class="size-5 group-hover/btn:translate-x-1 transition-transform"></i>
+                          </button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
+              <div class="lg:col-span-4 flex flex-col gap-8 pr-4">
+                  <div class="flex items-center gap-4">
+                      <a href="#" class="flex items-center">
+                          <img src="assets/img/logo.webp" alt="Apex International" class="h-12 md:h-14 w-auto object-contain brightness-0 invert">
+                      </a>
+                  </div>
+                  <p class="text-slate-400 text-sm leading-7">
+                      Empowering the next generation of leaders through excellence in education, innovation, and character building since 1985.
+                  </p>
+                  <div class="flex items-start gap-4 p-5 rounded-2xl bg-primary/10 border border-primary/30 hover:border-accent/50 transition-colors group cursor-default">
+                      <div class="mt-1">
+                          <i data-lucide="map-pin" class="w-6 h-6 text-accent group-hover:scale-110 transition-transform duration-300"></i>
+                      </div>
+                      <div>
+                          <h4 class="text-white text-sm font-bold uppercase tracking-wide mb-1 group-hover:text-accent transition-colors">Campus Address</h4>
+                          <p class="text-slate-400 text-sm leading-snug">123 Academic Avenue, Knowledge City<br/>Premium District, 54321</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="lg:col-span-2 lg:col-start-6">
+                  <h3 class="text-white text-sm font-bold uppercase tracking-widest mb-6 flex items-center gap-2">
+                      <span class="w-1 h-4 bg-accent rounded-full"></span>
+                      Menu
+                  </h3>
+                  <ul class="flex flex-col gap-3">
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>About Us
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>Litera Experience
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>School Timing
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>Academic Planner
+                      </a></li>
+                  </ul>
+              </div>
+              <div class="lg:col-span-2">
+                  <h3 class="text-white text-sm font-bold uppercase tracking-widest mb-6 flex items-center gap-2">
+                      <span class="w-1 h-4 bg-accent rounded-full"></span>
+                      Links
+                  </h3>
+                  <ul class="flex flex-col gap-3">
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>Gallery
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>CBSE Mandate
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>Alumni Network
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>Careers
+                      </a></li>
+                  </ul>
+              </div>
+              <div class="lg:col-span-3">
+                  <h3 class="text-white text-sm font-bold uppercase tracking-widest mb-6 flex items-center gap-2">
+                      <span class="w-1 h-4 bg-accent rounded-full"></span>
+                      Contact Us
+                  </h3>
+                  <div class="flex flex-col gap-5">
+                      <div class="flex items-center gap-4 group cursor-pointer">
+                          <div class="w-14 h-14 rounded-full shrink-0 bg-white/5 border border-white/10 flex items-center justify-center text-accent group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300 shadow-lg group-hover:shadow-primary/40">
+                              <i data-lucide="phone" class="w-6 h-6"></i>
+                          </div>
+                          <div>
+                              <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Phone</p>
+                              <a class="text-white font-semibold text-lg hover:text-accent transition-colors" href="tel:+919672797979">+91 9672797979</a>
+                          </div>
+                      </div>
+                      <div class="flex items-center gap-4 group cursor-pointer">
+                          <div class="w-14 h-14 rounded-full shrink-0 bg-white/5 border border-white/10 flex items-center justify-center text-accent group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300 shadow-lg group-hover:shadow-primary/40">
+                              <i data-lucide="mail" class="w-6 h-6"></i>
+                          </div>
+                          <div>
+                              <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Email Address</p>
+                              <a class="text-white font-semibold text-lg hover:text-accent transition-colors" href="mailto:mlzs.alwar@mountlitera.com">mlzs.alwar@mountlitera.com</a>
+                          </div>
+                      </div>
+                      <div class="flex items-start gap-4 group cursor-pointer mt-4">
+                          <div class="w-14 h-14 rounded-full shrink-0 bg-white/5 border border-white/10 flex items-center justify-center text-accent group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300 shadow-lg group-hover:shadow-primary/40">
+                              <i data-lucide="map-pin" class="w-6 h-6"></i>
+                          </div>
+                          <div>
+                              <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Campus</p>
+                              <p class="text-white font-semibold text-sm leading-relaxed">6th Milestone, Jharkheda, Sirmoli Village Road, Alwar - Bhiwadi State Highway, Alwar - 301028 (Raj.)</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="border-t border-primary/30 pt-8 flex flex-col-reverse md:flex-row justify-between items-center gap-6">
+              <div class="text-center md:text-left">
+                  <p class="text-slate-500 text-sm">
+                      Copyright &copy; 2025 Mount Litera Zee School, Alwar. All rights reserved.
+                  </p>
+                  <div class="flex items-center justify-center md:justify-start gap-2 mt-2">
+                      <span class="text-slate-500 text-sm">Design & Developed By</span>
+                      <img src="assets/img/img.png" alt="Developer Logo" class="h-6 w-auto object-contain">
+                  </div>
+              </div>
+              <div class="flex items-center gap-3">
+                  <a class="size-10 shrink-0 rounded-full border border-primary/40 bg-primary/20 flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white hover:border-accent hover:-translate-y-1 transition-all duration-300" href="#" aria-label="Instagram">
+                      <i data-lucide="instagram" class="size-5"></i>
+                  </a>
+                  <a class="size-10 shrink-0 rounded-full border border-primary/40 bg-primary/20 flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white hover:border-accent hover:-translate-y-1 transition-all duration-300" href="#" aria-label="LinkedIn">
+                      <i data-lucide="linkedin" class="size-5"></i>
+                  </a>
+                  <a class="size-10 shrink-0 rounded-full border border-primary/40 bg-primary/20 flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white hover:border-accent hover:-translate-y-1 transition-all duration-300" href="#" aria-label="Twitter">
+                      <i data-lucide="twitter" class="size-5"></i>
+                  </a>
+                  <a class="size-10 shrink-0 rounded-full border border-primary/40 bg-primary/20 flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white hover:border-accent hover:-translate-y-1 transition-all duration-300" href="#" aria-label="Facebook">
+                      <i data-lucide="facebook" class="size-5"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // --- HEADER SCROLL EFFECT ---
+        const header = document.getElementById('main-header');
+        const logo = document.getElementById('brand-logo');
+
+        if (header && logo) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    // Add Scroll Styles (White BG, Black Text, Smaller Height)
+                    header.classList.remove('text-white', 'h-24', 'border-white/10');
+                    header.classList.add('bg-white/95', 'backdrop-blur-[10px]', 'shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)]', 'h-16', 'text-black', 'border-transparent');
+                    
+                    // Logo Shrink
+                    const logoImg = logo.querySelector('img');
+                    if (logoImg) {
+                        logoImg.classList.remove('h-10', 'sm:h-12', 'md:h-14', 'lg:h-16');
+                        logoImg.classList.add('h-10');
+                        logoImg.classList.remove('brightness-0', 'invert');
+                    }
+                } else {
+                    // Remove Scroll Styles (Back to Transparent)
+                    header.classList.add('text-white', 'h-24', 'border-white/10');
+                    header.classList.remove('bg-white/95', 'backdrop-blur-[10px]', 'shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)]', 'h-16', 'text-black', 'border-transparent');
+                    
+                    // Logo Reset
+                    const logoImg = logo.querySelector('img');
+                    if (logoImg) {
+                        logoImg.classList.add('h-10', 'sm:h-12', 'md:h-14', 'lg:h-16');
+                        // logoImg.classList.remove('h-10');
+                        logoImg.classList.add('brightness-0', 'invert');
+                    }
+                }
+            });
+        }
+
+        // --- MENU TOGGLE ---
+        const menuOverlay = document.getElementById('full-menu');
+        
+        function toggleMenu() {
+            if (menuOverlay) {
+                const isOpen = !menuOverlay.classList.contains('-translate-y-full');
+                
+                if (isOpen) {
+                    // Close Menu
+                    menuOverlay.classList.add('-translate-y-full');
+                } else {
+                    // Open Menu
+                    menuOverlay.classList.remove('-translate-y-full');
+                }
+            }
+        }
+
+        
+    </script> 
+</body>
+</html>

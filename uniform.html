@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>School Uniform - Mount Litera Zee School, Alwar</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      tailwind.config = {
+          darkMode: "class",
+          theme: {
+              extend: {
+                  colors: {
+                      "primary": "#3D348B",
+                      "primary-dark": "#2d2566",
+                      "primary-light": "#7678ED",
+                      "primary-lighter": "#9a9cf0",
+                      "secondary": "#F7B801",
+                      "accent": "#F7B801",
+                      "accent-dark": "#F18701",
+                      "accent-light": "#F35B04",
+                      "indigo-velvet": "#3D348B",
+                      "slate-blue": "#7678ED",
+                      "amber-flame": "#F7B801",
+                      "tiger-orange": "#F18701",
+                      "cayenne-red": "#F35B04",
+                      "surface": "#ffffff",
+                      "background-light": "#f8fafc",
+                      "background-dark": "#111827",
+                      "surface-light": "#ffffff",
+                      "surface-dark": "#1f2937",
+                      "text-main-light": "#0f172a",
+                      "text-main-dark": "#f8fafc",
+                      "text-secondary-light": "#475569",
+                      "text-secondary-dark": "#94a3b8",
+                      "border-light": "#e2e8f0",
+                      "border-dark": "#374151",
+                      "dark-text": "#1e293b",
+                      "card-dark": "#1e293b",
+                  },
+                  fontFamily: {
+                      "display": ["Spline Sans", "sans-serif"],
+                      "body": ["Noto Sans", "sans-serif"],
+                  },
+                  // borderRadius: {
+                  //     "DEFAULT": "1rem",
+                  //     "lg": "1.5rem",
+                  //     "xl": "2rem",
+                  //     "2xl": "2.5rem",
+                  //     "full": "9999px"
+                  // },
+                  animation: {
+                      'fade-in-up': 'fadeInUp 0.8s ease-out',
+                      'pulse-slow': 'pulse 3s infinite',
+                  },
+                  keyframes: {
+                      fadeInUp: {
+                          '0%': { opacity: '0', transform: 'translateY(20px)' },
+                          '100%': { opacity: '1', transform: 'translateY(0)' },
+                      }
+                  },
+                  boxShadow: {
+                      'soft': '0 10px 40px -10px rgba(61, 52, 139, 0.05)',
+                      'glow': '0 0 20px -5px rgba(61, 52, 139, 0.3)',
+                      'glow-accent': '0 0 20px -5px rgba(247, 184, 1, 0.4)',
+                  }
+              },
+          },
+      }
+  </script>
+  <style>
+      ::-webkit-scrollbar {
+          width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+          background: #f1f5f9; 
+      }
+      ::-webkit-scrollbar-thumb {
+          background: #cbd5e1; 
+          border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+          background: #3D348B; 
+      }
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-display overflow-x-hidden antialiased selection:bg-[#F7B801] selection:text-white">
+    <!-- Header Section -->
+    <header id="main-header" class="fixed w-full top-0 z-40 transition-all duration-500 ease-in-out h-24 text-white flex items-center border-b border-white/10 px-4 sm:px-6 lg:px-8">
+        <div class="w-full max-w-7xl mx-auto h-full relative flex justify-between items-center">
+
+            <!-- LEFT MENU ITEMS (Desktop) -->
+            <nav class="hidden lg:flex items-center justify-start w-5/12 pr-12 space-x-8">
+                <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Home</a>
+                <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">About</a>
+                <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Academics</a>
+            </nav>
+
+            <!-- LOGO - Left on Mobile, Center on Desktop -->
+            <div class="lg:absolute lg:left-1/2 lg:top-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center lg:z-50">
+                <a href="#" id="brand-logo" class="transition-all duration-500 flex items-center justify-center">
+                    <img src="assets/img/logo.webp" alt="Mount Litera Zee School" class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain transition-all duration-500 brightness-0 invert">
+                </a>
+            </div>
+
+            <!-- RIGHT MENU ITEMS (Desktop) -->
+            <nav class="hidden lg:flex items-center justify-end w-5/12 pl-12 space-x-8">
+                <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Admissions</a>
+                <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Campus Life</a>
+                
+                <!-- MENU BUTTON with Icon & Label (Desktop) -->
+                <button onclick="toggleMenu()" class="flex items-center gap-3 group focus:outline-none ml-4 pl-6 border-l border-current">
+                    <span class="text-xs font-bold tracking-[0.2em] uppercase group-hover:opacity-70 transition-opacity">Menu</span>
+                    <div class="space-y-1.5 group-hover:scale-110 transition-transform duration-300">
+                        <span class="block w-6 h-0.5 bg-current transition-all"></span>
+                        <span class="block w-4 h-0.5 bg-current ml-auto transition-all group-hover:w-6"></span>
+                    </div>
+                </button>
+            </nav>
+
+            <!-- Mobile Menu Icon (Visible on small screens only) - Right aligned -->
+            <button onclick="toggleMenu()" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-full hover:bg-white/10 transition-colors">
+                <i data-lucide="menu" class="w-5 h-5"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Full Page Sidebar / Overlay -->
+    <div id="full-menu" class="fixed inset-0 bg-slate-900 text-white z-50 transform -translate-y-full transition-transform duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] flex flex-col overflow-y-auto">
+        
+        <!-- Sidebar Header (Close Button) -->
+        <div class="sticky top-0 w-full py-5 flex items-center justify-between px-4 sm:px-6 container mx-auto bg-slate-900 z-10 border-b border-primary/30">
+            <span class="font-['Playfair_Display',serif] text-xl sm:text-2xl italic text-gray-300">Navigation</span>
+            <button onclick="toggleMenu()" class="group flex items-center gap-2 sm:gap-3 hover:text-accent transition-colors">
+                <span class="text-xs font-bold tracking-[0.2em] uppercase hidden sm:inline">Close</span>
+                <div class="relative w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center border border-primary/40 rounded-full group-hover:border-accent group-hover:rotate-90 transition-all duration-500">
+                    <i data-lucide="x" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                </div>
+            </button>
+        </div>
+
+        <!-- Sidebar Content -->
+        <div class="flex-1 flex items-center justify-center container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 w-full max-w-5xl">
+                
+                <!-- Main Navigation Links -->
+                <div class="space-y-2">
+                    <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-4 sm:mb-6 uppercase">Explore</h3>
+                    <ul class="space-y-3 sm:space-y-4">
+                        <li class="overflow-hidden">
+                            <a href="#" class="block font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-accent transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">Home</a>
+                        </li>
+                        <li class="overflow-hidden">
+                            <a href="#" class="block font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-accent transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">About</a>
+                        </li>
+                        <li class="overflow-hidden">
+                            <a href="#" class="block font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-accent transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">Academics</a>
+                        </li>
+                        <li class="overflow-hidden">
+                            <a href="#" class="block font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-accent transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">Admissions</a>
+                        </li>
+                        <li class="overflow-hidden">
+                            <a href="#" class="block font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-accent transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">Campus Life</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Secondary Info -->
+                <div class="flex flex-col justify-between space-y-8 sm:space-y-10 mt-8 md:mt-0 md:pl-20 md:border-l border-white/10">
+                    
+                    <!-- Quick Actions -->
+                    <div>
+                        <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-4 sm:mb-6 uppercase">Quick Actions</h3>
+                        <ul class="space-y-3 sm:space-y-4">
+                            <li>
+                                <a href="#" class="flex items-center gap-3 text-base sm:text-lg text-gray-300 hover:text-accent transition-colors group">
+                                    <span class="w-1 h-5 sm:h-6 bg-primary/40 group-hover:bg-accent transition-colors"></span>
+                                    <span>Apply Now</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center gap-3 text-base sm:text-lg text-gray-300 hover:text-accent transition-colors group">
+                                    <span class="w-1 h-5 sm:h-6 bg-primary/40 group-hover:bg-accent transition-colors"></span>
+                                    <span>Virtual Tour</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center gap-3 text-base sm:text-lg text-gray-300 hover:text-accent transition-colors group">
+                                    <span class="w-1 h-5 sm:h-6 bg-primary/40 group-hover:bg-accent transition-colors"></span>
+                                    <span>Contact Us</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact & Social -->
+                    <div>
+                        <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-3 sm:mb-4 uppercase">Connect</h3>
+                        <p class="text-gray-400 mb-4 text-xs sm:text-sm font-light">mlzs.alwar@mountlitera.com <br> +91 9672797979</p>
+                        <div class="flex gap-3 sm:gap-4">
+                            <a href="#" class="w-9 h-9 sm:w-10 sm:h-10 border border-primary/40 rounded-full flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all">
+                                <i data-lucide="instagram" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                            </a>
+                            <a href="#" class="w-9 h-9 sm:w-10 sm:h-10 border border-primary/40 rounded-full flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all">
+                                <i data-lucide="twitter" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                            </a>
+                            <a href="#" class="w-9 h-9 sm:w-10 sm:h-10 border border-primary/40 rounded-full flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all">
+                                <i data-lucide="linkedin" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Hero Section -->
+    <section class="relative px-4 sm:px-6 lg:px-8 pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-br from-[#3D348B] via-[#2d2566] to-[#1a1544]">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 -z-10 h-full w-full overflow-hidden">
+            <div class="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-white/5 blur-[100px]"></div>
+            <div class="absolute top-1/2 -left-20 h-[300px] w-[300px] rounded-full bg-[#F7B801]/10 blur-[80px]"></div>
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-1/2 bg-gradient-to-t from-black/10 to-transparent"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto w-full relative z-10">
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+                <div class="flex-1">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6">
+                        <span class="relative flex h-2.5 w-2.5">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F7B801] opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#F7B801]"></span>
+                        </span>
+                        <span class="text-xs font-semibold text-white uppercase tracking-wider">School Dress Code</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-6">
+                        School <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#F7B801] via-[#F18701] to-[#F35B04]">Uniform</span> Guide
+                    </h1>
+                    
+                    <p class="text-lg text-white/90 max-w-2xl leading-relaxed font-light mb-8">
+                        Explore our complete uniform specifications with detailed images and descriptions for both summer and winter seasons. 
+                        Ensure your child is dressed correctly according to our school standards.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#summer-uniform" class="px-4 py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-[#50C878] to-[#3DAE57] text-white rounded-full font-bold hover:shadow-[0_0_20px_rgba(80,200,120,0.5)] transition-all transform hover:-translate-y-0.5 flex items-center gap-2 group text-sm sm:text-base">
+                            <i data-lucide="sun" class="size-4 sm:size-5 group-hover:rotate-90 transition-transform"></i>
+                            Summer Uniform
+                        </a>
+                        <a href="#winter-uniform" class="px-4 py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-[#1E3A8A] to-[#1E40AF] text-white rounded-full font-bold hover:shadow-[0_0_20px_rgba(30,58,138,0.5)] transition-all transform hover:-translate-y-0.5 flex items-center gap-2 group text-sm sm:text-base">
+                            <i data-lucide="snowflake" class="size-4 sm:size-5 group-hover:rotate-180 transition-transform"></i>
+                            Winter Uniform
+                        </a>
+                        <a href="#common-items" class="px-4 py-2 sm:px-6 sm:py-3 bg-white/10 backdrop-blur-sm border border-white/30 text-white rounded-full font-bold hover:bg-white/20 transition-all flex items-center gap-2 group text-sm sm:text-base">
+                            <i data-lucide="package" class="size-4 sm:size-5"></i>
+                            Accessories
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="relative mt-8 lg:mt-0">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-white/20 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                              alt="School Uniform Display" 
+                              class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#3D348B]/60 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <p class="text-lg font-bold">School Uniform</p>
+                            <p class="text-sm opacity-90">Light Green & Navy Blue</p>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 rounded-full bg-[#F7B801] blur-2xl opacity-30 -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Uniform Color Guide -->
+    <section class="px-4 sm:px-6 lg:px-8 py-16 bg-white">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Uniform Color Guide</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Official colors and fabric specifications for all uniform items</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Color 1 -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 rounded-lg bg-[#50C878] shadow-lg"></div>
+                        <div>
+                            <h3 class="font-bold text-gray-900">Light Parrot Green</h3>
+                            <p class="text-sm text-gray-600">HEX: #50C878</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-700">Used For:</span>
+                            <span class="text-sm font-medium text-gray-900">Shirts</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-700">Fabric:</span>
+                            <span class="text-sm font-medium text-gray-900">Polycot (67/33)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Color 2 -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 rounded-lg bg-[#1E3A8A] shadow-lg"></div>
+                        <div>
+                            <h3 class="font-bold text-gray-900">Navy Blue</h3>
+                            <p class="text-sm text-gray-600">HEX: #1E3A8A</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-700">Used For:</span>
+                            <span class="text-sm font-medium text-gray-900">Trousers/Skirts</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-700">Fabric:</span>
+                            <span class="text-sm font-medium text-gray-900">Polyester Viscose (70/30)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Color 3 -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 rounded-lg bg-[#3D348B] shadow-lg"></div>
+                        <div>
+                            <h3 class="font-bold text-gray-900">School Blue</h3>
+                            <p class="text-sm text-gray-600">HEX: #3D348B</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-700">Used For:</span>
+                            <span class="text-sm font-medium text-gray-900">Accessories</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-700">Type:</span>
+                            <span class="text-sm font-medium text-gray-900">Belt, Tie</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Color 4 -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 rounded-lg bg-[#F7B801] shadow-lg"></div>
+                        <div>
+                            <h3 class="font-bold text-gray-900">Accent Gold</h3>
+                            <p class="text-sm text-gray-600">HEX: #F7B801</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-700">Used For:</span>
+                            <span class="text-sm font-medium text-gray-900">Logo & Details</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-700">Type:</span>
+                            <span class="text-sm font-medium text-gray-900">Embroideries</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summer Uniform Section -->
+    <section id="summer-uniform" class="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-b from-white to-gray-50">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="flex items-center justify-between mb-12">
+                <div>
+                    <span class="bg-gradient-to-br from-green-500 to-green-700 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-flex items-center gap-2">
+                        <i data-lucide="sun" class="size-4"></i>
+                        Academic Year 2015-16
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Summer Uniform</h2>
+                    <p class="text-gray-600">Lightweight and comfortable for warmer months (March - October)</p>
+                </div>
+            </div>
+
+            <!-- Boys Summer Uniform -->
+            <div class="mb-20 animate-fade-in-up">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="p-3 rounded-lg bg-[#3D348B]/10">
+                        <i data-lucide="user" class="size-7 text-[#3D348B]"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900">Boys Summer Uniform</h3>
+                        <p class="text-gray-600">Half-sleeve shirts with navy blue trousers</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Summer Shirt -->
+                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                  alt="Boys Summer Shirt" 
+                                  class="w-full h-full object-cover">
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-gradient-to-br from-green-500 to-green-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUMMER</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-900 mb-2">Summer Shirt</h4>
+                                    <p class="text-gray-600 text-sm">Half sleeves with navy blue lining</p>
+                                </div>
+                                <span class="px-3 py-1 rounded-full bg-[#50C878]/10 text-[#50C878] text-xs font-bold">BOYS</span>
+                            </div>
+                            
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-6 h-6 rounded bg-[#50C878]"></div>
+                                    <span class="text-sm text-gray-700">Color: Light Parrot Green</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="scissors" class="size-4 text-gray-400"></i>
+                                    <span class="text-sm text-gray-700">Design: Half Sleeves</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="package" class="size-4 text-gray-400"></i>
+                                    <span class="text-sm text-gray-700">Fabric: Polycot (67/33)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <p class="text-xs text-gray-500">Navy blue lining on sleeves. Must be neatly tucked in.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Summer Trousers -->
+                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                  alt="Boys Summer Trousers" 
+                                  class="w-full h-full object-cover">
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-gradient-to-br from-green-500 to-green-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUMMER</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-900 mb-2">Summer Trousers</h4>
+                                    <p class="text-gray-600 text-sm">Navy blue formal trousers</p>
+                                </div>
+                                <span class="px-3 py-1 rounded-full bg-[#50C878]/10 text-[#50C878] text-xs font-bold">BOYS</span>
+                            </div>
+                            
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-6 h-6 rounded bg-[#1E3A8A]"></div>
+                                    <span class="text-sm text-gray-700">Color: Navy Blue</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="scissors" class="size-4 text-gray-400"></i>
+                                    <span class="text-sm text-gray-700">Design: Regular fit</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="package" class="size-4 text-gray-400"></i>
+                                    <span class="text-sm text-gray-700">Fabric: Polyester Viscose (70/30)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <p class="text-xs text-gray-500">Must be properly fitted. No jeans or casual trousers allowed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Complete Set Image -->
+                <div class="mt-8 bg-gradient-to-r from-[#50C878]/10 to-[#1E3A8A]/10 rounded-2xl p-8 border border-gray-200">
+                    <div class="text-center mb-6">
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Complete Summer Uniform Set</h4>
+                        <p class="text-gray-600">How the complete uniform should look</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="w-full h-48 rounded-xl overflow-hidden mb-4">
+                                <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                      alt="Full Uniform Front" 
+                                      class="w-full h-full object-cover">
+                            </div>
+                            <p class="text-sm font-medium text-gray-900">Front View</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-full h-48 rounded-xl overflow-hidden mb-4">
+                                <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                      alt="Full Uniform Side" 
+                                      class="w-full h-full object-cover">
+                            </div>
+                            <p class="text-sm font-medium text-gray-900">Side View</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-full h-48 rounded-xl overflow-hidden mb-4">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                      alt="Full Uniform Back" 
+                                      class="w-full h-full object-cover">
+                            </div>
+                            <p class="text-sm font-medium text-gray-900">Back View</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Girls Summer Uniform -->
+            <div class="animate-fade-in-up">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="p-3 rounded-lg bg-[#F7B801]/10">
+                        <i data-lucide="user" class="size-7 text-[#F7B801]"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900">Girls Summer Uniform</h3>
+                        <p class="text-gray-600">Half-sleeve shirts with navy blue skirts</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Girls Summer Shirt -->
+                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                  alt="Girls Summer Shirt" 
+                                  class="w-full h-full object-cover">
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-gradient-to-br from-green-500 to-green-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUMMER</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-900 mb-2">Summer Shirt</h4>
+                                    <p class="text-gray-600 text-sm">Half sleeves with navy blue jacket lining</p>
+                                </div>
+                                <span class="px-3 py-1 rounded-full bg-[#F7B801]/10 text-[#F7B801] text-xs font-bold">GIRLS</span>
+                            </div>
+                            
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-6 h-6 rounded bg-[#50C878]"></div>
+                                    <span class="text-sm text-gray-700">Color: Light Parrot Green</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="scissors" class="size-4 text-gray-400"></i>
+                                    <span class="text-sm text-gray-700">Design: Half Sleeves</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="package" class="size-4 text-gray-400"></i>
+                                    <span class="text-sm text-gray-700">Fabric: Polycot (67/33)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <p class="text-xs text-gray-500">Includes navy blue jacket and sleeve lining. Must be neatly tucked in.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Girls Summer Skirt -->
+                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                  alt="Girls Summer Skirt" 
+                                  class="w-full h-full object-cover">
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-gradient-to-br from-green-500 to-green-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUMMER</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-900 mb-2">Summer Skirt</h4>
+                                    <p class="text-gray-600 text-sm">Navy blue pleated skirt</p>
+                                </div>
+                                <span class="px-3 py-1 rounded-full bg-[#F7B801]/10 text-[#F7B801] text-xs font-bold">GIRLS</span>
+                            </div>
+                            
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-6 h-6 rounded bg-[#1E3A8A]"></div>
+                                    <span class="text-sm text-gray-700">Color: Navy Blue</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="scissors" class="size-4 text-gray-400"></i>
+                                    <span class="text-sm text-gray-700">Design: Pleated</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="package" class="size-4 text-gray-400"></i>
+                                    <span class="text-sm text-gray-700">Fabric: Polyester Viscose (70/30)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <p class="text-xs text-gray-500">Skirt length should be knee-length. Well-ironed pleats required.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Winter Uniform Section -->
+    <section id="winter-uniform" class="px-4 sm:px-6 lg:px-8 py-16 bg-white">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="flex items-center justify-between mb-12">
+                <div>
+                    <span class="bg-gradient-to-br from-blue-800 to-blue-900 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-flex items-center gap-2">
+                        <i data-lucide="snowflake" class="size-4"></i>
+                        Academic Year 2014-15
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Winter Uniform</h2>
+                    <p class="text-gray-600">Warm and formal for cooler months (November - February)</p>
+                </div>
+            </div>
+
+            <!-- Boys Winter Uniform -->
+            <div class="mb-20 animate-fade-in-up">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="p-3 rounded-lg bg-[#3D348B]/10">
+                        <i data-lucide="user" class="size-7 text-[#3D348B]"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900">Boys Winter Uniform</h3>
+                        <p class="text-gray-600">Full-sleeve shirts with sweater and optional blazer</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <!-- Winter Shirt -->
+                    <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                        <div class="h-40 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1599458254070-7f2dbe1bb4e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                  alt="Boys Winter Shirt" 
+                                  class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="font-bold text-gray-900">Winter Shirt</h4>
+                                <span class="px-2 py-0.5 rounded-full bg-[#50C878]/10 text-[#50C878] text-xs font-bold">FULL SLEEVE</span>
+                            </div>
+                            <div class="space-y-2">
+                                <p class="text-sm text-gray-700"><span class="font-medium">Color:</span> Light Green</p>
+                                <p class="text-sm text-gray-700"><span class="font-medium">Fabric:</span> Polycot (67/33)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Winter Trousers -->
+                    <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                        <div class="h-40 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                  alt="Boys Winter Trousers" 
+                                  class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="font-bold text-gray-900">Winter Trousers</h4>
+                                <span class="px-2 py-0.5 rounded-full bg-[#1E3A8A]/10 text-[#1E3A8A] text-xs font-bold">PLEATED</span>
+                            </div>
+                            <div class="space-y-2">
+                                <p class="text-sm text-gray-700"><span class="font-medium">Color:</span> Navy Blue</p>
+                                <p class="text-sm text-gray-700"><span class="font-medium">Design:</span> Pleats in front</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Winter Sweater -->
+                    <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                        <div class="h-40 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1574180045827-681f8a1a9622?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                  alt="Boys Winter Sweater" 
+                                  class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="font-bold text-gray-900">Winter Sweater</h4>
+                                <span class="px-2 py-0.5 rounded-full bg-[#1E3A8A]/10 text-[#1E3A8A] text-xs font-bold">STRIPED</span>
+                            </div>
+                            <div class="space-y-2">
+                                <p class="text-sm text-gray-700"><span class="font-medium">Color:</span> Navy Blue</p>
+                                <p class="text-sm text-gray-700"><span class="font-medium">Design:</span> Green stripes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blazer Section -->
+                <div class="mt-8 bg-gradient-to-r from-[#1E3A8A]/5 to-transparent rounded-2xl p-8 border border-[#1E3A8A]/20">
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="md:w-1/3">
+                            <div class="rounded-xl overflow-hidden border border-gray-300">
+                                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                      alt="School Blazer" 
+                                      class="w-full h-64 object-cover">
+                            </div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="p-2 rounded-lg bg-[#1E3A8A]/20">
+                                    <i data-lucide="coat-hanger" class="size-6 text-[#1E3A8A]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-900">School Blazer (Optional)</h4>
+                                    <p class="text-sm text-gray-600">For formal occasions and extreme cold</p>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <p class="text-sm text-gray-700"><span class="font-medium">Color:</span> Navy Blue</p>
+                                    <p class="text-sm text-gray-700"><span class="font-medium">Design:</span> Double/Single breasted</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-700"><span class="font-medium">Logo:</span> Left chest pocket</p>
+                                    <p class="text-sm text-gray-700"><span class="font-medium">Note:</span> Not compulsory for primary classes</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 p-4 bg-white/50 rounded-lg border border-gray-200">
+                                <p class="text-xs text-gray-600">
+                                    <i data-lucide="info" class="size-4 inline mr-2 text-[#1E3A8A]"></i>
+                                    The school decides blazer requirements based on local climatic conditions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Girls Winter Uniform -->
+            <div class="animate-fade-in-up">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="p-3 rounded-lg bg-[#F7B801]/10">
+                        <i data-lucide="user" class="size-7 text-[#F7B801]"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900">Girls Winter Uniform</h3>
+                        <p class="text-gray-600">Choice between skirt or trousers with sweater</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <!-- Girls Winter Shirt -->
+                    <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                        <div class="h-40 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                  alt="Girls Winter Shirt" 
+                                  class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="font-bold text-gray-900">Winter Shirt</h4>
+                                <span class="px-2 py-0.5 rounded-full bg-[#50C878]/10 text-[#50C878] text-xs font-bold">FULL SLEEVE</span>
+                            </div>
+                            <div class="space-y-2">
+                                <p class="text-sm text-gray-700"><span class="font-medium">Color:</span> Light Green</p>
+                                <p class="text-sm text-gray-700"><span class="font-medium">Fabric:</span> Polycot (67/33)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Winter Skirt/Trousers -->
+                    <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                        <div class="h-40 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1599458254070-7f2dbe1bb4e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                  alt="Girls Winter Skirt/Trousers" 
+                                  class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="font-bold text-gray-900">Skirt/Trousers</h4>
+                                <span class="px-2 py-0.5 rounded-full bg-[#1E3A8A]/10 text-[#1E3A8A] text-xs font-bold">OPTIONAL</span>
+                            </div>
+                            <div class="space-y-2">
+                                <p class="text-sm text-gray-700"><span class="font-medium">Color:</span> Navy Blue</p>
+                                <p class="text-sm text-gray-700"><span class="font-medium">Option:</span> Skirt or Trousers</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Girls Winter Sweater -->
+                    <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                        <div class="h-40 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1574180045827-681f8a1a9622?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                  alt="Girls Winter Sweater" 
+                                  class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="font-bold text-gray-900">Winter Sweater</h4>
+                                <span class="px-2 py-0.5 rounded-full bg-[#F7B801]/10 text-[#F7B801] text-xs font-bold">STRIPED</span>
+                            </div>
+                            <div class="space-y-2">
+                                <p class="text-sm text-gray-700"><span class="font-medium">Color:</span> Navy Blue</p>
+                                <p class="text-sm text-gray-700"><span class="font-medium">Design:</span> Green stripes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Winter Options Info -->
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-br from-[#50C878]/5 to-transparent rounded-xl p-6 border border-[#50C878]/20">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="p-2 rounded-lg bg-[#50C878]/10">
+                                <i data-lucide="thermometer" class="size-5 text-[#50C878]"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-900">Sweater Options</h4>
+                        </div>
+                        <p class="text-sm text-gray-700">
+                            Students can choose between <span class="font-medium">full-sleeved</span> and 
+                            <span class="font-medium">sleeveless</span> sweaters. The school arranges both options.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-[#F7B801]/5 to-transparent rounded-xl p-6 border border-[#F7B801]/20">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="p-2 rounded-lg bg-[#F7B801]/10">
+                                <i data-lucide="user" class="size-5 text-[#F7B801]"></i>
+                            </div>
+                            <h4 class="font-bold text-gray-900">Girls' Options</h4>
+                        </div>
+                        <p class="text-sm text-gray-700">
+                            Girl students may choose between <span class="font-medium">skirts and trousers</span> 
+                            based on local climatic conditions during winter months.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Items Section -->
+    <section id="common-items" class="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Common Accessories</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Items to be worn by both boys and girls as part of the complete uniform</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Cap -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                    <div class="h-48 overflow-hidden relative relative">
+                        <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                              alt="School Cap" 
+                              class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 rounded-full bg-[#3D348B] text-white text-xs font-bold">COMMON</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-gray-900 mb-2">School Cap</h4>
+                        <p class="text-sm text-gray-600 mb-4">Navy blue with school logo</p>
+                        <div class="flex items-center gap-2">
+                            <div class="w-6 h-6 rounded bg-[#1E3A8A]"></div>
+                            <span class="text-sm text-gray-700">Navy Blue</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Belt -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                    <div class="h-48 overflow-hidden relative relative">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                              alt="School Belt" 
+                              class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 rounded-full bg-[#3D348B] text-white text-xs font-bold">COMMON</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-gray-900 mb-2">School Belt</h4>
+                        <p class="text-sm text-gray-600 mb-4">Black leather with school buckle</p>
+                        <div class="flex items-center gap-2">
+                            <div class="w-6 h-6 rounded bg-gray-900"></div>
+                            <span class="text-sm text-gray-700">Black</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tie -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                    <div class="h-48 overflow-hidden relative relative">
+                        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                              alt="School Tie" 
+                              class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 rounded-full bg-[#3D348B] text-white text-xs font-bold">COMMON</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-gray-900 mb-2">School Tie</h4>
+                        <p class="text-sm text-gray-600 mb-4">Striped with school colors</p>
+                        <div class="flex items-center gap-1">
+                            <div class="w-4 h-4 rounded bg-[#3D348B]"></div>
+                            <div class="w-4 h-4 rounded bg-[#F7B801]"></div>
+                            <div class="w-4 h-4 rounded bg-[#50C878]"></div>
+                            <span class="text-sm text-gray-700 ml-2">Striped</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Socks -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                    <div class="h-48 overflow-hidden relative relative">
+                        <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                              alt="School Socks" 
+                              class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 rounded-full bg-[#3D348B] text-white text-xs font-bold">COMMON</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-gray-900 mb-2">School Socks</h4>
+                        <p class="text-sm text-gray-600 mb-4">Navy blue or white</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded bg-[#1E3A8A]"></div>
+                            <div class="w-6 h-6 rounded bg-white border border-gray-300"></div>
+                            <span class="text-sm text-gray-700">Two options</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- General Instructions -->
+            <div class="mt-12 bg-white rounded-2xl p-8 border border-gray-200 shadow-lg">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="p-2 rounded-lg bg-[#F35B04]/10">
+                        <i data-lucide="alert-circle" class="size-6 text-[#F35B04]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Important Instructions</h3>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="size-5 text-[#50C878] mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Blazer Policy</h4>
+                                <p class="text-sm text-gray-700">Blazers are not compulsory for primary classes. Implementation depends on the school's discretion considering local climatic conditions.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="size-5 text-[#50C878] mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Quality Standards</h4>
+                                <p class="text-sm text-gray-700">All uniform items must meet specified fabric ratios and color standards. Non-compliant uniforms will not be permitted.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="size-5 text-[#50C878] mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Purchase Information</h4>
+                                <p class="text-sm text-gray-700">Uniforms available at school store (8 AM - 4 PM) and authorized vendors. Contact school for vendor details.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="size-5 text-[#50C878] mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Regular Checks</h4>
+                                <p class="text-sm text-gray-700">Uniform checks will be conducted regularly. Students not adhering to uniform policy may face disciplinary action.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fabric Details Section -->
+    <section class="px-4 sm:px-6 lg:px-8 py-16 bg-white">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Fabric Specifications</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Detailed fabric composition and care instructions</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Polycot Fabric -->
+                <div class="rounded-2xl overflow-hidden border border-gray-200" style="background-image: url('data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M0 0h20L0 20z\' fill=\'%2350C878\' fill-opacity=\'0.1\'/%3E%3C/svg%3E')">
+                    <div class="bg-gradient-to-r from-[#50C878]/20 to-transparent p-8">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="p-3 rounded-full bg-white">
+                                <i data-lucide="leaf" class="size-8 text-[#50C878]"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900">Polycot Fabric</h3>
+                                <p class="text-gray-600">For Light Green Shirts</p>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-6 mb-6">
+                            <div class="bg-white/80 rounded-xl p-4">
+                                <p class="text-sm text-gray-600 mb-1">Polyester</p>
+                                <p class="text-2xl font-bold text-[#50C878]">67%</p>
+                            </div>
+                            <div class="bg-white/80 rounded-xl p-4">
+                                <p class="text-sm text-gray-600 mb-1">Cotton</p>
+                                <p class="text-2xl font-bold text-[#50C878]">33%</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check" class="size-5 text-[#50C878]"></i>
+                                <span class="text-gray-700">Durable and long-lasting</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check" class="size-5 text-[#50C878]"></i>
+                                <span class="text-gray-700">Comfortable for daily wear</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check" class="size-5 text-[#50C878]"></i>
+                                <span class="text-gray-700">Easy to wash and maintain</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check" class="size-5 text-[#50C878]"></i>
+                                <span class="text-gray-700">Minimal wrinkling</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Polyester Viscose Fabric -->
+                <div class="rounded-2xl overflow-hidden border border-gray-200" style="background-image: url('data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M0 0h20v20H0z\' fill=\'%231E3A8A\' fill-opacity=\'0.1\'/%3E%3C/svg%3E')">
+                    <div class="bg-gradient-to-r from-[#1E3A8A]/20 to-transparent p-8">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="p-3 rounded-full bg-white">
+                                <i data-lucide="droplets" class="size-8 text-[#1E3A8A]"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900">Polyester Viscose</h3>
+                                <p class="text-gray-600">For Navy Blue Items</p>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-6 mb-6">
+                            <div class="bg-white/80 rounded-xl p-4">
+                                <p class="text-sm text-gray-600 mb-1">Polyester</p>
+                                <p class="text-2xl font-bold text-[#1E3A8A]">70%</p>
+                            </div>
+                            <div class="bg-white/80 rounded-xl p-4">
+                                <p class="text-sm text-gray-600 mb-1">Viscose</p>
+                                <p class="text-2xl font-bold text-[#1E3A8A]">30%</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check" class="size-5 text-[#1E3A8A]"></i>
+                                <span class="text-gray-700">Formal appearance</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check" class="size-5 text-[#1E3A8A]"></i>
+                                <span class="text-gray-700">Good drape and fall</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check" class="size-5 text-[#1E3A8A]"></i>
+                                <span class="text-gray-700">Color fastness</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check" class="size-5 text-[#1E3A8A]"></i>
+                                <span class="text-gray-700">Wrinkle-resistant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="relative w-full bg-slate-900 text-white px-4 sm:px-6 lg:px-8 pt-16 md:pt-24 lg:pt-32 pb-8 rounded-t-[40px] overflow-hidden border-t border-primary/30 shadow-[0_-10px_40px_rgba(61,52,139,0.1)] -mt-1">
+      <div class="absolute inset-0 bg-gradient-to-br from-primary-dark via-slate-900 to-slate-950 opacity-95 z-0"></div>
+      <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] pointer-events-none z-0 mix-blend-screen"></div>
+      <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[100px] pointer-events-none z-0 mix-blend-screen"></div>
+      <div class="layout-container flex flex-col max-w-7xl mx-auto w-full relative z-10">
+          <div class="mb-20 rounded-3xl p-8 lg:p-12 relative overflow-hidden group bg-gradient-to-r from-primary-dark via-slate-900 to-primary-dark border border-primary/40 shadow-2xl">
+              <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-20"></div>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start relative z-10">
+                  <div class="flex flex-col gap-4">
+                      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/20 border border-primary/30 w-fit backdrop-blur-sm">
+                          <span class="relative flex h-2 w-2">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+                          </span>
+                          <span class="text-xs font-bold text-accent uppercase tracking-widest">Contact Us</span>
+                      </div>
+                      <h2 class="text-3xl lg:text-4xl font-bold tracking-tight text-white">Get In Touch</h2>
+                      <p class="text-slate-300 text-lg max-w-md font-light">Have questions about admissions, programs, or campus life? We're here to help. Reach out to us and we'll get back to you soon.</p>
+                      <div class="flex flex-col gap-4 mt-4">
+                          <div class="flex items-center gap-3 p-4 rounded-xl bg-primary/10 border border-primary/30 hover:border-accent/50 transition-all group">
+                              <div class="p-2 rounded-lg bg-accent/20 group-hover:bg-accent/30 transition-colors">
+                                  <i data-lucide="mail" class="w-5 h-5 text-accent"></i>
+                              </div>
+                              <div>
+                                  <p class="text-xs text-slate-400 uppercase tracking-wide">Email</p>
+                                  <p class="text-white font-medium">info@mountlitera.edu</p>
+                              </div>
+                          </div>
+                          <div class="flex items-center gap-3 p-4 rounded-xl bg-primary/10 border border-primary/30 hover:border-accent/50 transition-all group">
+                              <div class="p-2 rounded-lg bg-accent/20 group-hover:bg-accent/30 transition-colors">
+                                  <i data-lucide="phone" class="w-5 h-5 text-accent"></i>
+                              </div>
+                              <div>
+                                  <p class="text-xs text-slate-400 uppercase tracking-wide">Phone</p>
+                                  <p class="text-white font-medium">+91 123 456 7890</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="flex justify-start lg:justify-end w-full">
+                      <form class="w-full max-w-lg flex flex-col gap-4">
+                          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                              <div class="relative group/input">
+                                  <i data-lucide="user" class="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-slate-400 group-focus-within/input:text-accent transition-colors z-10"></i>
+                                  <input class="w-full bg-primary/20 border border-primary/40 rounded-xl pl-12 pr-4 py-3.5 text-white placeholder-gray-400 focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all duration-300 shadow-inner" placeholder="Your Name" type="text" required/>
+                              </div>
+                              <div class="relative group/input">
+                                  <i data-lucide="mail" class="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-slate-400 group-focus-within/input:text-accent transition-colors z-10"></i>
+                                  <input class="w-full bg-primary/20 border border-primary/40 rounded-xl pl-12 pr-4 py-3.5 text-white placeholder-gray-400 focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all duration-300 shadow-inner" placeholder="Your Email" type="email" required/>
+                              </div>
+                          </div>
+                          <div class="relative group/input">
+                              <i data-lucide="phone" class="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-slate-400 group-focus-within/input:text-accent transition-colors z-10"></i>
+                              <input class="w-full bg-primary/20 border border-primary/40 rounded-xl pl-12 pr-4 py-3.5 text-white placeholder-gray-400 focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all duration-300 shadow-inner" placeholder="Phone Number (Optional)" type="tel"/>
+                          </div>
+                          <div class="relative group/input">
+                              <i data-lucide="message-square" class="absolute left-4 top-4 size-5 text-slate-400 group-focus-within/input:text-accent transition-colors z-10"></i>
+                              <textarea class="w-full bg-primary/20 border border-primary/40 rounded-xl pl-12 pr-4 py-3.5 text-white placeholder-gray-400 focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all duration-300 shadow-inner resize-none min-h-[120px]" placeholder="Your Message" required></textarea>
+                          </div>
+                          <button class="w-full bg-primary hover:bg-primary-dark text-white font-bold text-base px-8 py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_4px_14px_0_rgba(61,52,139,0.39)] hover:shadow-[0_6px_20px_rgba(61,52,139,0.23)] hover:-translate-y-0.5 active:translate-y-0 group/btn" type="submit">
+                              <span>Send Message</span>
+                              <i data-lucide="send" class="size-5 group-hover/btn:translate-x-1 transition-transform"></i>
+                          </button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
+              <div class="lg:col-span-4 flex flex-col gap-8 pr-4">
+                  <div class="flex items-center gap-4">
+                      <a href="#" class="flex items-center">
+                          <img src="assets/img/logo.webp" alt="Apex International" class="h-12 md:h-14 w-auto object-contain brightness-0 invert">
+                      </a>
+                  </div>
+                  <p class="text-slate-400 text-sm leading-7">
+                      Empowering the next generation of leaders through excellence in education, innovation, and character building since 1985.
+                  </p>
+                  <div class="flex items-start gap-4 p-5 rounded-2xl bg-primary/10 border border-primary/30 hover:border-accent/50 transition-colors group cursor-default">
+                      <div class="mt-1">
+                          <i data-lucide="map-pin" class="w-6 h-6 text-accent group-hover:scale-110 transition-transform duration-300"></i>
+                      </div>
+                      <div>
+                          <h4 class="text-white text-sm font-bold uppercase tracking-wide mb-1 group-hover:text-accent transition-colors">Campus Address</h4>
+                          <p class="text-slate-400 text-sm leading-snug">123 Academic Avenue, Knowledge City<br/>Premium District, 54321</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="lg:col-span-2 lg:col-start-6">
+                  <h3 class="text-white text-sm font-bold uppercase tracking-widest mb-6 flex items-center gap-2">
+                      <span class="w-1 h-4 bg-accent rounded-full"></span>
+                      Menu
+                  </h3>
+                  <ul class="flex flex-col gap-3">
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>About Us
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>Litera Experience
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>School Timing
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>Academic Planner
+                      </a></li>
+                  </ul>
+              </div>
+              <div class="lg:col-span-2">
+                  <h3 class="text-white text-sm font-bold uppercase tracking-widest mb-6 flex items-center gap-2">
+                      <span class="w-1 h-4 bg-accent rounded-full"></span>
+                      Links
+                  </h3>
+                  <ul class="flex flex-col gap-3">
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>Gallery
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>CBSE Mandate
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>Alumni Network
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>Careers
+                      </a></li>
+                  </ul>
+              </div>
+              <div class="lg:col-span-3">
+                  <h3 class="text-white text-sm font-bold uppercase tracking-widest mb-6 flex items-center gap-2">
+                      <span class="w-1 h-4 bg-accent rounded-full"></span>
+                      Contact Us
+                  </h3>
+                  <div class="flex flex-col gap-5">
+                      <div class="flex items-center gap-4 group cursor-pointer">
+                          <div class="w-14 h-14 rounded-full shrink-0 bg-white/5 border border-white/10 flex items-center justify-center text-accent group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300 shadow-lg group-hover:shadow-primary/40">
+                              <i data-lucide="phone" class="w-6 h-6"></i>
+                          </div>
+                          <div>
+                              <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Phone</p>
+                              <a class="text-white font-semibold text-lg hover:text-accent transition-colors" href="tel:+919672797979">+91 9672797979</a>
+                          </div>
+                      </div>
+                      <div class="flex items-center gap-4 group cursor-pointer">
+                          <div class="w-14 h-14 rounded-full shrink-0 bg-white/5 border border-white/10 flex items-center justify-center text-accent group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300 shadow-lg group-hover:shadow-primary/40">
+                              <i data-lucide="mail" class="w-6 h-6"></i>
+                          </div>
+                          <div>
+                              <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Email Address</p>
+                              <a class="text-white font-semibold text-lg hover:text-accent transition-colors" href="mailto:mlzs.alwar@mountlitera.com">mlzs.alwar@mountlitera.com</a>
+                          </div>
+                      </div>
+                      <div class="flex items-start gap-4 group cursor-pointer mt-4">
+                          <div class="w-14 h-14 rounded-full shrink-0 bg-white/5 border border-white/10 flex items-center justify-center text-accent group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300 shadow-lg group-hover:shadow-primary/40">
+                              <i data-lucide="map-pin" class="w-6 h-6"></i>
+                          </div>
+                          <div>
+                              <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Campus</p>
+                              <p class="text-white font-semibold text-sm leading-relaxed">6th Milestone, Jharkheda, Sirmoli Village Road, Alwar - Bhiwadi State Highway, Alwar - 301028 (Raj.)</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="border-t border-primary/30 pt-8 flex flex-col-reverse md:flex-row justify-between items-center gap-6">
+              <div class="text-center md:text-left">
+                  <p class="text-slate-500 text-sm">
+                      Copyright &copy; 2025 Mount Litera Zee School, Alwar. All rights reserved.
+                  </p>
+                  <div class="flex items-center justify-center md:justify-start gap-2 mt-2">
+                      <span class="text-slate-500 text-sm">Design & Developed By</span>
+                      <img src="assets/img/img.png" alt="Developer Logo" class="h-6 w-auto object-contain">
+                  </div>
+              </div>
+              <div class="flex items-center gap-3">
+                  <a class="w-10 h-10 rounded-full border border-primary/40 bg-primary/20 flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white hover:border-accent hover:-translate-y-1 transition-all duration-300" href="#" aria-label="Instagram">
+                      <i data-lucide="instagram" class="size-5"></i>
+                  </a>
+                  <a class="w-10 h-10 rounded-full border border-primary/40 bg-primary/20 flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white hover:border-accent hover:-translate-y-1 transition-all duration-300" href="#" aria-label="LinkedIn">
+                      <i data-lucide="linkedin" class="size-5"></i>
+                  </a>
+                  <a class="w-10 h-10 rounded-full border border-primary/40 bg-primary/20 flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white hover:border-accent hover:-translate-y-1 transition-all duration-300" href="#" aria-label="Twitter">
+                      <i data-lucide="twitter" class="size-5"></i>
+                  </a>
+                  <a class="w-10 h-10 rounded-full border border-primary/40 bg-primary/20 flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white hover:border-accent hover:-translate-y-1 transition-all duration-300" href="#" aria-label="Facebook">
+                      <i data-lucide="facebook" class="size-5"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // --- HEADER SCROLL EFFECT ---
+        const header = document.getElementById('main-header');
+        const logo = document.getElementById('brand-logo');
+
+        if (header && logo) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    // Add Scroll Styles (White BG, Black Text, Smaller Height)
+                    header.classList.remove('text-white', 'h-24', 'border-white/10');
+                    header.classList.add('bg-white/95', 'backdrop-blur-[10px]', 'shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)]', 'h-16', 'text-black', 'border-transparent');
+                    
+                    // Logo Shrink
+                    const logoImg = logo.querySelector('img');
+                    if (logoImg) {
+                        logoImg.classList.remove('h-10', 'sm:h-12', 'md:h-14', 'lg:h-16');
+                        logoImg.classList.add('h-10');
+                        logoImg.classList.remove('brightness-0', 'invert');
+                    }
+                } else {
+                    // Remove Scroll Styles (Back to Transparent)
+                    header.classList.add('text-white', 'h-24', 'border-white/10');
+                    header.classList.remove('bg-white/95', 'backdrop-blur-[10px]', 'shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)]', 'h-16', 'text-black', 'border-transparent');
+                    
+                    // Logo Reset
+                    const logoImg = logo.querySelector('img');
+                    if (logoImg) {
+                        logoImg.classList.add('h-10', 'sm:h-12', 'md:h-14', 'lg:h-16');
+                        // logoImg.classList.remove('h-10');
+                        logoImg.classList.add('brightness-0', 'invert');
+                    }
+                }
+            });
+        }
+
+        // --- MENU TOGGLE ---
+        const menuOverlay = document.getElementById('full-menu');
+        
+        function toggleMenu() {
+            if (menuOverlay) {
+                const isOpen = !menuOverlay.classList.contains('-translate-y-full');
+                
+                if (isOpen) {
+                    // Close Menu
+                    menuOverlay.classList.add('-translate-y-full');
+                } else {
+                    // Open Menu
+                    menuOverlay.classList.remove('-translate-y-full');
+                }
+            }
+        }
+    </script> 
+</body>
+</html>
