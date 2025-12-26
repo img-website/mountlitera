@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Disaster Management - Mount Litera Zee School, Alwar</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- Masonry Layout CSS (for grid gallery effect) -->
+    <style>
+        .masonry-grid {
+            column-count: 2;
+            column-gap: 0.5rem;
+        }
+        @media (min-width: 640px) {
+            .masonry-grid {
+                column-count: 3;
+                column-gap: 0.75rem;
+            }
+        }
+        @media (min-width: 768px) {
+            .masonry-grid {
+                column-count: 4;
+                column-gap: 1rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            .masonry-grid {
+                column-count: 5;
+                column-gap: 1rem;
+            }
+        }
+        .masonry-item {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 0.5rem;
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+        @media (min-width: 640px) {
+            .masonry-item {
+                margin-bottom: 0.75rem;
+            }
+        }
+        @media (min-width: 768px) {
+            .masonry-item {
+                margin-bottom: 1rem;
+            }
+        }
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.7;
+                transform: scale(1.1);
+            }
+        }
+        .masonry-item:hover .play-icon {
+            animation: blink 1.5s ease-in-out infinite;
+        }
+    </style>
+    <script>
+      tailwind.config = {
+          darkMode: "class",
+          theme: {
+              extend: {
+                  colors: {
+                      "primary": "#3D348B",
+                      "primary-dark": "#2d2566",
+                      "primary-light": "#7678ED",
+                      "primary-lighter": "#9a9cf0",
+                      "secondary": "#F7B801",
+                      "accent": "#F7B801",
+                      "accent-dark": "#F18701",
+                      "accent-light": "#F35B04",
+                      "indigo-velvet": "#3D348B",
+                      "slate-blue": "#7678ED",
+                      "amber-flame": "#F7B801",
+                      "tiger-orange": "#F18701",
+                      "cayenne-red": "#F35B04",
+                      "surface": "#ffffff",
+                      "background-light": "#f8fafc",
+                      "background-dark": "#111827",
+                      "surface-light": "#ffffff",
+                      "surface-dark": "#1f2937",
+                      "text-main-light": "#0f172a",
+                      "text-main-dark": "#f8fafc",
+                      "text-secondary-light": "#475569",
+                      "text-secondary-dark": "#94a3b8",
+                      "border-light": "#e2e8f0",
+                      "border-dark": "#374151",
+                      "dark-text": "#1e293b",
+                      "card-dark": "#1e293b",
+                  },
+                  fontFamily: {
+                      "display": ["Spline Sans", "sans-serif"],
+                      "body": ["Noto Sans", "sans-serif"],
+                  },
+                  animation: {
+                      'fade-in-up': 'fadeInUp 0.8s ease-out',
+                      'pulse-slow': 'pulse 3s infinite',
+                  },
+                  keyframes: {
+                      fadeInUp: {
+                          '0%': { opacity: '0', transform: 'translateY(20px)' },
+                          '100%': { opacity: '1', transform: 'translateY(0)' },
+                      }
+                  },
+                  boxShadow: {
+                      'soft': '0 10px 40px -10px rgba(61, 52, 139, 0.05)',
+                      'glow': '0 0 20px -5px rgba(61, 52, 139, 0.3)',
+                      'glow-accent': '0 0 20px -5px rgba(247, 184, 1, 0.4)',
+                  }
+              },
+          },
+      }
+  </script>
+  <style>
+      ::-webkit-scrollbar {
+          width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+          background: #f1f5f9; 
+      }
+      ::-webkit-scrollbar-thumb {
+          background: #cbd5e1; 
+          border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+          background: #3D348B; 
+      }
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+</head>
+<body class="bg-background-light text-text-main-light font-display overflow-x-hidden antialiased selection:bg-secondary selection:text-white scroll-smooth">
+    <!-- Header Section -->
+    <header id="main-header" class="fixed w-full top-0 z-40 transition-all duration-500 ease-in-out h-24 text-white flex items-center border-b border-white/10 px-4 sm:px-6 lg:px-8">
+        <div class="w-full max-w-7xl mx-auto h-full relative flex justify-between items-center">
+
+            <!-- LEFT MENU ITEMS (Desktop) -->
+            <nav class="hidden lg:flex items-center justify-start w-5/12 pr-12 space-x-8">
+                <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Home</a>
+                <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">About</a>
+                <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Academics</a>
+            </nav>
+
+            <!-- LOGO - Left on Mobile, Center on Desktop -->
+            <div class="lg:absolute lg:left-1/2 lg:top-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center lg:z-50">
+                <a href="#" id="brand-logo" class="transition-all duration-500 flex items-center justify-center">
+                    <img src="assets/img/logo.webp" alt="Mount Litera Zee School" class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain transition-all duration-500 brightness-0 invert">
+                </a>
+            </div>
+
+            <!-- RIGHT MENU ITEMS (Desktop) -->
+            <nav class="hidden lg:flex items-center justify-end w-5/12 pl-12 space-x-8">
+                <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Admissions</a>
+                <a href="#" class="hover-underline text-sm font-medium tracking-wide uppercase transition-colors">Campus Life</a>
+                
+                <!-- MENU BUTTON with Icon & Label (Desktop) -->
+                <button onclick="toggleMenu()" class="flex items-center gap-3 group focus:outline-none ml-4 pl-6 border-l border-current">
+                    <span class="text-xs font-bold tracking-[0.2em] uppercase group-hover:opacity-70 transition-opacity">Menu</span>
+                    <div class="space-y-1.5 group-hover:scale-110 transition-transform duration-300">
+                        <span class="block w-6 h-0.5 bg-current transition-all"></span>
+                        <span class="block w-4 h-0.5 bg-current ml-auto transition-all group-hover:w-6"></span>
+                    </div>
+                </button>
+            </nav>
+
+            <!-- Mobile Menu Icon (Visible on small screens only) - Right aligned -->
+            <button onclick="toggleMenu()" class="lg:hidden flex items-center justify-center size-10 shrink-0 rounded-full hover:bg-white/10 transition-colors">
+                <i data-lucide="menu" class="w-5 h-5"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Full Page Sidebar / Overlay -->
+    <div id="full-menu" class="fixed inset-0 bg-slate-900 text-white z-50 transform -translate-y-full transition-transform duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] flex flex-col overflow-y-auto">
+        
+        <!-- Sidebar Header (Close Button) -->
+        <div class="sticky top-0 w-full py-5 flex items-center justify-between px-4 sm:px-6 container mx-auto bg-slate-900 z-10 border-b border-primary/30">
+            <span class="font-['Playfair_Display',serif] text-xl sm:text-2xl italic text-gray-300">Navigation</span>
+            <button onclick="toggleMenu()" class="group flex items-center gap-2 sm:gap-3 hover:text-accent transition-colors">
+                <span class="text-xs font-bold tracking-[0.2em] uppercase hidden sm:inline">Close</span>
+                <div class="relative size-8 sm:size-10 flex items-center justify-center border border-primary/40 rounded-full group-hover:border-accent group-hover:rotate-90 transition-all duration-500">
+                    <i data-lucide="x" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                </div>
+            </button>
+        </div>
+
+        <!-- Sidebar Content -->
+        <div class="flex-1 flex items-center justify-center container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 w-full max-w-5xl">
+                
+                <!-- Main Navigation Links -->
+                <div class="space-y-2">
+                    <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-4 sm:mb-6 uppercase">Explore</h3>
+                    <ul class="space-y-3 sm:space-y-4">
+                        <li class="overflow-hidden">
+                            <a href="#" class="block font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-accent transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">Home</a>
+                        </li>
+                        <li class="overflow-hidden">
+                            <a href="#" class="block font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-accent transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">About</a>
+                        </li>
+                        <li class="overflow-hidden">
+                            <a href="#" class="block font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-accent transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">Academics</a>
+                        </li>
+                        <li class="overflow-hidden">
+                            <a href="#" class="block font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-accent transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">Admissions</a>
+                        </li>
+                        <li class="overflow-hidden">
+                            <a href="#" class="block font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl hover:italic hover:text-accent transition-all transform hover:translate-x-2 sm:hover:translate-x-4 duration-300">Campus Life</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Secondary Info -->
+                <div class="flex flex-col justify-between space-y-8 sm:space-y-10 mt-8 md:mt-0 md:pl-20 md:border-l border-white/10">
+                    
+                    <!-- Quick Actions -->
+                    <div>
+                        <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-4 sm:mb-6 uppercase">Quick Actions</h3>
+                        <ul class="space-y-3 sm:space-y-4">
+                            <li>
+                                <a href="#" class="flex items-center gap-3 text-base sm:text-lg text-gray-300 hover:text-accent transition-colors group">
+                                    <span class="w-1 h-5 sm:h-6 bg-primary/40 group-hover:bg-accent transition-colors"></span>
+                                    <span>Apply Now</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center gap-3 text-base sm:text-lg text-gray-300 hover:text-accent transition-colors group">
+                                    <span class="w-1 h-5 sm:h-6 bg-primary/40 group-hover:bg-accent transition-colors"></span>
+                                    <span>Virtual Tour</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center gap-3 text-base sm:text-lg text-gray-300 hover:text-accent transition-colors group">
+                                    <span class="w-1 h-5 sm:h-6 bg-primary/40 group-hover:bg-accent transition-colors"></span>
+                                    <span>Contact Us</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact & Social -->
+                    <div>
+                        <h3 class="text-xs font-bold tracking-[0.2em] text-gray-500 mb-3 sm:mb-4 uppercase">Connect</h3>
+                        <p class="text-gray-400 mb-4 text-xs sm:text-sm font-light">mlzs.alwar@mountlitera.com <br> +91 9672797979</p>
+                        <div class="flex gap-3 sm:gap-4">
+                            <a href="#" class="w-9 h-9 sm:size-10 border border-primary/40 rounded-full flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all">
+                                <i data-lucide="instagram" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                            </a>
+                            <a href="#" class="w-9 h-9 sm:size-10 border border-primary/40 rounded-full flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all">
+                                <i data-lucide="twitter" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                            </a>
+                            <a href="#" class="w-9 h-9 sm:size-10 border border-primary/40 rounded-full flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition-all">
+                                <i data-lucide="linkedin" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary via-primary-dark to-slate-900 px-4 sm:px-6 lg:px-8 pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')]"></div>
+        <div class="absolute top-0 right-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto">
+            <div class="text-center text-white">
+                <div class="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 mb-4 sm:mb-6 animate-fade-in-up">
+                    <i data-lucide="images" class="w-4 h-4 sm:w-5 sm:h-5 text-accent"></i>
+                    <span class="text-xs sm:text-sm font-semibold uppercase tracking-wider">Memories</span>
+                </div>
+                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 tracking-tight">
+                    Photo <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-flame to-tiger-orange">Gallery</span>
+                </h1>
+                <p class="text-sm sm:text-base md:text-lg lg:text-xl text-slate-200 max-w-3xl mx-auto leading-relaxed">
+                    Capturing moments of excellence, creativity, and achievement at Mount Litera Zee School
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="relative bg-background-light px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
+        <div class="max-w-7xl mx-auto">
+            <!-- Gallery Grid - Masonry Layout -->
+            <div class="masonry-grid" id="gallery-grid">
+                <!-- Images will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="relative w-full bg-slate-900 text-white px-4 sm:px-6 lg:px-8 pt-16 md:pt-24 lg:pt-32 pb-8 rounded-t-[40px] overflow-hidden border-t border-primary/30 shadow-[0_-10px_40px_rgba(61,52,139,0.1)] -mt-1">
+      <div class="absolute inset-0 bg-gradient-to-br from-primary-dark via-slate-900 to-slate-950 opacity-95 z-0"></div>
+      <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] pointer-events-none z-0 mix-blend-screen"></div>
+      <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[100px] pointer-events-none z-0 mix-blend-screen"></div>
+      <div class="layout-container flex flex-col max-w-7xl mx-auto w-full relative z-10">
+          <div class="mb-20 rounded-3xl p-8 lg:p-12 relative overflow-hidden group bg-gradient-to-r from-primary-dark via-slate-900 to-primary-dark border border-primary/40 shadow-2xl">
+              <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-20"></div>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start relative z-10">
+                  <div class="flex flex-col gap-4">
+                      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/20 border border-primary/30 w-fit backdrop-blur-sm">
+                          <span class="relative flex h-2 w-2">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+                          </span>
+                          <span class="text-xs font-bold text-accent uppercase tracking-widest">Contact Us</span>
+                      </div>
+                      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white">Get In Touch</h2>
+                      <p class="text-slate-300 text-sm sm:text-base md:text-lg max-w-md font-light">Have questions about admissions, programs, or campus life? We're here to help. Reach out to us and we'll get back to you soon.</p>
+                      <div class="flex flex-col gap-4 mt-4">
+                          <div class="flex items-center gap-3 p-4 rounded-xl bg-primary/10 border border-primary/30 hover:border-accent/50 transition-all group">
+                              <div class="p-2 rounded-lg bg-accent/20 group-hover:bg-accent/30 transition-colors">
+                                  <i data-lucide="mail" class="w-5 h-5 text-accent"></i>
+                              </div>
+                              <div>
+                                  <p class="text-xs text-slate-400 uppercase tracking-wide">Email</p>
+                                  <p class="text-white font-medium">info@mountlitera.edu</p>
+                              </div>
+                          </div>
+                          <div class="flex items-center gap-3 p-4 rounded-xl bg-primary/10 border border-primary/30 hover:border-accent/50 transition-all group">
+                              <div class="p-2 rounded-lg bg-accent/20 group-hover:bg-accent/30 transition-colors">
+                                  <i data-lucide="phone" class="w-5 h-5 text-accent"></i>
+                              </div>
+                              <div>
+                                  <p class="text-xs text-slate-400 uppercase tracking-wide">Phone</p>
+                                  <p class="text-white font-medium">+91 123 456 7890</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="flex justify-start lg:justify-end w-full">
+                      <form class="w-full max-w-lg flex flex-col gap-4">
+                          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                              <div class="relative group/input">
+                                  <i data-lucide="user" class="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-slate-400 group-focus-within/input:text-accent transition-colors z-10"></i>
+                                  <input class="w-full bg-primary/20 border border-primary/40 rounded-xl pl-12 pr-4 py-3.5 text-white placeholder-gray-400 focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all duration-300 shadow-inner" placeholder="Your Name" type="text" required/>
+                              </div>
+                              <div class="relative group/input">
+                                  <i data-lucide="mail" class="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-slate-400 group-focus-within/input:text-accent transition-colors z-10"></i>
+                                  <input class="w-full bg-primary/20 border border-primary/40 rounded-xl pl-12 pr-4 py-3.5 text-white placeholder-gray-400 focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all duration-300 shadow-inner" placeholder="Your Email" type="email" required/>
+                              </div>
+                          </div>
+                          <div class="relative group/input">
+                              <i data-lucide="phone" class="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-slate-400 group-focus-within/input:text-accent transition-colors z-10"></i>
+                              <input class="w-full bg-primary/20 border border-primary/40 rounded-xl pl-12 pr-4 py-3.5 text-white placeholder-gray-400 focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all duration-300 shadow-inner" placeholder="Phone Number (Optional)" type="tel"/>
+                          </div>
+                          <div class="relative group/input">
+                              <i data-lucide="message-square" class="absolute left-4 top-4 size-5 text-slate-400 group-focus-within/input:text-accent transition-colors z-10"></i>
+                              <textarea class="w-full bg-primary/20 border border-primary/40 rounded-xl pl-12 pr-4 py-3.5 text-white placeholder-gray-400 focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all duration-300 shadow-inner resize-none min-h-[120px]" placeholder="Your Message" required></textarea>
+                          </div>
+                          <button class="w-full bg-primary hover:bg-primary-dark text-white font-bold text-base px-8 py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_4px_14px_0_rgba(61,52,139,0.39)] hover:shadow-[0_6px_20px_rgba(61,52,139,0.23)] hover:-translate-y-0.5 active:translate-y-0 group/btn" type="submit">
+                              <span>Send Message</span>
+                              <i data-lucide="send" class="size-5 group-hover/btn:translate-x-1 transition-transform"></i>
+                          </button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
+              <div class="lg:col-span-4 flex flex-col gap-8 pr-4">
+                  <div class="flex items-center gap-4">
+                      <a href="#" class="flex items-center">
+                          <img src="assets/img/logo.webp" alt="Mount Litera Zee School" class="h-12 md:h-14 w-auto object-contain brightness-0 invert">
+                      </a>
+                  </div>
+                  <p class="text-slate-400 text-sm leading-7">
+                      Empowering the next generation of leaders through excellence in education, innovation, and character building since 1985.
+                  </p>
+                  <div class="flex items-start gap-4 p-5 rounded-2xl bg-primary/10 border border-primary/30 hover:border-accent/50 transition-colors group cursor-default">
+                      <div class="mt-1">
+                          <i data-lucide="map-pin" class="w-6 h-6 text-accent group-hover:scale-110 transition-transform duration-300"></i>
+                      </div>
+                      <div>
+                          <h4 class="text-white text-sm font-bold uppercase tracking-wide mb-1 group-hover:text-accent transition-colors">Campus Address</h4>
+                          <p class="text-slate-400 text-sm leading-snug">123 Academic Avenue, Knowledge City<br/>Premium District, 54321</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="lg:col-span-2 lg:col-start-6">
+                  <h3 class="text-white text-sm font-bold uppercase tracking-widest mb-6 flex items-center gap-2">
+                      <span class="w-1 h-4 bg-accent rounded-full"></span>
+                      Menu
+                  </h3>
+                  <ul class="flex flex-col gap-3">
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>About Us
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>Litera Experience
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>School Timing
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>Academic Planner
+                      </a></li>
+                  </ul>
+              </div>
+              <div class="lg:col-span-2">
+                  <h3 class="text-white text-sm font-bold uppercase tracking-widest mb-6 flex items-center gap-2">
+                      <span class="w-1 h-4 bg-accent rounded-full"></span>
+                      Links
+                  </h3>
+                  <ul class="flex flex-col gap-3">
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>Gallery
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>CBSE Mandate
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>Alumni Network
+                      </a></li>
+                      <li><a class="text-slate-400 hover:text-accent hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 text-sm font-medium" href="#">
+                          <span class="w-1 h-1 rounded-full bg-accent opacity-0 hover:opacity-100 transition-opacity"></span>Careers
+                      </a></li>
+                  </ul>
+              </div>
+              <div class="lg:col-span-3">
+                  <h3 class="text-white text-sm font-bold uppercase tracking-widest mb-6 flex items-center gap-2">
+                      <span class="w-1 h-4 bg-accent rounded-full"></span>
+                      Contact Us
+                  </h3>
+                  <div class="flex flex-col gap-5">
+                      <div class="flex items-center gap-4 group cursor-pointer">
+                          <div class="w-14 h-14 rounded-full shrink-0 bg-white/5 border border-white/10 flex items-center justify-center text-accent group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300 shadow-lg group-hover:shadow-primary/40">
+                              <i data-lucide="phone" class="w-6 h-6"></i>
+                          </div>
+                          <div>
+                              <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Phone</p>
+                              <a class="text-white font-semibold text-lg hover:text-accent transition-colors" href="tel:+919672797979">+91 9672797979</a>
+                          </div>
+                      </div>
+                      <div class="flex items-center gap-4 group cursor-pointer">
+                          <div class="w-14 h-14 rounded-full shrink-0 bg-white/5 border border-white/10 flex items-center justify-center text-accent group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300 shadow-lg group-hover:shadow-primary/40">
+                              <i data-lucide="mail" class="w-6 h-6"></i>
+                          </div>
+                          <div>
+                              <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Email Address</p>
+                              <a class="text-white font-semibold text-lg hover:text-accent transition-colors" href="mailto:mlzs.alwar@mountlitera.com">mlzs.alwar@mountlitera.com</a>
+                          </div>
+                      </div>
+                      <div class="flex items-start gap-4 group cursor-pointer mt-4">
+                          <div class="w-14 h-14 rounded-full shrink-0 bg-white/5 border border-white/10 flex items-center justify-center text-accent group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300 shadow-lg group-hover:shadow-primary/40">
+                              <i data-lucide="map-pin" class="w-6 h-6"></i>
+                          </div>
+                          <div>
+                              <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Campus</p>
+                              <p class="text-white font-semibold text-sm leading-relaxed">6th Milestone, Jharkheda, Sirmoli Village Road, Alwar - Bhiwadi State Highway, Alwar - 301028 (Raj.)</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="border-t border-primary/30 pt-8 flex flex-col-reverse md:flex-row justify-between items-center gap-6">
+              <div class="text-center md:text-left">
+                  <p class="text-slate-500 text-sm">
+                      Copyright &copy; 2025 Mount Litera Zee School, Alwar. All rights reserved.
+                  </p>
+                  <div class="flex items-center justify-center md:justify-start gap-2 mt-2">
+                      <span class="text-slate-500 text-sm">Design & Developed By</span>
+                      <img src="assets/img/img.png" alt="Developer Logo" class="h-6 w-auto object-contain">
+                  </div>
+              </div>
+              <div class="flex items-center gap-3">
+                  <a class="size-10 shrink-0 rounded-full border border-primary/40 bg-primary/20 flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white hover:border-accent hover:-translate-y-1 transition-all duration-300" href="#" aria-label="Instagram">
+                      <i data-lucide="instagram" class="size-5"></i>
+                  </a>
+                  <a class="size-10 shrink-0 rounded-full border border-primary/40 bg-primary/20 flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white hover:border-accent hover:-translate-y-1 transition-all duration-300" href="#" aria-label="LinkedIn">
+                      <i data-lucide="linkedin" class="size-5"></i>
+                  </a>
+                  <a class="size-10 shrink-0 rounded-full border border-primary/40 bg-primary/20 flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white hover:border-accent hover:-translate-y-1 transition-all duration-300" href="#" aria-label="Twitter">
+                      <i data-lucide="twitter" class="size-5"></i>
+                  </a>
+                  <a class="size-10 shrink-0 rounded-full border border-primary/40 bg-primary/20 flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white hover:border-accent hover:-translate-y-1 transition-all duration-300" href="#" aria-label="Facebook">
+                      <i data-lucide="facebook" class="size-5"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // --- HEADER SCROLL EFFECT ---
+        const header = document.getElementById('main-header');
+        const logo = document.getElementById('brand-logo');
+
+        if (header && logo) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    // Add Scroll Styles (White BG, Black Text, Smaller Height)
+                    header.classList.remove('text-white', 'h-24', 'border-white/10');
+                    header.classList.add('bg-white/95', 'backdrop-blur-[10px]', 'shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)]', 'h-16', 'text-black', 'border-transparent');
+                    
+                    // Logo Shrink
+                    const logoImg = logo.querySelector('img');
+                    if (logoImg) {
+                        logoImg.classList.remove('h-10', 'sm:h-12', 'md:h-14', 'lg:h-16');
+                        logoImg.classList.add('h-10');
+                        logoImg.classList.remove('brightness-0', 'invert');
+                    }
+                } else {
+                    // Remove Scroll Styles (Back to Transparent)
+                    header.classList.add('text-white', 'h-24', 'border-white/10');
+                    header.classList.remove('bg-white/95', 'backdrop-blur-[10px]', 'shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)]', 'h-16', 'text-black', 'border-transparent');
+                    
+                    // Logo Reset
+                    const logoImg = logo.querySelector('img');
+                    if (logoImg) {
+                        logoImg.classList.add('h-10', 'sm:h-12', 'md:h-14', 'lg:h-16');
+                        logoImg.classList.add('brightness-0', 'invert');
+                    }
+                }
+            });
+        }
+
+        // --- MENU TOGGLE ---
+        const menuOverlay = document.getElementById('full-menu');
+        
+        function toggleMenu() {
+            if (menuOverlay) {
+                const isOpen = !menuOverlay.classList.contains('-translate-y-full');
+                
+                if (isOpen) {
+                    // Close Menu
+                    menuOverlay.classList.add('-translate-y-full');
+                } else {
+                    // Open Menu
+                    menuOverlay.classList.remove('-translate-y-full');
+                }
+            }
+        }
+
+        // --- GALLERY SETUP ---
+        const imageBaseUrl = 'https://www.mlzsalwar.ac.in/';
+        const galleryImages = [
+            'mlz-admin/webroot/uploads/gallery/IMG_0765.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0762.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0807.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0796.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0795.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0778.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0773.JPG',
+            'mlz-admin/webroot/uploads/gallery/WhatsApp_Image_2025-07-29_at_3_17_54_PM.jpg',
+            'mlz-admin/webroot/uploads/gallery/WhatsApp_Image_2025-07-21_at_7_51_45_AM.jpg',
+            'mlz-admin/webroot/uploads/gallery/IMG_9140.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9138.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9133.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9115.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9114.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9102.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9096.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9094.jpg',
+            'mlz-admin/webroot/uploads/gallery/IMG_9092.JPG',
+            'mlz-admin/webroot/uploads/gallery/WhatsApp_Image_2024-11-15_at_6_50_14_AM.jpeg',
+            'mlz-admin/webroot/uploads/gallery/WhatsApp_Image_2024-11-15_at_6_50_13_AM_(2).jpeg',
+            'mlz-admin/webroot/uploads/gallery/IMG_8170.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_8106.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_8074.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_8050.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_7998.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_7802.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_7578.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_7513.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_6997.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_6995.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP03456.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP03386.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP03335.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP03296.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP03091.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP03053.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP02607.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP02508.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP02496.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP02359.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP02309.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP02209.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP02190.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP02182.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP02107.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP02094.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP01986.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP01923.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP01844.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSP01813.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_1123.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_1076.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_0914.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_0813.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_0743.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_0602.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_0576.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_0510.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_0448.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_0159.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_0081.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0447.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0422.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0388.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0377.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0358.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0354.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0304.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0267.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0259.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0255.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0227.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0217.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9948.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9943.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9932.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9930.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9927.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9926.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9910.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9904.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9894.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9879.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9872.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9855.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9852.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9839.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_8001.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_8000.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_7994.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_7991.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_7990.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_37741.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_37691.JPG',
+            'mlz-admin/webroot/uploads/gallery/WhatsApp_Image_2023-03-26_at_10_16_33_AM.jpeg',
+            'mlz-admin/webroot/uploads/gallery/WhatsApp_Image_2023-03-26_at_10_16_24_AM.jpeg',
+            'mlz-admin/webroot/uploads/gallery/IMG_4207.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_4164.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_3774.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_3769.JPG',
+            'mlz-admin/webroot/uploads/gallery/WhatsApp_Image_2024-01-07_at_10_55_50_AM.jpeg',
+            'mlz-admin/webroot/uploads/gallery/WhatsApp_Image_2024-01-07_at_10_55_49_AM.jpeg',
+            'mlz-admin/webroot/uploads/gallery/WhatsApp_Image_2024-01-07_at_10_55_36_AM_(1).jpeg',
+            'mlz-admin/webroot/uploads/gallery/WhatsApp_Image_2024-01-07_at_10_55_35_AM.jpeg',
+            'mlz-admin/webroot/uploads/gallery/WhatsApp_Image_2024-01-07_at_10_55_33_AM.jpeg',
+            'mlz-admin/webroot/uploads/gallery/WhatsApp_Image_2024-01-07_at_10_55_32_AM_(1).jpeg',
+            'mlz-admin/webroot/uploads/gallery/IMG_1679.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_1638.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_1607.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_1591.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_1560.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_1041.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_1034.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0849_-_Copy.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0795_-_Copy.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0761_-_Copy.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0708_-_Copy.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0696.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0673.JPG',
+            'mlz-admin/webroot/uploads/gallery/2Q3A5278.JPG',
+            'mlz-admin/webroot/uploads/gallery/2Q3A5271.JPG',
+            'mlz-admin/webroot/uploads/gallery/2Q3A5243.JPG',
+            'mlz-admin/webroot/uploads/gallery/2Q3A5151.JPG',
+            'mlz-admin/webroot/uploads/gallery/2Q3A51351.JPG',
+            'mlz-admin/webroot/uploads/gallery/2Q3A5217.JPG',
+            'mlz-admin/webroot/uploads/gallery/2Q3A5135.JPG',
+            'mlz-admin/webroot/uploads/gallery/2Q3A5034.JPG',
+            'mlz-admin/webroot/uploads/gallery/2Q3A4864.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_8404.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_8403.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_8329.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_8319.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_8231.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_5272.jpg',
+            'mlz-admin/webroot/uploads/gallery/IMG_5681.jpg',
+            'mlz-admin/webroot/uploads/gallery/IMG_5392.jpg',
+            'mlz-admin/webroot/uploads/gallery/IMG_5216.jpg',
+            'mlz-admin/webroot/uploads/gallery/IMG_1911.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_1908.JPG',
+            'mlz-admin/webroot/uploads/gallery/5_.jpeg',
+            'mlz-admin/webroot/uploads/gallery/4_.jpeg',
+            'mlz-admin/webroot/uploads/gallery/GORV2459.JPG',
+            'mlz-admin/webroot/uploads/gallery/GORV2314.JPG',
+            'mlz-admin/webroot/uploads/gallery/GORV2310.JPG',
+            'mlz-admin/webroot/uploads/gallery/GORV2301.JPG',
+            'mlz-admin/webroot/uploads/gallery/GORV2294.JPG',
+            'mlz-admin/webroot/uploads/gallery/GORV2111.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_56351.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_5690.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_5635.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_5618.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_5611.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_5585.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_5554.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_5551.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_5546.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_5517.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_5419.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_5407.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_53941.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_5383.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_5340.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_5295.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9997.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9987.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9976.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A99151.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9884.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9786.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9742.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9717.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9671.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9662.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9608.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A95941.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9568.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9566.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9516.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9494.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9440.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0862.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0835.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0828.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0825.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A08171.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0785.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_5394.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9915.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A9594.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0817.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0782.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0638.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0564.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0481.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0130.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0101.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0085.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0082.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0067.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0054.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0051.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0046.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0030.JPG',
+            'mlz-admin/webroot/uploads/gallery/0W9A0019.JPG',
+            'mlz-admin/webroot/uploads/gallery/WhatsApp_Image_2019-06-08_at_11_04_03_AM_(Copy).jpeg',
+            'mlz-admin/webroot/uploads/gallery/WhatsApp_Image_2019-06-08_at_11_03_41_AM_(Copy).jpeg',
+            'mlz-admin/webroot/uploads/gallery/IMG-20190607-WA0007_(Copy).jpg',
+            'mlz-admin/webroot/uploads/gallery/IMG_9824_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9682_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_4000_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_3865_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_3299_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_1605_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_1548_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_1540_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_7244_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_7054_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_7052_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_6757_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_5313_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_5263_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_3455_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_1768_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_3396_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_3344_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_3273_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_3208_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_3183_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_3151_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_3120_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_3074_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_3033_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_2955_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_2943_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_2912_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_2828_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_2462_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_2437_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_2358_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_2352_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_2348_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_2307_(Copy).JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_9832.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0142.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_0074.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_7482.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_7184.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_7178.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_5419.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_5198.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_5124.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_4155.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_3850.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_3847.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_3545.JPG',
+            'mlz-admin/webroot/uploads/gallery/IMG_3540.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_3291.JPG',
+            'mlz-admin/webroot/uploads/gallery/DSC_3282.JPG',
+            'mlz-admin/webroot/uploads/gallery/_MG_9171.JPG'
+        ];
+
+        // Initialize gallery
+        const galleryGrid = document.getElementById('gallery-grid');
+        if (galleryGrid) {
+            galleryImages.forEach((imagePath, index) => {
+                const fullImageUrl = imageBaseUrl + imagePath.trim();
+                const galleryItem = document.createElement('a');
+                galleryItem.href = fullImageUrl;
+                galleryItem.setAttribute('data-fancybox', 'gallery');
+                galleryItem.setAttribute('data-caption', `Gallery Image ${index + 1}`);
+                galleryItem.className = 'masonry-item group relative overflow-hidden rounded-lg sm:rounded-xl bg-gray-100 hover:scale-105 transition-transform duration-300 cursor-pointer block';
+                
+                const img = document.createElement('img');
+                img.src = fullImageUrl;
+                img.alt = `Gallery Image ${index + 1}`;
+                img.className = 'w-full h-auto object-cover group-hover:opacity-90 transition-opacity';
+                img.loading = 'lazy';
+                
+                // Overlay on hover
+                const overlay = document.createElement('div');
+                overlay.className = 'absolute inset-0 bg-gradient-to-br from-black/40 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center';
+                
+                const icon = document.createElement('i');
+                icon.setAttribute('data-lucide', 'play');
+                icon.className = 'play-icon w-12 h-12 sm:w-14 sm:h-14 text-white bg-white/20 rounded-full p-3 backdrop-blur-sm';
+                
+                overlay.appendChild(icon);
+                galleryItem.appendChild(img);
+                galleryItem.appendChild(overlay);
+                galleryGrid.appendChild(galleryItem);
+            });
+            
+            // Re-initialize Lucide icons for new elements
+            lucide.createIcons();
+            
+            // Initialize Fancybox after images are added
+            setTimeout(() => {
+                if (typeof Fancybox !== 'undefined') {
+                    Fancybox.bind('[data-fancybox="gallery"]', {
+                        Toolbar: {
+                            display: {
+                                left: ['infobar'],
+                                middle: [],
+                                right: ['slideshow', 'download', 'thumbs', 'close']
+                            }
+                        },
+                        Thumbs: {
+                            autoStart: true
+                        }
+                    });
+                    console.log('Fancybox initialized successfully');
+                } else {
+                    console.error('Fancybox library not loaded');
+                }
+            }, 300);
+        }
+
+    </script>
+</body>
+</html>
+

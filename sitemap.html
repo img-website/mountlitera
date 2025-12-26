@@ -92,22 +92,21 @@
 <body class="bg-slate-50 text-slate-900 font-display overflow-x-hidden antialiased selection:bg-[#F7B801] selection:text-white scroll-smooth">
     
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-primary/90 via-primary to-primary-dark text-white overflow-hidden">
-        <div class="absolute inset-0 opacity-20">
-            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-green-500/10 rounded-full blur-3xl"></div>
-        </div>
+    <section class="relative bg-gradient-to-br from-primary via-primary-dark to-slate-900 text-white overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-20"></div>
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary-light/10 rounded-full blur-[100px] pointer-events-none"></div>
         
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-10 md:pt-40 md:pb-24">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 md:pt-40 md:pb-28">
             <div class="max-w-3xl">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6 animate-fade-in-up">
-                    <i data-lucide="map" class="w-4 h-4"></i>
-                    <span class="text-sm font-semibold uppercase tracking-wider">Navigation</span>
+                <div class="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
+                    <i data-lucide="map" class="w-4 h-4 sm:w-5 sm:h-5 text-accent"></i>
+                    <span class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Site Map</span>
                 </div>
-                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
                     Site <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-flame via-tiger-orange to-cayenne-red">Map</span>
                 </h1>
-                <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 max-w-2xl leading-relaxed">
+                <p class="text-sm sm:text-base md:text-lg lg:text-xl text-slate-200 mb-8 max-w-2xl leading-relaxed">
                     Explore all pages of Mount Litera Zee School website. Find information about academics, facilities, admissions, and more.
                 </p>
             </div>
@@ -327,13 +326,244 @@
                 </div>
             </div>
 
-            <!-- Information -->
+            <!-- Facilities & Services -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center">
+                        <i data-lucide="building-2" class="w-6 h-6 text-purple-600"></i>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Facilities & Services</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="library.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="book" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Library</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">library.html</p>
+                        <p class="text-xs text-slate-500">School library</p>
+                    </a>
+
+                    <a href="security.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="shield-check" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Security</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">security.html</p>
+                        <p class="text-xs text-slate-500">Security measures</p>
+                    </a>
+
+                    <a href="infirmary.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="heart-pulse" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Infirmary</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">infirmary.html</p>
+                        <p class="text-xs text-slate-500">Medical facility</p>
+                    </a>
+
+                    <a href="theatre.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="theater" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Theatre</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">theatre.html</p>
+                        <p class="text-xs text-slate-500">Theatre facilities</p>
+                    </a>
+
+                    <a href="cafe.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="coffee" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Café</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">cafe.html</p>
+                        <p class="text-xs text-slate-500">School café</p>
+                    </a>
+
+                    <a href="transport.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="bus" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Transport</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">transport.html</p>
+                        <p class="text-xs text-slate-500">Transportation services</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Activities & Programs -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-12 h-12 rounded-lg bg-pink-100 flex items-center justify-center">
+                        <i data-lucide="activity" class="w-6 h-6 text-pink-600"></i>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Activities & Programs</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="sports.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="trophy" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Sports</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">sports.html</p>
+                        <p class="text-xs text-slate-500">Sports activities</p>
+                    </a>
+
+                    <a href="art.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="palette" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Art</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">art.html</p>
+                        <p class="text-xs text-slate-500">Art programs</p>
+                    </a>
+
+                    <a href="dance.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="music" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Dance</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">dance.html</p>
+                        <p class="text-xs text-slate-500">Dance programs</p>
+                    </a>
+
+                    <a href="spritual.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="heart" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Spiritual Programme</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">spritual.html</p>
+                        <p class="text-xs text-slate-500">Spiritual activities</p>
+                    </a>
+
+                    <a href="efe.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="leaf" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Eco Friendly Environment</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">efe.html</p>
+                        <p class="text-xs text-slate-500">Environmental initiatives</p>
+                    </a>
+
+                    <a href="excursion.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Educational Excursions</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">excursion.html</p>
+                        <p class="text-xs text-slate-500">Field trips</p>
+                    </a>
+
+                    <a href="teacher_training.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="users-round" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Teacher Training</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">teacher_training.html</p>
+                        <p class="text-xs text-slate-500">Training programs</p>
+                    </a>
+
+                    <a href="disaster.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="alert-triangle" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Disaster Management</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">disaster.html</p>
+                        <p class="text-xs text-slate-500">Safety protocols</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Admissions -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-12 h-12 rounded-lg bg-indigo-100 flex items-center justify-center">
+                        <i data-lucide="user-plus" class="w-6 h-6 text-indigo-600"></i>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Admissions</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="admission-process.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="file-check" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Admission Process</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">admission-process.html</p>
+                        <p class="text-xs text-slate-500">Admission procedure</p>
+                    </a>
+
+                    <a href="enquiry.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="message-circle" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Enquiry</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">enquiry.html</p>
+                        <p class="text-xs text-slate-500">General enquiry</p>
+                    </a>
+
+                    <a href="form.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="file-text" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Registration Form</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">form.html</p>
+                        <p class="text-xs text-slate-500">Student registration</p>
+                    </a>
+
+                    <a href="transfer_certificate.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="file-x" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Transfer Certificate</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">transfer_certificate.html</p>
+                        <p class="text-xs text-slate-500">TC application</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Information & Resources -->
             <div class="mb-16">
                 <div class="flex items-center gap-3 mb-8">
                     <div class="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center">
                         <i data-lucide="file-text" class="w-6 h-6 text-amber-600"></i>
                     </div>
-                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Information</h2>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Information & Resources</h2>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <a href="uniform.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
@@ -356,6 +586,61 @@
                         </div>
                         <p class="text-sm text-slate-600 mb-2">timing.html</p>
                         <p class="text-xs text-slate-500">School schedule</p>
+                    </a>
+
+                    <a href="cbse.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="shield-check" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">CBSE Mandate</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">cbse.html</p>
+                        <p class="text-xs text-slate-500">CBSE compliance</p>
+                    </a>
+
+                    <a href="reach.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Reach Us</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">reach.html</p>
+                        <p class="text-xs text-slate-500">Contact information</p>
+                    </a>
+
+                    <a href="gallery.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="images" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Photo Gallery</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">gallery.html</p>
+                        <p class="text-xs text-slate-500">School photos</p>
+                    </a>
+
+                    <a href="feed.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="users" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Alumni Feed</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">feed.html</p>
+                        <p class="text-xs text-slate-500">Alumni network</p>
+                    </a>
+
+                    <a href="testimonial.html" class="group p-6 bg-white border border-slate-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i data-lucide="star" class="w-5 h-5 text-primary group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">Parent Testimonials</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-2">testimonial.html</p>
+                        <p class="text-xs text-slate-500">Parent feedback</p>
                     </a>
                 </div>
             </div>
